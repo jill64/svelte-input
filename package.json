@@ -1,6 +1,6 @@
 {
   "name": "@jill64/svelte-input",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Input component set for Svelte",
   "type": "module",
   "main": "dist/index.js",
@@ -46,7 +46,7 @@
     "@sveltejs/package": "^2.2.2",
     "@typescript-eslint/eslint-plugin": "^6.6.0",
     "@typescript-eslint/parser": "^6.6.0",
-    "eslint": "^8.48.0",
+    "eslint": "^8.49.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-svelte": "^2.33.0",
     "prettier": "^3.0.3",
@@ -57,5 +57,11 @@
     "tslib": "^2.6.2",
     "typescript": "^5.2.2",
     "vite": "^4.4.9"
+  },
+  "dependencies": {
+    "@jill64/async-observer": "^0.1.1",
+    "@jill64/svelte-device-theme": "^0.1.0",
+    "@jill64/svelte-toast": "^0.1.0",
+    "svelte-loading-spinners": "^0.3.4"
   }
 }
