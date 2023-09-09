@@ -1,5 +1,7 @@
 # svelte-input
 
+[Demo](https://jill64.github.io/svelte-input)
+
 Input component set for Svelte
 
 ## Install
