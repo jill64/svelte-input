@@ -1,10 +1,6 @@
 name: CI
 
-on:
-  push:
-    branches:
-      - dev
-      - main
+on: push
 
 permissions:
   contents: read
