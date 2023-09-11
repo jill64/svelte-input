@@ -7,8 +7,8 @@
 
   export let onClick: () => unknown
   export let label = ''
-  export let Class = ''
-  export let style = ''
+  export let Class: HTMLButtonAttributes['class'] = ''
+  export let style: HTMLButtonAttributes['style'] = ''
   export let size = 24
   export let gap = '5px'
   export let color = ''

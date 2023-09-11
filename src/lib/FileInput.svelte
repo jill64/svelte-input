@@ -11,7 +11,7 @@
   export let onSelect: ((files: FileList) => unknown) | undefined = undefined
 </script>
 
-<label>
+<label style:cursor="pointer" style:display="inline-block">
   <input
     type="file"
     {...attributes}
@@ -29,18 +29,7 @@
         onSelect?.(files)
       }
     }}
-    aria-hidden="true"
-    tabindex="-1"
+    hidden
   />
   <slot />
 </label>
-
-<style>
-  input {
-    display: none;
-  }
-  label {
-    cursor: pointer;
-    display: inline-block;
-  }
-</style>
