@@ -3,8 +3,8 @@
   import type { HTMLTextareaAttributes } from 'svelte/elements'
 
   export let value = ''
-  export let Class = ''
-  export let style = ''
+  export let Class: HTMLTextareaAttributes['class'] = ''
+  export let style: HTMLTextareaAttributes['style'] = ''
   export let fontSize = '1rem'
   export let lineHeight = 1.5
   export let padding = '4px'
