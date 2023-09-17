@@ -60,7 +60,7 @@
   },
   "dependencies": {
     "svelte": "4.2.0",
-    "@jill64/async-observer": "^0.1.1",
+    "@jill64/async-observer": "^1.0.0",
     "@jill64/svelte-device-theme": "^0.1.0",
     "svelte-loading-spinners": "^0.3.4"
   }
