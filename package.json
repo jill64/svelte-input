@@ -59,7 +59,7 @@
     "vite": "4.4.9"
   },
   "dependencies": {
-    "svelte": "4.2.0",
+    "svelte": "4.2.1",
     "@jill64/async-observer": "^1.0.0",
     "@jill64/svelte-device-theme": "^1.0.0",
     "svelte-loading-spinners": "^0.3.4"
