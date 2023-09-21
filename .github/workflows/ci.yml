@@ -7,28 +7,10 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: 'pages'
-  cancel-in-progress: false
-
 jobs:
-  ci:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac # v4
-      - uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d # v3
-        with:
-          node-version: 18
-      - uses: pnpm/action-setup@v2
-        with:
-          version: latest
-          run_install: true
-      - run: pnpm lint
-      - run: pnpm check
-      - run: pnpm build
-      - uses: actions/configure-pages@f156874f8191504dae5b037505266ed5dda6c382 # v3
-      - uses: actions/upload-pages-artifact@a753861a5debcf57bf8b404356158c8e1e33150c # v2
-        with:
-          path: './build'
-      - uses: actions/deploy-pages@9dbe3824824f8a1377b8e298bafde1a50ede43e5 # v2
-        id: deployment
+  lint:
+    uses: jill64/reusable-workflow/.github/workflows/lint.yml@main
+  check:
+    uses: jill64/reusable-workflow/.github/workflows/check.yml@main
+  publish-pages:
+    uses: jill64/reusable-workflow/.github/workflows/publish-pages.yml@main
