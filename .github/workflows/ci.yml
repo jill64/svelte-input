@@ -3,14 +3,13 @@ name: CI
 on: push
 
 permissions:
-  contents: read
   pages: write
   id-token: write
 
 jobs:
   lint:
-    uses: jill64/reusable-workflow/.github/workflows/lint.yml@main
+    uses: jill64/workflows/.github/workflows/lint.yml@main
   check:
-    uses: jill64/reusable-workflow/.github/workflows/check.yml@main
+    uses: jill64/workflows/.github/workflows/check.yml@main
   publish-pages:
-    uses: jill64/reusable-workflow/.github/workflows/publish-pages.yml@main
+    uses: jill64/workflows/.github/workflows/publish-pages.yml@main
