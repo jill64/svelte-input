@@ -1,6 +1,6 @@
 {
   "name": "@jill64/svelte-input",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Input component set for Svelte",
   "type": "module",
   "main": "dist/index.js",
@@ -33,6 +33,7 @@
     "build": "vite build && npm run package",
     "preview": "pnpm build && vite preview",
     "package": "svelte-kit sync && svelte-package && publint",
+    "test": "playwright test",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "format": "prettier --write . --plugin prettier-plugin-svelte .",
     "lint": "prettier --check . --plugin prettier-plugin-svelte . && eslint ."
@@ -41,11 +42,12 @@
     "svelte": "^4.0.0"
   },
   "devDependencies": {
+    "@jill64/svelte-toast": "0.1.1",
+    "@playwright/test": "^1.38.1",
     "@sveltejs/adapter-static": "2.0.3",
     "@sveltejs/kit": "1.25.1",
     "@sveltejs/package": "2.2.2",
     "@typescript-eslint/eslint-plugin": "6.7.3",
-    "@jill64/svelte-toast": "0.1.1",
     "@typescript-eslint/parser": "6.7.3",
     "eslint": "8.50.0",
     "eslint-config-prettier": "9.0.0",
@@ -59,9 +61,9 @@
     "vite": "4.4.9"
   },
   "dependencies": {
-    "svelte": "4.2.1",
     "@jill64/async-observer": "^1.0.0",
     "@jill64/svelte-device-theme": "^1.0.0",
+    "svelte": "4.2.1",
     "svelte-loading-spinners": "^0.3.4"
   }
 }
