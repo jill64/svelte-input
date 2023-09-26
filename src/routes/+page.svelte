@@ -27,9 +27,7 @@
     style="border-radius: 9999px; font-size: 16px; border: 1px solid #555; padding:8px 16px; background: transparent; color: inherit"
     onClick={async () => {
       await delay(1500)
-      Math.random() > 0.5
-        ? $toast.error('Action Failed')
-        : $toast.success('Action Complete')
+      $toast.success('Action Complete')
     }}
     label="Action Button"
   >
