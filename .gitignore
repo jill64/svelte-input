@@ -4,3 +4,4 @@ dist
 build
 .svelte-kit
 .env
+pnpm-lock.yaml
