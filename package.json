@@ -34,7 +34,7 @@
     "preview": "pnpm build && vite preview",
     "package": "svelte-kit sync && npx @sveltejs/package && npx publint",
     "test": "playwright test",
-    "check": "svelte-kit sync && npx svelte-check --tsconfig ./tsconfig.json",
+    "check": "svelte-kit sync && npx svelte-check",
     "format": "npx prettier --write . --plugin prettier-plugin-svelte .",
     "lint": "npx prettier --check . --plugin prettier-plugin-svelte . && npx eslint"
   },
