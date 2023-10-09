@@ -1,6 +1,6 @@
 {
   "name": "@jill64/svelte-input",
-  "version": "0.3.18",
+  "version": "0.3.19",
   "description": "Input component set for Svelte",
   "type": "module",
   "main": "dist/index.js",
@@ -34,7 +34,7 @@
     "preview": "pnpm build && vite preview",
     "package": "svelte-kit sync && npx @sveltejs/package && npx publint",
     "test": "playwright test",
-    "check": "svelte-kit sync && npx svelte-check --tsconfig ./tsconfig.json",
+    "check": "svelte-kit sync && npx svelte-check",
     "format": "npx prettier --write . --plugin prettier-plugin-svelte .",
     "lint": "npx prettier --check . --plugin prettier-plugin-svelte . && npx eslint"
   },
