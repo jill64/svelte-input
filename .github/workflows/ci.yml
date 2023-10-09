@@ -7,9 +7,6 @@ permissions:
   id-token: write
 
 jobs:
-  lint:
-    uses: jill64/workflows/.github/workflows/lint.yml@main
-    secrets: inherit
   check:
     uses: jill64/workflows/.github/workflows/check.yml@main
   publish-pages:
