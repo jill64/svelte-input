@@ -2,12 +2,11 @@ name: CI
 
 on: push
 
-permissions:
-  pages: write
-  id-token: write
-
 jobs:
   check:
     uses: jill64/workflows/.github/workflows/check.yml@main
   publish-pages:
+    permissions:
+      pages: write
+      id-token: write
     uses: jill64/workflows/.github/workflows/publish-pages.yml@main
