@@ -1,6 +1,6 @@
 {
   "name": "@jill64/svelte-input",
-  "version": "0.3.22",
+  "version": "0.3.23",
   "description": "Input component set for Svelte",
   "type": "module",
   "main": "dist/index.js",
@@ -45,7 +45,7 @@
     "@jill64/svelte-toast": "0.1.10",
     "@playwright/test": "1.38.1",
     "@sveltejs/adapter-static": "2.0.3",
-    "@sveltejs/kit": "1.25.1",
+    "@sveltejs/kit": "1.25.2",
     "@typescript-eslint/eslint-plugin": "6.7.5",
     "@typescript-eslint/parser": "6.7.5",
     "eslint-config-prettier": "9.0.0",
