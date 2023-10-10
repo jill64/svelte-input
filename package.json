@@ -1,6 +1,6 @@
 {
   "name": "@jill64/svelte-input",
-  "version": "0.3.29",
+  "version": "0.3.30",
   "description": "Input component set for Svelte",
   "type": "module",
   "main": "dist/index.js",
@@ -57,7 +57,7 @@
     "vite": "4.4.11"
   },
   "dependencies": {
-    "@jill64/async-observer": "1.0.13",
+    "@jill64/async-observer": "1.0.14",
     "@jill64/svelte-device-theme": "1.0.7",
     "svelte": "4.2.1",
     "svelte-loading-spinners": "0.3.4"
