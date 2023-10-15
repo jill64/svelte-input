@@ -2,6 +2,5 @@ branch-protection:
   main:
     required_status_checks:
       contexts:
-        - check / check
-        - publish-pages / publish-pages
-        - e2e-test / run-playwright
+        - deploy / publish-pages
+        - integration / run-playwright
