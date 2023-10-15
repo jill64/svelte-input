@@ -1,4 +1,4 @@
-name: CI
+name: Deploy
 
 on: push
 
@@ -7,7 +7,5 @@ permissions:
   id-token: write
 
 jobs:
-  check:
-    uses: jill64/workflows/.github/workflows/check.yml@main
-  publish-pages:
+  deploy:
     uses: jill64/workflows/.github/workflows/publish-pages.yml@main
