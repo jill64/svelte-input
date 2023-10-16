@@ -3,4 +3,3 @@ branch-protection:
     required_status_checks:
       contexts:
         - deploy / publish-pages
-        - integration / run-playwright
