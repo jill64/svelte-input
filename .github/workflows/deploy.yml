@@ -8,4 +8,4 @@ permissions:
 
 jobs:
   deploy:
-    uses: jill64/workflows/.github/workflows/publish-pages.yml@main
+    uses: jill64/.github/.github/workflows/publish-pages.yml@main
