@@ -19,8 +19,7 @@ env:
   es2017: true
   node: true
 overrides:
-  -
-    files:
+  - files:
       - '*.svelte'
     parser: svelte-eslint-parser
     parserOptions:
