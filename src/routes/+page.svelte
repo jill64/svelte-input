@@ -14,7 +14,10 @@
 </script>
 
 <Toaster />
-<h1>svelte-input</h1>
+<header>
+  <h1>svelte-input</h1>
+  <a href="https://github.com/jill64/svelte-input">GitHub</a>
+</header>
 <main>
   <FileInput>
     <div
@@ -69,9 +72,22 @@
       color: white;
     }
   }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0.5rem;
+  }
   main {
     display: inline-flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
   }
 </style>
