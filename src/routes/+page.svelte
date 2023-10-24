@@ -15,8 +15,8 @@
 
 <Toaster />
 <header>
-<h1>svelte-input</h1>
-<a href="https://github.com/jill64/svelte-input">GitHub</a>
+  <h1>svelte-input</h1>
+  <a href="https://github.com/jill64/svelte-input">GitHub</a>
 </header>
 <main>
   <FileInput>
