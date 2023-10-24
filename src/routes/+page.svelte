@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { Toaster } from '@jill64/svelte-toast'
   import {
     ActionButton,
     CheckBox,
@@ -12,6 +13,7 @@
     new Promise((resolve) => setTimeout(resolve, ms))
 </script>
 
+<Toaster />
 <h1>svelte-input</h1>
 <main>
   <FileInput>
