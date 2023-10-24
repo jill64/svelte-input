@@ -24,3 +24,5 @@ overrides:
     parser: svelte-eslint-parser
     parserOptions:
       parser: '@typescript-eslint/parser'
+globals:
+  $$Generic: readonly
