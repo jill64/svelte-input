@@ -64,13 +64,13 @@ test('Radio', async ({ page }) => {
   await expect(first).not.toBeChecked()
   await expect(second).not.toBeChecked()
   await expect(third).not.toBeChecked()
-  
+
   await first.click()
 
   await expect(first).toBeChecked()
   await expect(second).not.toBeChecked()
   await expect(third).not.toBeChecked()
-  
+
   await second.click()
 
   await expect(first).not.toBeChecked()
