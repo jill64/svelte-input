@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Toaster } from '@jill64/svelte-toast'
+  import Radio from '$lib/Radio.svelte'
   import {
     ActionButton,
     CheckBox,
@@ -7,7 +7,7 @@
     TextArea,
     ToggleSwitch
   } from '$lib/index.js'
-  import { toast } from '@jill64/svelte-toast'
+  import { Toaster, toast } from '@jill64/svelte-toast'
 
   const delay = (ms: number) =>
     new Promise((resolve) => setTimeout(resolve, ms))
@@ -52,6 +52,11 @@
     placeholder="Auto Grow Text Area"
     style="background: inherit; color: inherit;"
   />
+  <Radio list={['First', 'Second', 'Third']} let:item onSelect={console.log}>
+    <span style:margin-left="4px">
+      {item}
+    </span>
+  </Radio>
 </main>
 
 <style>
