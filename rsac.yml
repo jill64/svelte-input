@@ -1,5 +1,5 @@
 branch-protection:
   branch-name:
     required_status_checks:
-      checks:
+      contexts:
         - e2e-test / run-playwright
