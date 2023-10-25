@@ -1,0 +1,5 @@
+branch-protection:
+  branch-name:
+    required_status_checks:
+      checks:
+        - e2e-test / run-playwright
