@@ -48,7 +48,7 @@
     "@jill64/svelte-toast": "1.0.0",
     "@playwright/test": "1.39.0",
     "@sveltejs/adapter-static": "2.0.3",
-    "@sveltejs/kit": "1.27.0",
+    "@sveltejs/kit": "1.27.1",
     "@typescript-eslint/eslint-plugin": "6.9.0",
     "@typescript-eslint/parser": "6.9.0",
     "eslint-plugin-deprecation": "2.0.0",
