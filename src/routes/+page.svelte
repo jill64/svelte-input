@@ -24,6 +24,8 @@
       style:border-radius="9999px"
       style:padding="8px 16px"
       style:background="#77F"
+      style:display="flex"
+      style:justify-content="center"
     >
       Custom File Input
     </div>
