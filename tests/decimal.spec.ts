@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test'
 
 test('Decimal', async ({ page }) => {
-  await page.goto('/svelte-input')
+  await page.goto('/')
 
   const textarea = page.getByPlaceholder('Decimal Input')
   await expect(textarea).toBeVisible()

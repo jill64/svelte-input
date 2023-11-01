@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test'
 
 test('Radio', async ({ page }) => {
-  await page.goto('/svelte-input')
+  await page.goto('/')
 
   const first = page.getByLabel('First')
   const second = page.getByLabel('Second')

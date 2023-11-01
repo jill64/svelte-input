@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test'
 
 test('Check Box', async ({ page }) => {
-  await page.goto('/svelte-input')
+  await page.goto('/')
 
   const checkBox = page.getByLabel('Check Box')
   await expect(checkBox).toBeVisible()
