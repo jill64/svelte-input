@@ -1,12 +1,13 @@
 <script lang="ts">
-  import Radio from '$lib/Radio.svelte'
   import {
     ActionButton,
     CheckBox,
+    Decimal,
     FileInput,
+    Radio,
     TextArea,
     ToggleSwitch
-  } from '$lib/index.js'
+  } from '$lib'
   import { Toaster, toast } from '@jill64/svelte-toast'
 
   const delay = (ms: number) =>
@@ -41,14 +42,7 @@
     ＋
   </ActionButton>
   <CheckBox value={null}>
-    <span
-      style:user-select="none"
-      style:-moz-user-select="none"
-      style:-webkit-user-select="none"
-      style:margin-left="4px"
-    >
-      Check Box
-    </span>
+    <span style:margin-left="4px"> Check Box </span>
   </CheckBox>
   <ToggleSwitch>
     <span style:margin-left="4px"> Toggle Switch </span>
@@ -57,11 +51,20 @@
     placeholder="Auto Grow Text Area"
     style="background: inherit; color: inherit;"
   />
-  <Radio list={['First', 'Second', 'Third']} let:item onSelect={console.log}>
-    <span style:margin-left="4px">
-      {item}
-    </span>
-  </Radio>
+  <div style:display="flex" style:flex-direction="column" style:gap="0.5rem">
+    <Radio list={['First', 'Second', 'Third']} let:item onSelect={console.log}>
+      <span style:margin-left="4px">
+        {item}
+      </span>
+    </Radio>
+  </div>
+  <fieldset style:border="none">
+    <Decimal
+      placeholder="Decimal Input"
+      style="color: inherit; background: inherit; border: solid 1px #888;"
+      buttonStyle="color: inherit; background: inherit; border: solid 1px #888;"
+    />
+  </fieldset>
 </main>
 
 <style>

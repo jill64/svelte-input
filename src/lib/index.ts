@@ -1,5 +1,6 @@
 export { default as ActionButton } from './ActionButton.svelte'
 export { default as CheckBox } from './CheckBox.svelte'
+export { default as Decimal } from './Decimal.svelte'
 export { default as FileInput } from './FileInput.svelte'
 export { default as Radio } from './Radio.svelte'
 export { default as TextArea } from './TextArea.svelte'
