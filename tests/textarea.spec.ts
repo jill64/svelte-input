@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test'
 
 test('TextArea', async ({ page }) => {
-  await page.goto('/svelte-input')
+  await page.goto('/')
 
   const textarea = page.getByPlaceholder('Auto Grow Text Area')
   await expect(textarea).toBeVisible()

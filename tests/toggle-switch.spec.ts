@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test'
 
 test('Toggle Switch', async ({ page }) => {
-  await page.goto('/svelte-input')
+  await page.goto('/')
 
   const toggleSwitch = page.getByText('Toggle Switch')
   await expect(toggleSwitch).toBeVisible()

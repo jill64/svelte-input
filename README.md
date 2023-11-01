@@ -2,7 +2,7 @@
 
 # svelte-input
 
-[![npm-version](https://img.shields.io/npm/v/@jill64/svelte-input)](https://npmjs.com/package/@jill64/svelte-input) [![npm-license](https://img.shields.io/npm/l/@jill64/svelte-input)](https://npmjs.com/package/@jill64/svelte-input) [![npm-download-month](https://img.shields.io/npm/dm/@jill64/svelte-input)](https://npmjs.com/package/@jill64/svelte-input) [![npm-min-size](https://img.shields.io/bundlephobia/min/@jill64/svelte-input)](https://npmjs.com/package/@jill64/svelte-input) [![ci.yml](https://github.com/jill64/svelte-input/actions/workflows/ci.yml/badge.svg)](https://github.com/jill64/svelte-input/actions/workflows/ci.yml) [![deploy.yml](https://github.com/jill64/svelte-input/actions/workflows/deploy.yml/badge.svg)](https://github.com/jill64/svelte-input/actions/workflows/deploy.yml)
+[![npm-version](https://img.shields.io/npm/v/@jill64/svelte-input)](https://npmjs.com/package/@jill64/svelte-input) [![npm-license](https://img.shields.io/npm/l/@jill64/svelte-input)](https://npmjs.com/package/@jill64/svelte-input) [![npm-download-month](https://img.shields.io/npm/dm/@jill64/svelte-input)](https://npmjs.com/package/@jill64/svelte-input) [![npm-min-size](https://img.shields.io/bundlephobia/min/@jill64/svelte-input)](https://npmjs.com/package/@jill64/svelte-input) [![ci.yml](https://github.com/jill64/svelte-input/actions/workflows/ci.yml/badge.svg)](https://github.com/jill64/svelte-input/actions/workflows/ci.yml)
 
 Input component set for Svelte
 
