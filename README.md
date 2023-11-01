@@ -50,10 +50,7 @@ Button component with visual feedback to wait for `Promise`
   }
 </script>
 
-<ActionButton
-  onClick={actionHandler}
-  label="Action Button"
->
+<ActionButton onClick={actionHandler} label="Action Button">
   <!-- Icon Component -->
 </ActionButton>
 ```
@@ -154,10 +151,6 @@ Numeric input with accessible control buttons and logic to handle fractional iss
 </script>
 
 <fieldset style:border="none">
-  <Decimal
-    value={0}
-    onChange={onValueChange}
-    placeholder="Decimal Input"
-  />
+  <Decimal value={0} onChange={onValueChange} placeholder="Decimal Input" />
 </fieldset>
 ```
