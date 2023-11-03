@@ -16,14 +16,6 @@ npm i @jill64/svelte-input
 
 <!----- END GHOST DOCS HEADER ----->
 
-## Install
-
-```sh
-npm i -D @jill64/svelte-input
-```
-
-## [Demo + Example](https://stackblitz.com/edit/jill64-svelte-input?file=src%2Froutes%2FDemo.svelte)
-
 ## Components
 
 ### FileInput
