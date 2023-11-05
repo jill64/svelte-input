@@ -9,7 +9,9 @@
   "bugs": "https://github.com/jill64/svelte-input/issues",
   "homepage": "https://github.com/jill64/svelte-input#readme",
   "files": [
-    "dist"
+    "dist",
+    "!*.test.*",
+    "!*.spec.*"
   ],
   "exports": {
     ".": {
@@ -26,9 +28,7 @@
     "url": "https://github.com/jill64/svelte-input.git"
   },
   "keywords": [
-    "svelte",
-    "input",
-    "component"
+    "svelte"
   ],
   "scripts": {
     "dev": "vite dev",
