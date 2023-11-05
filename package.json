@@ -45,7 +45,7 @@
     "svelte": "^4.0.0"
   },
   "devDependencies": {
-    "@jill64/svelte-toast": "1.0.0",
+    "@jill64/svelte-toast": "1.0.1",
     "@playwright/test": "1.39.0",
     "@sveltejs/adapter-auto": "2.1.1",
     "@sveltejs/kit": "1.27.3",
