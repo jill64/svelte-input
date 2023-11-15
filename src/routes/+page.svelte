@@ -41,8 +41,14 @@
   <CheckBox value={null}>
     <span style:margin-left="4px"> Check Box </span>
   </CheckBox>
+  <CheckBox disabled value={true}>
+    <span style:margin-left="4px"> Disabled Check Box </span>
+  </CheckBox>
   <ToggleSwitch>
     <span style:margin-left="4px"> Toggle Switch </span>
+  </ToggleSwitch>
+  <ToggleSwitch disabled>
+    <span style:margin-left="4px"> Disabled Toggle Switch </span>
   </ToggleSwitch>
   <TextArea
     placeholder="Auto Grow Text Area"
@@ -52,6 +58,13 @@
     <Radio list={['First', 'Second', 'Third']} let:item onSelect={console.log}>
       <span style:margin-left="4px">
         {item}
+      </span>
+    </Radio>
+  </div>
+  <div style:display="flex" style:flex-direction="column" style:gap="0.5rem">
+    <Radio disabled list={['First', 'Second', 'Third']} let:item onSelect={console.log}>
+      <span style:margin-left="4px">
+        Disabled {item}
       </span>
     </Radio>
   </div>
