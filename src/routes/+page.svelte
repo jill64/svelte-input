@@ -62,7 +62,12 @@
     </Radio>
   </div>
   <div style:display="flex" style:flex-direction="column" style:gap="0.5rem">
-    <Radio disabled list={['First', 'Second', 'Third']} let:item onSelect={console.log}>
+    <Radio
+      disabled
+      list={['First', 'Second', 'Third']}
+      let:item
+      onSelect={console.log}
+    >
       <span style:margin-left="4px">
         Disabled {item}
       </span>
