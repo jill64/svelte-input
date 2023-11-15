@@ -17,12 +17,13 @@
 
 {#each list as item}
   <label
-    style:cursor="pointer"
+    style:cursor={disabled ? 'not-allowed' : 'pointer'}
     style:display="inline-flex"
     style:align-items="center"
   >
     <input
       type="radio"
+      style:cursor={disabled ? 'not-allowed' : 'pointer'}
       {...attributes}
       {readonly}
       {required}
@@ -34,7 +35,6 @@
       on:change={() => onSelect?.(item)}
       on:change
       on:input
-      style:cursor="pointer"
     />
     <slot {item} />
   </label>

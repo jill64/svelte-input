@@ -18,12 +18,13 @@
 </script>
 
 <label
-  style:cursor="pointer"
+  style:cursor={disabled ? 'not-allowed' : 'pointer'}
   style:display="inline-flex"
   style:align-items="center"
 >
   <input
     type="checkbox"
+    style:cursor={disabled ? 'not-allowed' : 'pointer'}
     {...attributes}
     {readonly}
     {required}
@@ -35,7 +36,6 @@
     on:change={(x) => onChange?.(x.currentTarget.checked)}
     on:change
     on:input
-    style:cursor="pointer"
   />
   <slot />
 </label>

@@ -21,7 +21,7 @@
 </script>
 
 <label
-  style:cursor="pointer"
+  style:cursor={disabled ? 'not-allowed' : 'pointer'}
   style:display="inline-flex"
   style:align-items="center"
 >
@@ -39,7 +39,7 @@
     hidden
   />
   <span
-    style:cursor="pointer"
+    style:cursor={disabled ? 'not-allowed' : 'pointer'}
     style:position="relative"
     style:background={value ? onColor : offColor}
     style:height
