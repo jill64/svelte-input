@@ -8,7 +8,7 @@
 
 ## [Demo](https://stackblitz.com/edit/jill64-svelte-input?file=src%2Froutes%2FDemo.svelte)
 
-## Install
+## Installation
 
 ```sh
 npm i @jill64/svelte-input

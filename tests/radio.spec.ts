@@ -3,9 +3,9 @@ import { expect, test } from '@playwright/test'
 test('Radio', async ({ page }) => {
   await page.goto('/')
 
-  const first = page.getByLabel('First')
-  const second = page.getByLabel('Second')
-  const third = page.getByLabel('Third')
+  const first = page.getByLabel('First', { exact: true })
+  const second = page.getByLabel('Second', { exact: true })
+  const third = page.getByLabel('Third', { exact: true })
 
   await expect(first).toBeVisible()
   await expect(second).toBeVisible()
