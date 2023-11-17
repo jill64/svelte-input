@@ -60,7 +60,7 @@
     "vite": "5.0.0"
   },
   "dependencies": {
-    "@jill64/async-observer": "1.1.3",
+    "@jill64/async-observer": "1.1.4",
     "@jill64/svelte-device-theme": "1.2.0",
     "bignumber.js": "9.1.2",
     "svelte-loading-spinners": "0.3.4"
