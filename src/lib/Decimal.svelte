@@ -25,9 +25,19 @@
     return n.toNumber()
   }
 
-  $: set = (n: BigNumber) => {
-    value = clamp(n)
-    onChange?.(value)
+  const validation = (n: number) => (isNaN(n) || !isFinite(n) ? 0 : n)
+
+  $: set = (
+    n: BigNumber,
+    options?: {
+      skipHandler?: boolean
+    }
+  ) => {
+    const clamped = clamp(n)
+    value = validation(clamped)
+    if (!options?.skipHandler) {
+      onChange?.(value)
+    }
   }
 </script>
 
@@ -41,7 +51,7 @@
   ー
 </button>
 <input
-  bind:value
+  {value}
   type="number"
   class={Class}
   {style}
@@ -52,6 +62,10 @@
   {readonly}
   {step}
   on:change={(x) => set(BigNumber(x.currentTarget.valueAsNumber))}
+  on:input={(x) =>
+    set(BigNumber(x.currentTarget.valueAsNumber), {
+      skipHandler: true
+    })}
   on:input
   on:focus
   on:blur
