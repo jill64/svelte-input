@@ -3,7 +3,7 @@
   import Demo from './Demo.svelte'
   import { RadioCode } from './RadioCode'
 
-  let value = 'First'
+  let value = 'Alpha'
   let disabled = false
 </script>
 
