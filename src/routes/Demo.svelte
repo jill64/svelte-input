@@ -1,8 +1,7 @@
 <script lang="ts">
   import { ToggleSwitch } from '$lib'
   import { theme } from '@jill64/svelte-dark-theme'
-  import { Highlight } from 'svelte-highlight'
-  import xml from 'svelte-highlight/languages/xml'
+  import { HighlightAuto } from 'svelte-highlight'
 
   export let title: string
   export let code: string
@@ -29,7 +28,7 @@
   {label} = {value}
 </output>
 <div style:overflow="auto">
-  <Highlight code={code.trim()} language={xml} />
+  <HighlightAuto code={code.trim()} />
 </div>
 <div>
   <slot {disabled} />
