@@ -1,48 +1,39 @@
 <script lang="ts">
   import type { HTMLInputAttributes } from 'svelte/elements'
+  import CheckBox from './CheckBox.svelte'
 
   type T = $$Generic
-  type V = T extends string ? T : never
+  type K = string | number | symbol
+  type V = T extends Record<K, boolean | null> ? T : never
 
-  export let value: V[] = []
-  export let list: V[] = []
+  export let value: V = {} as V
   export let Class: HTMLInputAttributes['class'] = ''
   export let style: HTMLInputAttributes['style'] = undefined
   export let disabled: HTMLInputAttributes['disabled'] = undefined
   export let required: HTMLInputAttributes['required'] = undefined
   export let readonly: HTMLInputAttributes['readonly'] = undefined
   export let attributes: HTMLInputAttributes = {}
-  export let onSelect: ((value: string) => unknown) | undefined = undefined
+  export let onChange: ((value: V) => unknown) | undefined = undefined
+
+  $: handle = (key: K) => (x: boolean) => {
+    value = { ...value, [key]: x }
+    onChange?.(value)
+  }
 </script>
 
-{#each list as item}
-  <label
-    style:cursor={disabled ? 'not-allowed' : 'pointer'}
-    style:display="inline-flex"
-    style:align-items="center"
+{#each Object.entries(value) as [key, v]}
+  <CheckBox
+    value={v}
+    {...attributes}
+    {readonly}
+    {required}
+    {disabled}
+    {style}
+    {Class}
+    onChange={handle(key)}
+    on:change
+    on:input
   >
-    <input
-      type="checkbox"
-      style:cursor={disabled ? 'not-allowed' : 'pointer'}
-      {...attributes}
-      {readonly}
-      {required}
-      {disabled}
-      {style}
-      bind:group={value}
-      value={item}
-      class={Class}
-      on:change={() => onSelect?.(item)}
-      on:change
-      on:input
-    />
-    <slot {item} />
-  </label>
+    <slot item={key} />
+  </CheckBox>
 {/each}
-
-<style>
-  input {
-    transform: scale(1.25);
-    z-index: 0;
-  }
-</style>
