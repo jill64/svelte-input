@@ -60,7 +60,7 @@
     "eslint-plugin-deprecation": "2.0.0",
     "eslint-plugin-svelte": "2.35.0",
     "prettier-plugin-svelte": "3.1.0",
-    "svelte": "4.2.5",
+    "svelte": "4.2.6",
     "svelte-highlight": "^7.4.1",
     "typescript": "5.2.2",
     "vite": "5.0.0"
