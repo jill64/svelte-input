@@ -18,7 +18,7 @@
     <code>{'<input type="checkbox">'}</code>
     compatible toggle switch component.
   </svelte:fragment>
-  <ToggleSwitch bind:value>
+  <ToggleSwitch bind:value {disabled}>
     <span style:margin-left="4px"> Toggle Switch </span>
   </ToggleSwitch>
 </Demo>

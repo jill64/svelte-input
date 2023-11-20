@@ -3,9 +3,9 @@
 
   export let height = '2rem'
   export let padGap = '0.25rem'
-  export let padColor = 'white'
-  export let offColor = 'gray'
-  export let onColor = 'green'
+  export let padColor = ''
+  export let offColor = ''
+  export let onColor = ''
   export let style = ''
   export let value = false
   export let Class: HTMLInputAttributes['class'] = ''
@@ -39,12 +39,14 @@
   <span
     style:cursor
     style:position="relative"
-    style:background={value ? onColor : offColor}
+    style:background={value
+      ? onColor || (disabled ? 'gray' : 'green')
+      : offColor || (disabled ? 'dimgray' : 'gray')}
     style:height
     style:width
     style:flex-shrink="0"
     style:--position-x={translateX}
-    style:--pad-color={padColor}
+    style:--pad-color={padColor || (disabled ? 'lightgray' : 'white')}
     style:--pad-gap={padGap}
     style:--pad-size={padSize}
     class={Class}
