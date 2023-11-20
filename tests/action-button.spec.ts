@@ -11,7 +11,7 @@ test('Action Button', async ({ page }) => {
     page.getByRole('button', { name: 'Action Button' })
   ).toBeVisible()
 
-  page.getByRole('button', { name: 'Action Button' }).click()
+  await page.getByRole('button', { name: 'Action Button' }).click()
 
   await expect(page.getByText('Action Complete')).toBeVisible()
 })
