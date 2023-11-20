@@ -31,9 +31,9 @@
 
 <button
   style:gap
-  style:cursor={disabled ? 'not-allowed' : pending ? 'wait' : 'pointer'}
   {...attributes}
   {style}
+  style:cursor={disabled ? 'not-allowed' : pending ? 'wait' : 'pointer'}
   class={Class}
   disabled={!enable}
   on:click={() => {
@@ -61,7 +61,6 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
   }
   span {
     display: inline-flex;

@@ -15,7 +15,7 @@
   export let attributes: HTMLInputAttributes = {}
   export let onChange: ((value: V) => unknown) | undefined = undefined
 
-  $: handle = (key: K) => (x: boolean) => {
+  const handle = (key: K) => (x: boolean) => {
     value = { ...value, [key]: x }
     onChange?.(value)
   }

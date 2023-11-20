@@ -10,7 +10,7 @@
   }
 
   let disabled = false
-  let value = initialValue
+  let value = { ...initialValue }
 </script>
 
 <Demo
@@ -34,14 +34,7 @@
     </button>
   </svelte:fragment>
   <fieldset>
-    <CheckList
-      bind:value
-      onChange={(x) => {
-        x
-      }}
-      {disabled}
-      let:item
-    >
+    <CheckList bind:value {disabled} let:item>
       <span style:margin-left="4px">
         {item}
       </span>
