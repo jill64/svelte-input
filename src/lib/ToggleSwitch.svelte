@@ -18,13 +18,11 @@
   $: width = `calc(${height} * 1.6)`
   $: padSize = `calc(${height} - ${padGap} * 2)`
   $: translateX = value ? `calc(${width} - ${padGap} * 2 - ${padSize})` : '0px'
+
+  $: cursor = disabled ? 'not-allowed' : 'pointer'
 </script>
 
-<label
-  style:cursor={disabled ? 'not-allowed' : 'pointer'}
-  style:display="inline-flex"
-  style:align-items="center"
->
+<label style:cursor style:display="inline-flex" style:align-items="center">
   <input
     type="checkbox"
     bind:checked={value}
@@ -39,7 +37,7 @@
     hidden
   />
   <span
-    style:cursor={disabled ? 'not-allowed' : 'pointer'}
+    style:cursor
     style:position="relative"
     style:background={value ? onColor : offColor}
     style:height

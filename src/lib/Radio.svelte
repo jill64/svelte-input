@@ -13,17 +13,15 @@
   export let readonly: HTMLInputAttributes['readonly'] = undefined
   export let attributes: HTMLInputAttributes = {}
   export let onSelect: ((value: string) => unknown) | undefined = undefined
+
+  $: cursor = disabled ? 'not-allowed' : 'pointer'
 </script>
 
 {#each list as item}
-  <label
-    style:cursor={disabled ? 'not-allowed' : 'pointer'}
-    style:display="inline-flex"
-    style:align-items="center"
-  >
+  <label style:cursor style:display="inline-flex" style:align-items="center">
     <input
       type="radio"
-      style:cursor={disabled ? 'not-allowed' : 'pointer'}
+      style:cursor
       {...attributes}
       {readonly}
       {required}
