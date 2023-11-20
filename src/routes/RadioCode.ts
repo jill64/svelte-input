@@ -4,7 +4,7 @@ export const RadioCode = ({ disabled }: { disabled: boolean }) => /*html*/ `
 </script>
 
 <fieldset>
-  <Radio list={['First', 'Second', 'Third']} bind:value let:item ${
+  <Radio list={['Alpha', 'Beta', 'Gamma']} bind:value let:item ${
     disabled ? 'disabled ' : ''
   }>
     {item}

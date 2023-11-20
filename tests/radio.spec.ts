@@ -3,33 +3,33 @@ import { expect, test } from '@playwright/test'
 test('Radio', async ({ page }) => {
   await page.goto('/')
 
-  const first = page.getByLabel('First', { exact: true })
-  const second = page.getByLabel('Second', { exact: true })
-  const third = page.getByLabel('Third', { exact: true })
+  const alpha = page.getByLabel('Alpha', { exact: true })
+  const beta = page.getByLabel('Beta', { exact: true })
+  const gamma = page.getByLabel('Gamma', { exact: true })
 
-  await expect(first).toBeVisible()
-  await expect(second).toBeVisible()
-  await expect(third).toBeVisible()
+  await expect(alpha).toBeVisible()
+  await expect(beta).toBeVisible()
+  await expect(gamma).toBeVisible()
 
-  await expect(first).not.toBeChecked()
-  await expect(second).not.toBeChecked()
-  await expect(third).not.toBeChecked()
+  await expect(alpha).not.toBeChecked()
+  await expect(beta).not.toBeChecked()
+  await expect(gamma).not.toBeChecked()
 
-  await first.click()
+  await alpha.click()
 
-  await expect(first).toBeChecked()
-  await expect(second).not.toBeChecked()
-  await expect(third).not.toBeChecked()
+  await expect(alpha).toBeChecked()
+  await expect(beta).not.toBeChecked()
+  await expect(gamma).not.toBeChecked()
 
-  await second.click()
+  await beta.click()
 
-  await expect(first).not.toBeChecked()
-  await expect(second).toBeChecked()
-  await expect(third).not.toBeChecked()
+  await expect(alpha).not.toBeChecked()
+  await expect(beta).toBeChecked()
+  await expect(gamma).not.toBeChecked()
 
-  await third.click()
+  await gamma.click()
 
-  await expect(first).not.toBeChecked()
-  await expect(second).not.toBeChecked()
-  await expect(third).toBeChecked()
+  await expect(alpha).not.toBeChecked()
+  await expect(beta).not.toBeChecked()
+  await expect(gamma).toBeChecked()
 })
