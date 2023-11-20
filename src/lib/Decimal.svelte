@@ -2,10 +2,10 @@
   import BigNumber from 'bignumber.js'
   import type { HTMLInputAttributes } from 'svelte/elements'
 
-  export let value = 0
   export let step = 1
   export let max: number | undefined = undefined
   export let min: number | undefined = undefined
+  export let value = min ?? 0
   export let Class: HTMLInputAttributes['class'] = undefined
   export let style: HTMLInputAttributes['style'] = undefined
   export let buttonClass: HTMLInputAttributes['class'] = undefined
@@ -20,12 +20,20 @@
   $: stepN = BigNumber(step)
 
   $: clamp = (n: BigNumber) => {
-    if (max && n.gt(max)) return max
-    if (min && n.lt(min)) return min
+    if (max !== undefined && n.gt(max)) return max
+    if (min !== undefined && n.lt(min)) return min
     return n.toNumber()
   }
 
-  const validation = (n: number) => (isNaN(n) || !isFinite(n) ? 0 : n)
+  const validation = (n: number) => (isNaN(n) || !isFinite(n) ? min ?? 0 : n)
+
+  $: if (min !== undefined && value < min) {
+    value = min
+  }
+
+  $: if (max !== undefined && value > max) {
+    value = max
+  }
 
   $: set = (
     n: BigNumber,
