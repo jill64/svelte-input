@@ -44,6 +44,7 @@
     style:background={value ? onColor : offColor}
     style:height
     style:width
+    style:flex-shrink="0"
     style:--position-x={translateX}
     style:--pad-color={padColor}
     style:--pad-gap={padGap}

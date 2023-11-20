@@ -33,9 +33,9 @@
   style:gap
   {...attributes}
   {style}
+  style:cursor={disabled ? 'not-allowed' : pending ? 'wait' : 'pointer'}
   class={Class}
   disabled={!enable}
-  data-pending={pending}
   on:click={() => {
     if (enable) {
       set()
@@ -47,7 +47,7 @@
     {#if pending}
       <Moon size={size - 2} color={color ? color : $isDark ? '#CCC' : '#222'} />
     {:else}
-      <slot />
+      <slot {status} />
     {/if}
   </span>
   {label}
@@ -61,10 +61,6 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-  }
-  button[data-pending='true'] {
-    cursor: wait;
   }
   span {
     display: inline-flex;
