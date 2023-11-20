@@ -1,6 +1,5 @@
 <script lang="ts">
   import { ActionButton } from '$lib'
-  import ToggleSwitch from '$lib/ToggleSwitch.svelte'
   import { observable } from '@jill64/async-observer'
   import { toast } from '@jill64/svelte-toast'
   import { ActionButtonCode } from './ActionButtonCode'

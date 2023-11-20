@@ -1,6 +1,5 @@
 <script lang="ts">
   import { Decimal } from '$lib'
-  import ToggleSwitch from '$lib/ToggleSwitch.svelte'
   import { DecimalCode } from './DecimalCode'
   import Demo from './Demo.svelte'
 
