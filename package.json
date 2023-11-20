@@ -67,7 +67,6 @@
   },
   "dependencies": {
     "@jill64/async-observer": "1.2.0",
-    "@jill64/svelte-device-theme": "1.2.0",
     "bignumber.js": "9.1.2",
     "svelte-loading-spinners": "0.3.4"
   }
