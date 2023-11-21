@@ -23,8 +23,8 @@ devDependencies:
     specifier: 2.2.2
     version: 2.2.2(@sveltejs/kit@1.27.6)(svelte@4.2.7)
   '@jill64/svelte-toast':
-    specifier: 1.1.1
-    version: 1.1.1(svelte@4.2.7)
+    specifier: 1.2.0
+    version: 1.2.0(svelte@4.2.7)
   '@playwright/test':
     specifier: 1.40.0
     version: 1.40.0
@@ -595,14 +595,15 @@ packages:
       svelte: 4.2.7
     dev: true
 
-  /@jill64/svelte-toast@1.1.1(svelte@4.2.7):
-    resolution: {integrity: sha512-ZEckIItuz+4nZ+XmjyPeZ9f2fLDl1MoVh/o94uxJ3W/Ph5togamKCr6VJkYK/3Q2dsHP2h4qZhPlTBTBg7LiJQ==}
+  /@jill64/svelte-toast@1.2.0(svelte@4.2.7):
+    resolution: {integrity: sha512-8Zv6jIgB0ry6tDFvpucNDA/clgIDDbsqQIPpLSuNkvyewiQDqeOaAJ0oMbTZgQf1WYQhswTBn0y97nmdj/fFQg==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
       '@jill64/svelte-device-theme': 1.2.1(svelte@4.2.7)
       svelte: 4.2.7
       svelte-french-toast: 1.2.0(svelte@4.2.7)
+      svelte-mq-store: 0.0.1(svelte@4.2.7)
     dev: true
 
   /@jill64/typed-storage@1.0.1:
