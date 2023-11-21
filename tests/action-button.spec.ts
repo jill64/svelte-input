@@ -3,6 +3,8 @@ import { expect, test } from '@playwright/test'
 test('Action Button', async ({ page }) => {
   await page.goto('/')
 
+  await expect(page.getByTestId('hydrated')).toBeAttached()
+
   await expect(
     page.getByRole('heading', { name: 'svelte-input' })
   ).toBeVisible()

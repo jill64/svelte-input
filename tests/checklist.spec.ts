@@ -3,6 +3,8 @@ import { expect, test } from '@playwright/test'
 test('CheckList', async ({ page }) => {
   await page.goto('/')
 
+  await expect(page.getByTestId('hydrated')).toBeAttached()
+
   const first = page.getByRole('checkbox', { name: 'First', exact: true })
   const second = page.getByRole('checkbox', { name: 'Second', exact: true })
   const third = page.getByRole('checkbox', { name: 'Third', exact: true })
