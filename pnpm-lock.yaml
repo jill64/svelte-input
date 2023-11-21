@@ -23,8 +23,8 @@ devDependencies:
     specifier: 2.2.1
     version: 2.2.1(@sveltejs/kit@1.27.6)(svelte@4.2.7)
   '@jill64/svelte-toast':
-    specifier: 1.1.0
-    version: 1.1.0(svelte@4.2.7)
+    specifier: 1.1.1
+    version: 1.1.1(svelte@4.2.7)
   '@playwright/test':
     specifier: 1.40.0
     version: 1.40.0
@@ -585,6 +585,15 @@ packages:
       svelte: 4.2.7
     dev: true
 
+  /@jill64/svelte-device-theme@1.2.1(svelte@4.2.7):
+    resolution: {integrity: sha512-1KCfKxXHoNNVPxoaeo8tqCGOH+3X+4OS+lSFEZP6NCiREbrL1cHB2P9mIUN8Xr6HIE1CYlAZIUQBUpb47hadKw==}
+    peerDependencies:
+      svelte: ^4.0.0
+    dependencies:
+      svelte: 4.2.7
+      svelte-mq-store: 0.0.1(svelte@4.2.7)
+    dev: true
+
   /@jill64/svelte-html@1.0.0(@sveltejs/kit@1.27.6)(svelte@4.2.7):
     resolution: {integrity: sha512-kj3ujgKFTN47mcyNA+sjIXV+PrRxdiMBYIh8ba5sfZ8hhxhyy8VJDcoEWupO2RCsPhC5+gCmRwbg6Td771ndZQ==}
     peerDependencies:
@@ -595,12 +604,12 @@ packages:
       svelte: 4.2.7
     dev: true
 
-  /@jill64/svelte-toast@1.1.0(svelte@4.2.7):
-    resolution: {integrity: sha512-HHVtmq0BdpDJOp5pD5r2Nh5szNWhCCayCbLzkUxgxuBu+9Y7aZDS1+7ZYBC79Yi5Vs5S8MyHcEegwqzHVh0bMQ==}
+  /@jill64/svelte-toast@1.1.1(svelte@4.2.7):
+    resolution: {integrity: sha512-ZEckIItuz+4nZ+XmjyPeZ9f2fLDl1MoVh/o94uxJ3W/Ph5togamKCr6VJkYK/3Q2dsHP2h4qZhPlTBTBg7LiJQ==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
-      '@jill64/svelte-device-theme': 1.2.0(svelte@4.2.7)
+      '@jill64/svelte-device-theme': 1.2.1(svelte@4.2.7)
       svelte: 4.2.7
       svelte-french-toast: 1.2.0(svelte@4.2.7)
     dev: true
@@ -2201,6 +2210,15 @@ packages:
   /svelte-loading-spinners@0.3.4:
     resolution: {integrity: sha512-vKaW71QMCBcTNijAGc0mUl8k3DQ66iYmp6MB8BMGCXyWk82bTrcLy8FOnSm9fE+8q6TwzD6PLUoYFHt0II93Xw==}
     dev: false
+
+  /svelte-mq-store@0.0.1(svelte@4.2.7):
+    resolution: {integrity: sha512-HHO2tfnbohrkz1Ua46sa076CZeafldE5JWJMz550f+vrc1VGk0X/ud7HmPmi93SHig7z3NiKBOom7F1c8Aqeeg==}
+    peerDependencies:
+      svelte: ^4.0.0
+    dependencies:
+      esm-env: 1.0.0
+      svelte: 4.2.7
+    dev: true
 
   /svelte-writable-derived@3.1.0(svelte@4.2.7):
     resolution: {integrity: sha512-cTvaVFNIJ036vSDIyPxJYivKC7ZLtcFOPm1Iq6qWBDo1fOHzfk6ZSbwaKrxhjgy52Rbl5IHzRcWgos6Zqn9/rg==}
