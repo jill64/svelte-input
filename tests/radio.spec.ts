@@ -3,6 +3,8 @@ import { expect, test } from '@playwright/test'
 test('Radio', async ({ page }) => {
   await page.goto('/')
 
+  await expect(page.getByTestId('hydrated')).toBeAttached()
+
   const alpha = page.getByRole('radio', { name: 'Alpha', exact: true })
   const beta = page.getByRole('radio', { name: 'Beta', exact: true })
   const gamma = page.getByRole('radio', { name: 'Gamma', exact: true })
