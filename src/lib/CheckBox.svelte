@@ -15,16 +15,14 @@
   $: if (dom) {
     dom.indeterminate = value === null || value === undefined
   }
+
+  $: cursor = disabled ? 'not-allowed' : 'pointer'
 </script>
 
-<label
-  style:cursor={disabled ? 'not-allowed' : 'pointer'}
-  style:display="inline-flex"
-  style:align-items="center"
->
+<label style:cursor style:display="inline-flex" style:align-items="center">
   <input
     type="checkbox"
-    style:cursor={disabled ? 'not-allowed' : 'pointer'}
+    style:cursor
     {...attributes}
     {readonly}
     {required}

@@ -1,7 +1,6 @@
 <script lang="ts">
   import { dev } from '$app/environment'
   import { observable } from '@jill64/async-observer'
-  import { isDark } from '@jill64/svelte-device-theme'
   import { Moon } from 'svelte-loading-spinners'
   import type { HTMLButtonAttributes } from 'svelte/elements'
 
@@ -45,7 +44,7 @@
 >
   <span style:height style:width style:font-size="{size}px">
     {#if pending}
-      <Moon size={size - 2} color={color ? color : $isDark ? '#CCC' : '#222'} />
+      <Moon size={size - 2} color={color || '#AAA'} />
     {:else}
       <slot {status} />
     {/if}

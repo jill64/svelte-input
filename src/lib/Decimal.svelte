@@ -25,7 +25,7 @@
     return n.toNumber()
   }
 
-  const validation = (n: number) => (isNaN(n) || !isFinite(n) ? min ?? 0 : n)
+  $: validation = (n: number) => (isNaN(n) || !isFinite(n) ? min ?? 0 : n)
 
   $: if (min !== undefined && value < min) {
     value = min
@@ -47,12 +47,15 @@
       onChange?.(value)
     }
   }
+
+  $: cursor = disabled ? 'not-allowed' : 'pointer'
 </script>
 
 <button
   title="decrease"
   class={buttonClass}
   style={buttonStyle}
+  style:cursor
   on:click={() => set(stepN.negated().plus(value))}
   {disabled}
 >
@@ -86,6 +89,7 @@
 <button
   class={buttonClass}
   style={buttonStyle}
+  style:cursor
   title="increase"
   on:click={() => set(stepN.plus(value))}
   {disabled}
@@ -100,7 +104,6 @@
     margin: 0;
   }
   button {
-    cursor: pointer;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;

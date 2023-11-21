@@ -9,9 +9,11 @@
   export let readonly: HTMLInputAttributes['readonly'] = undefined
   export let attributes: HTMLInputAttributes = {}
   export let onSelect: ((files: FileList) => unknown) | undefined = undefined
+
+  $: cursor = disabled ? 'not-allowed' : 'pointer'
 </script>
 
-<label style:cursor="pointer" style:display="inline-block">
+<label style:cursor style:display="inline-block">
   <input
     type="file"
     {...attributes}
