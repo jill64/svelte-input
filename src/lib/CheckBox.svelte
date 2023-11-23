@@ -14,11 +14,14 @@
   $: cursor = disabled ? 'not-allowed' : 'pointer'
 
   $: action = ((node, value) => {
-    node.indeterminate = value === null || value === undefined
+    const update = (v: typeof value) => {
+      node.indeterminate = v === null || v === undefined
+    }
+
+    update(value)
+
     return {
-      update(value) {
-        node.indeterminate = value === null || value === undefined
-      }
+      update
     }
   }) satisfies Action<HTMLInputElement, typeof value>
 </script>
