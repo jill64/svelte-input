@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount } from 'svelte'
+  import type { Action } from 'svelte/action'
   import type { HTMLTextareaAttributes } from 'svelte/elements'
 
   export let value = ''
@@ -22,30 +22,30 @@
   export let attributes: HTMLTextareaAttributes = {}
   export let onChange: ((s: string) => unknown) | undefined = undefined
 
-  let textarea: HTMLTextAreaElement | null
   let height = `calc((${fontSize} * ${
     (value.match(/\n/g)?.length ?? 0) + 1
   } * ${lineHeight}) + (${borderWidth} * 2) + ${paddingTop} + ${paddingBottom})`
 
-  const resize = () => {
-    if (textarea) {
-      const { borderWidth } = getComputedStyle(textarea)
+  $: action = ((node) => {
+    const update = () => {
+      const { borderWidth } = getComputedStyle(node)
       const state = scrollY
-      textarea.style.height = '0px'
-      height = `calc(${textarea.scrollHeight}px + (${borderWidth} * 2))`
+      node.style.height = '0px'
+      height = `calc(${node.scrollHeight}px + (${borderWidth} * 2))`
       document.documentElement.scrollTop = state
     }
-  }
 
-  $: {
-    value
-    resize()
-  }
+    update()
 
-  onMount(resize)
+    return {
+      update
+    }
+  }) as Action<HTMLTextAreaElement, unknown>
+
+  let innerWidth = 0
 </script>
 
-<svelte:window on:resize={resize} />
+<svelte:window bind:innerWidth />
 <textarea
   {...attributes}
   class={Class}
@@ -55,7 +55,7 @@
   {readonly}
   {style}
   bind:value
-  bind:this={textarea}
+  use:action={{ value, innerWidth }}
   on:change={(x) => onChange?.(x.currentTarget.value)}
   on:change
   on:input
