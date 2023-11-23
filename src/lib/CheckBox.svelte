@@ -1,4 +1,5 @@
 <script lang="ts">
+  import type { Action } from 'svelte/action'
   import type { HTMLInputAttributes } from 'svelte/elements'
 
   export let value: HTMLInputAttributes['checked'] = false
@@ -10,17 +11,21 @@
   export let attributes: HTMLInputAttributes = {}
   export let onChange: ((s: boolean) => unknown) | undefined = undefined
 
-  let dom: HTMLInputElement | null
-
-  $: if (dom) {
-    dom.indeterminate = value === null || value === undefined
-  }
-
   $: cursor = disabled ? 'not-allowed' : 'pointer'
+
+  $: action = ((node, value) => {
+    node.indeterminate = value === null || value === undefined
+    return {
+      update(value) {
+        node.indeterminate = value === null || value === undefined
+      }
+    }
+  }) satisfies Action<HTMLInputElement, typeof value>
 </script>
 
 <label style:cursor style:display="inline-flex" style:align-items="center">
   <input
+    use:action={value}
     type="checkbox"
     style:cursor
     {...attributes}
@@ -28,7 +33,6 @@
     {required}
     {disabled}
     {style}
-    bind:this={dom}
     bind:checked={value}
     class={Class}
     on:change={(x) => onChange?.(x.currentTarget.checked)}
