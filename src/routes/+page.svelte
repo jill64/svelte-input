@@ -6,6 +6,7 @@
   import FileInputDemo from './FileInputDemo.svelte'
   import Index from './Index.svelte'
   import RadioDemo from './RadioDemo.svelte'
+  import SelectDemo from './SelectDemo.svelte'
   import TextAreaDemo from './TextAreaDemo.svelte'
   import ToggleSwitchDemo from './ToggleSwitchDemo.svelte'
 
@@ -17,7 +18,8 @@
     'FileInput',
     'Radio',
     'TextArea',
-    'ToggleSwitch'
+    'ToggleSwitch',
+    'Select'
   ]
 </script>
 
@@ -34,6 +36,7 @@
   <RadioDemo />
   <TextAreaDemo />
   <ToggleSwitchDemo />
+  <SelectDemo />
 </main>
 
 <style>
