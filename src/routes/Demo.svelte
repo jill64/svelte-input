@@ -1,7 +1,7 @@
 <script lang="ts">
   import { ToggleSwitch } from '$lib'
   import { theme } from '@jill64/svelte-dark-theme'
-  import { HighlightAuto } from 'svelte-highlight'
+  import { HighlightSvelte } from 'svelte-highlight'
 
   export let title: string
   export let code: string
@@ -28,7 +28,7 @@
   {label} = {value}
 </output>
 <div style:overflow="auto">
-  <HighlightAuto code={code.trim()} />
+  <HighlightSvelte code={code.trim()} />
 </div>
 <div>
   <slot {disabled} />
