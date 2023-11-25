@@ -27,9 +27,9 @@
     list={grouped
       ? {
           Num: { list: ['One', 'Two', 'Three'] },
-          Char: { list: ['A', 'B', 'C'] }
+          Char: { list: { A: 'a', B: 'b', C: 'c' } }
         }
-      : ['One', 'Two', 'Three', 'A', 'B', 'C']}
+      : { One: 'One', Two: 'Two', Three: 'Three', A: 'a', B: 'b', C: 'c' }}
     bind:value
     {disabled}
     style="background: inherit; padding: 0.5rem; font-size: large; color: inherit; border: none;"
