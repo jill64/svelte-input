@@ -15,6 +15,7 @@
   export let onChange: ((item: string) => unknown) | undefined = undefined
 
   $: output = convert(list)
+  $: cursor = disabled ? 'not-allowed' : 'pointer'
 </script>
 
 <select
@@ -22,6 +23,7 @@
   bind:value
   class={Class || null}
   {style}
+  style:cursor
   {disabled}
   {required}
   on:change={() => onChange?.(value)}
@@ -33,14 +35,14 @@
   {#if isGroupedOutput(output)}
     {#each output as { label, disabled, list }}
       <optgroup {label} {disabled}>
-        {#each list as item}
-          <option {...item}>{item.label}</option>
+        {#each list as { value, selected, label, disabled }}
+          <option {value} {selected} {disabled} style:cursor>{label}</option>
         {/each}
       </optgroup>
     {/each}
   {:else}
-    {#each output as item}
-      <option {...item}>{item.label}</option>
+    {#each output as { value, selected, label, disabled }}
+      <option {value} {selected} {disabled} style:cursor>{label}</option>
     {/each}
   {/if}
 </select>
