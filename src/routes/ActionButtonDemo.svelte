@@ -28,12 +28,7 @@
   <svelte:fragment slot="description">
     Button component with visual feedback to wait for <code>Promise</code>.
   </svelte:fragment>
-  <ActionButton
-    {disabled}
-    style="font-size: 1rem;"
-    {onClick}
-    label="Action Button"
-  >
+  <ActionButton {disabled} {onClick} label="Action Button" Class="px-4 py-2">
     ＋
   </ActionButton>
 </Demo>

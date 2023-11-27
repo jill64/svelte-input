@@ -1,80 +1,65 @@
 <script lang="ts">
   import { ToggleSwitch } from '$lib'
-  import { theme } from '@jill64/svelte-dark-theme'
+  import { Menu } from '@jill64/svelte-menu'
   import { HighlightSvelte } from 'svelte-highlight'
+  import { listen } from 'svelte-mq-store'
+  import { slide } from 'svelte/transition'
 
   export let title: string
   export let code: string
   export let label = 'value'
   export let value: unknown
   export let disabled: boolean
+
+  $: isMobile = listen('(max-width: 640px)')
 </script>
 
-<hr style:border-color={$theme === 'dark' ? '#444' : '#CCC'} />
+<hr class="border mt-4 border-zinc-500 dark:border-zinc-700" />
 <section>
-  <hgroup>
-    <h2 id={title}>
+  <hgroup class="mr-auto">
+    <h2 class="font-bold text-2xl" id={title}>
       {title}
-      <a href="#{title}">#</a>
+      <a class="invisible text-blue-500 hover:underline" href="#{title}">#</a>
     </h2>
-    <p class={$theme}><slot name="description" /></p>
+    <p class="text-zinc-500 leading-loose dark:text-zinc-400 my-2">
+      <slot name="description" />
+    </p>
   </hgroup>
   <slot name="options" />
   <ToggleSwitch bind:value={disabled}>
     <span style:margin-left="0.5rem">Disable</span>
   </ToggleSwitch>
 </section>
-<output>
+<output
+  class="overflow-auto bg-zinc-400 dark:bg-gray-900 p-2 rounded max-h-80 whitespace-pre-wrap font-mono text-xl"
+>
   {label} = {value}
 </output>
-<div style:overflow="auto">
-  <HighlightSvelte code={code.trim()} />
-</div>
+<Menu
+  initialOpened={!$isMobile}
+  Class="overflow-auto"
+  summaryClass="rounded-md py-1 px-2 push-effect dark:pop-effect"
+  noOuterClosing
+  let:state
+>
+  {state === 'CLOSED' || state === 'CLOSING' ? '▷' : '▽'} Code
+  <div slot="contents" transition:slide>
+    <HighlightSvelte code={code.trim()} />
+  </div>
+</Menu>
 <div>
   <slot {disabled} />
 </div>
 
 <style>
-  hgroup {
-    margin-right: auto;
-  }
   section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
   }
-  h2 {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-  }
-  p {
-    color: gray;
-    line-height: 1.5rem;
-  }
-  :global(code) {
-    border-radius: 0.5rem;
-  }
-  h2 {
-    display: flex;
-    gap: 0.5rem;
-    margin: 0;
-  }
-  a {
-    text-decoration: none;
-    color: royalblue;
-    visibility: hidden;
-  }
   h2:hover a {
     visibility: visible;
-  }
-  output {
-    font-size: x-large;
-    font-family: 'Courier New', Courier, monospace;
-    white-space: pre-wrap;
-    max-height: 300px;
-    overflow: auto;
   }
   hr {
     width: 100%;
@@ -92,8 +77,9 @@
     background: rgba(0, 0, 0, 0.25);
     color: chocolate;
     padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
   }
-  p.dark :global(code) {
+  :global(.dark p code) {
     background: rgba(255, 255, 255, 0.1);
     color: peru;
   }

@@ -24,10 +24,10 @@
 </script>
 
 <nav>
-  <h2>Index</h2>
+  <h2 class="text-2xl font-bold my-2">Index</h2>
   <Index {list} />
 </nav>
-<main>
+<main class="grid cols-auto-2">
   <ActionButtonDemo />
   <CheckBoxDemo />
   <CheckListDemo />
@@ -41,8 +41,6 @@
 
 <style>
   main {
-    display: grid;
-    grid-template-columns: auto auto;
     align-items: center;
     column-gap: 1rem;
     padding: 1rem 0;

@@ -24,16 +24,17 @@
   <svelte:fragment slot="options">
     <fieldset>
       <legend> Min </legend>
-      <Decimal bind:value={min} {max} {style} {disabled} />
+      <Decimal buttonClass="p-2" bind:value={min} {max} {style} {disabled} />
     </fieldset>
     <fieldset>
       <legend> Max </legend>
-      <Decimal bind:value={max} {min} {style} {disabled} />
+      <Decimal buttonClass="p-2" bind:value={max} {min} {style} {disabled} />
     </fieldset>
   </svelte:fragment>
   <fieldset>
     <Decimal
       bind:value
+      buttonClass="p-2 rounded-full border border-zinc-500 push-effect dark:pop-effect"
       placeholder="Decimal Input"
       {style}
       {disabled}
@@ -45,11 +46,9 @@
 
 <style>
   fieldset {
-    border: none;
     display: flex;
+    align-items: center;
     gap: 0.5rem;
-    padding: 0;
-    margin: 0;
   }
   legend {
     margin-bottom: 0.5rem;
