@@ -4,21 +4,8 @@
 
 <ul>
   {#each list as item}
-    <li><a href="#{item}">{item}</a></li>
+    <li class="list-disc list-inside py-1">
+      <a class="text-blue-500 hover:underline" href="#{item}">{item}</a>
+    </li>
   {/each}
 </ul>
-
-<style>
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  a {
-    color: royalblue;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-</style>

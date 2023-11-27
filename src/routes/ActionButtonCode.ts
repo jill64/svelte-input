@@ -13,7 +13,6 @@ export const ActionButtonCode = ({
 </script>
 
 <ActionButton
-  style="border-radius: 9999px; border: 1px solid #555; padding:8px 16px;"
   onClick={actionHandler}
   label="Action Button"${disabled ? '\n  disabled' : ''}
   let:status
