@@ -29,7 +29,7 @@ devDependencies:
     specifier: 1.2.0
     version: 1.2.0(svelte@4.2.7)
   '@jill64/tailwind-grid-auto':
-    specifier: ^1.2.0
+    specifier: 1.2.0
     version: 1.2.0(tailwindcss@3.3.5)
   '@jill64/tailwind-reactions':
     specifier: 1.1.0
