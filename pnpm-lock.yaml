@@ -28,8 +28,11 @@ devDependencies:
   '@jill64/svelte-toast':
     specifier: 1.2.0
     version: 1.2.0(svelte@4.2.7)
+  '@jill64/tailwind-grid-auto':
+    specifier: ^1.2.0
+    version: 1.2.0(tailwindcss@3.3.5)
   '@jill64/tailwind-reactions':
-    specifier: ^1.1.0
+    specifier: 1.1.0
     version: 1.1.0(tailwindcss@3.3.5)
   '@playwright/test':
     specifier: 1.40.0
@@ -642,6 +645,14 @@ packages:
       svelte: 4.2.7
       svelte-french-toast: 1.2.0(svelte@4.2.7)
       svelte-mq-store: 0.0.1(svelte@4.2.7)
+    dev: true
+
+  /@jill64/tailwind-grid-auto@1.2.0(tailwindcss@3.3.5):
+    resolution: {integrity: sha512-I11GtXDeNZAWOQqzdgwHPM1j7ZVAFg7XV+pcXTOYnxgxuxqAdeAHwwvZ2UJdhdGFO2SIU0+wJ5AvaZCrHLX0pA==}
+    peerDependencies:
+      tailwindcss: ^3.0.0
+    dependencies:
+      tailwindcss: 3.3.5
     dev: true
 
   /@jill64/tailwind-reactions@1.1.0(tailwindcss@3.3.5):
