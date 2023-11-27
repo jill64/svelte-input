@@ -29,10 +29,8 @@
   $: action = ((node) => {
     const update = () => {
       const { borderWidth } = getComputedStyle(node)
-      const state = scrollY
-      node.style.height = '0px'
+      node.style.height = 'auto'
       height = `calc(${node.scrollHeight}px + (${borderWidth} * 2))`
-      document.documentElement.scrollTop = state
     }
 
     update()
