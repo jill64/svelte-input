@@ -54,7 +54,7 @@
     "@jill64/svelte-toast": "1.2.0",
     "@jill64/tailwind-grid-auto": "1.2.0",
     "@jill64/tailwind-reactions": "1.1.0",
-    "@playwright/test": "1.40.0",
+    "@playwright/test": "1.40.1",
     "@sveltejs/adapter-cloudflare": "2.3.3",
     "@sveltejs/kit": "1.27.6",
     "@typescript-eslint/eslint-plugin": "6.13.1",
