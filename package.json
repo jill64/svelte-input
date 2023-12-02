@@ -63,7 +63,7 @@
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-deprecation": "2.0.0",
     "eslint-plugin-svelte": "2.35.1",
-    "nanoid": "5.0.3",
+    "nanoid": "5.0.4",
     "postcss": "8.4.31",
     "postcss-load-config": "5.0.0",
     "prettier-plugin-svelte": "3.1.2",
