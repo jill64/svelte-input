@@ -23,8 +23,8 @@ devDependencies:
     specifier: 2.2.4
     version: 2.2.4(@sveltejs/kit@1.27.6)(svelte@4.2.8)
   '@jill64/svelte-menu':
-    specifier: 0.0.2
-    version: 0.0.2(svelte@4.2.8)
+    specifier: 0.0.3
+    version: 0.0.3(svelte@4.2.8)
   '@jill64/svelte-toast':
     specifier: 1.2.1
     version: 1.2.1(svelte@4.2.8)
@@ -659,12 +659,12 @@ packages:
       svelte: 4.2.8
     dev: true
 
-  /@jill64/svelte-menu@0.0.2(svelte@4.2.8):
-    resolution: {integrity: sha512-q9TDu18Sy+cDOIRdQ10VwWqouF3R1h3NBRPqoK4vroQ//b3RTnOpPmhhDeMZSV41plWy61t/kedbxT8wD9Lyvw==}
+  /@jill64/svelte-menu@0.0.3(svelte@4.2.8):
+    resolution: {integrity: sha512-BJwQda/xVtcd25nxFCMH6oBgaD2x4eo1R31hFTmAO63/K3fpleshtpay/UHlNGcL3HGHgb4tkCTerLqdbFXBFQ==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
-      nanoid: 5.0.3
+      nanoid: 5.0.4
       svelte: 4.2.8
     dev: true
 
@@ -2565,12 +2565,6 @@ packages:
   /nanoid@3.3.7:
     resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
-    dev: true
-
-  /nanoid@5.0.3:
-    resolution: {integrity: sha512-I7X2b22cxA4LIHXPSqbBCEQSL+1wv8TuoefejsX4HFWyC6jc5JG7CEaxOltiKjc1M+YCS2YkrZZcj4+dytw9GA==}
-    engines: {node: ^18 || >=20}
     hasBin: true
     dev: true
 

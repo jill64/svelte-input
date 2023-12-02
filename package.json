@@ -50,7 +50,7 @@
   "devDependencies": {
     "@jill64/sentry-sveltekit-cloudflare": "1.4.2",
     "@jill64/svelte-dark-theme": "2.2.4",
-    "@jill64/svelte-menu": "0.0.2",
+    "@jill64/svelte-menu": "0.0.3",
     "@jill64/svelte-toast": "1.2.1",
     "@jill64/tailwind-grid-auto": "1.2.0",
     "@jill64/tailwind-reactions": "1.1.0",
