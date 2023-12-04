@@ -1,11 +1,4 @@
-import reactions from '@jill64/tailwind-reactions'
-import gridAuto from '@jill64/tailwind-grid-auto'
-import { Config } from 'tailwindcss'
+import { tailwindConfig } from '@jill64/svelte-tailwind'
 
-const config: Config = {
-  content: ['./src/**/*.{html,js,svelte,ts}'],
-  darkMode: 'class',
-  plugins: [reactions, gridAuto]
-}
-
-export default config
+/** @type {import('@jill64/svelte-tailwind').TailwindConfig} */
+export default tailwindConfig()

@@ -2,15 +2,13 @@
   import { browser } from '$app/environment'
   import { FlipButton, ThemeManager, theme } from '@jill64/svelte-dark-theme'
   import { Toaster } from '@jill64/svelte-toast'
-  import github from 'svelte-highlight/styles/github'
-  import githubDark from 'svelte-highlight/styles/github-dark'
+  import { HighlightSwitcher } from 'svelte-highlight-switcher'
   import '../app.pcss'
   import GitHubLogo from './GitHubLogo.svelte'
 </script>
 
+<HighlightSwitcher name={$theme === 'dark' ? 'githubDark' : 'github'} />
 <svelte:head>
-  <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-  {@html $theme === 'dark' ? githubDark : github}
   {#if browser}
     <meta data-testid="hydrated" />
   {/if}

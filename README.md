@@ -8,15 +8,15 @@
 
 ## [Demo](https://svelte-input.jill64.dev)
 
+<!----- END GHOST DOCS HEADER ----->
+
+[StackBlitz](https://stackblitz.com/edit/jill64-svelte-input?file=src%2Froutes%2FDemo.svelte)
+
 ## Installation
 
 ```sh
 npm i @jill64/svelte-input
 ```
-
-<!----- END GHOST DOCS HEADER ----->
-
-[StackBlitz Demo](https://stackblitz.com/edit/jill64-svelte-input?file=src%2Froutes%2FDemo.svelte)
 
 This library is a set of input components for Svelte, intended to improve markup semantics and reduce functional complexity.  
 There are few prescribed styles available, so use `style`, `class`, etc. to create the style you prefer.
