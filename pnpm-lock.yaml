@@ -68,8 +68,8 @@ devDependencies:
     specifier: 8.4.32
     version: 8.4.32
   postcss-load-config:
-    specifier: 5.0.0
-    version: 5.0.0(postcss@8.4.32)
+    specifier: 5.0.1
+    version: 5.0.1(postcss@8.4.32)
   prettier-plugin-svelte:
     specifier: 3.1.2
     version: 3.1.2(prettier@3.1.0)(svelte@4.2.8)
@@ -2807,8 +2807,8 @@ packages:
       yaml: 2.3.4
     dev: true
 
-  /postcss-load-config@5.0.0(postcss@8.4.32):
-    resolution: {integrity: sha512-i069VOAUi6mpTsToA+qPAAfD7m7dfjm9Yhaqma7KEMJcQFM9jerKBU6rTGNcYLErj4sjR9fZ1q30TpFm2K7PSg==}
+  /postcss-load-config@5.0.1(postcss@8.4.32):
+    resolution: {integrity: sha512-d7kcvvpqQpCeC8DkmiKFiOK1sH8Rv8Sei3O0it+o4ixd+jIllmUfVBe8qOZOorMrlSwd4Ke3I7UAE1bOU7u40A==}
     engines: {node: '>= 18'}
     peerDependencies:
       jiti: '>=1.21.0'
