@@ -8,12 +8,6 @@
 
 ## [Demo](https://svelte-input.jill64.dev)
 
-## Installation
-
-```sh
-npm i @jill64/svelte-input
-```
-
 <!----- END GHOST DOCS HEADER ----->
 
 [StackBlitz Demo](https://stackblitz.com/edit/jill64-svelte-input?file=src%2Froutes%2FDemo.svelte)
