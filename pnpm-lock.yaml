@@ -29,8 +29,8 @@ devDependencies:
     specifier: 1.5.0
     version: 1.5.0(@sveltejs/kit@1.27.6)(svelte@4.2.8)
   '@jill64/svelte-dark-theme':
-    specifier: 2.2.4
-    version: 2.2.4(@sveltejs/kit@1.27.6)(svelte@4.2.8)
+    specifier: 2.2.7
+    version: 2.2.7(@sveltejs/kit@1.27.6)(svelte@4.2.8)
   '@jill64/svelte-menu':
     specifier: 0.0.3
     version: 0.0.3(svelte@4.2.8)
@@ -635,8 +635,8 @@ packages:
       - svelte
     dev: true
 
-  /@jill64/svelte-dark-theme@2.2.4(@sveltejs/kit@1.27.6)(svelte@4.2.8):
-    resolution: {integrity: sha512-o0kVrEySgqIgO1HWXhXuorjGkWIpOOo77d+Glb/xAyNDzpsi/dEgRmY3hFbS8jaCI7LXp21rFaVr+cLLHn3XeA==}
+  /@jill64/svelte-dark-theme@2.2.7(@sveltejs/kit@1.27.6)(svelte@4.2.8):
+    resolution: {integrity: sha512-XWXQkD4oHRjtYXWuBIp/lWzHu9saxzQ71WGFdmBFpSaQo2aiOjioTpAjfHWHyFtnhGGdHxIM6PMajaaACWKWBA==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
       svelte: ^4.0.0
@@ -644,10 +644,10 @@ packages:
       '@jill64/attempt': 1.1.0
       '@jill64/svelte-device-theme': 1.2.2(svelte@4.2.8)
       '@jill64/svelte-html': 1.0.0(@sveltejs/kit@1.27.6)(svelte@4.2.8)
-      '@jill64/svelte-storage': 0.0.2(@sveltejs/kit@1.27.6)(svelte@4.2.8)
+      '@jill64/svelte-storage': 0.0.4(@sveltejs/kit@1.27.6)(svelte@4.2.8)
       '@sveltejs/kit': 1.27.6(svelte@4.2.8)(vite@5.0.5)
-      cookie: 0.6.0
       svelte: 4.2.8
+      svelte-baked-cookie: 0.0.1(@sveltejs/kit@1.27.6)(svelte@4.2.8)
       svelte-feather-icons: 4.0.1
       typescanner: 0.5.3
     dev: true
@@ -680,13 +680,13 @@ packages:
       svelte: 4.2.8
     dev: true
 
-  /@jill64/svelte-storage@0.0.2(@sveltejs/kit@1.27.6)(svelte@4.2.8):
-    resolution: {integrity: sha512-eexyP3K/2fuP7vpv0oU8C/fZH9HjDnvRBgoBl8dgzH/V9Ch3wPTLIj8y9CbPuLSPf3c9UmHWMAl5D7aotbAQ/A==}
+  /@jill64/svelte-storage@0.0.4(@sveltejs/kit@1.27.6)(svelte@4.2.8):
+    resolution: {integrity: sha512-7TzTkzaoBkzuEcBAKWdvZzmWfKrkvbsyQj5GMuEjqJ5IBZU1AXwm5CXpEm20WGMpLsXixttMRn4K2iKlKjU+eA==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
       svelte: ^4.0.0
     dependencies:
-      '@jill64/typed-storage': 2.0.2
+      '@jill64/typed-storage': 2.0.4
       '@sveltejs/kit': 1.27.6(svelte@4.2.8)(vite@5.0.5)
       svelte: 4.2.8
     dev: true
@@ -732,10 +732,14 @@ packages:
       tailwindcss: 3.3.5
     dev: true
 
-  /@jill64/typed-storage@2.0.2:
-    resolution: {integrity: sha512-z+Q/XrPrqF2vZ1QyW+U3B5ZnsxjI6oEgAswWkK+khIQXT7wDyoCzRzpFyuiRQ5hGiGF6y1EtU3sduIayz9DzqQ==}
+  /@jill64/transform@0.0.1:
+    resolution: {integrity: sha512-0kLFSdMmTCW76YiUonDaK+geGRkkqufxJKdsyRO3fDJ5dSC04yKa9DEgLhJnH8xtvU/KkAW8UGCmZUeIXz4jiA==}
+    dev: true
+
+  /@jill64/typed-storage@2.0.4:
+    resolution: {integrity: sha512-f/2g02ph6m4yWSPMsFl3A7rLrFy3AyrU5OvYKaEw8UHSoE7vZKmIzUzpQ5P59K1djDVTUSPR3qKstn4vHE4zGQ==}
     dependencies:
-      ts-serde: 0.3.1
+      ts-serde: 0.4.0
     dev: true
 
   /@jridgewell/gen-mapping@0.3.3:
@@ -1232,6 +1236,10 @@ packages:
 
   /@types/cookie@0.5.4:
     resolution: {integrity: sha512-7z/eR6O859gyWIAjuvBWFzNURmf2oPBmJlfVWkwehU5nzIyjwBsTh7WMmEEV4JFnHuQ3ex4oyTvfKzcyJVDBNA==}
+    dev: true
+
+  /@types/cookie@0.6.0:
+    resolution: {integrity: sha512-4Kh9a6B2bQciAhf7FSuMRRkUWecJgJu9nPnx3yzpsfXX/c50REIqpHY4C82bXP90qrLtXtkDxTZosYO3UpOwlA==}
     dev: true
 
   /@types/eslint@8.44.8:
@@ -3078,6 +3086,20 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
+  /svelte-baked-cookie@0.0.1(@sveltejs/kit@1.27.6)(svelte@4.2.8):
+    resolution: {integrity: sha512-7Hld9bvk1aQRty+QxVnCyBfLSlFLyz5Vq32TsWWPzqb9RycrruAdwvSadd7VnWD/+nzWPWufPAZtUE5+tG6vFQ==}
+    peerDependencies:
+      '@sveltejs/kit': ^1.0.0
+      svelte: ^4.0.0
+    dependencies:
+      '@jill64/transform': 0.0.1
+      '@sveltejs/kit': 1.27.6(svelte@4.2.8)(vite@5.0.5)
+      '@types/cookie': 0.6.0
+      cookie: 0.6.0
+      svelte: 4.2.8
+      ts-serde: 0.4.0
+    dev: true
+
   /svelte-eslint-parser@0.33.1(svelte@4.2.8):
     resolution: {integrity: sha512-vo7xPGTlKBGdLH8T5L64FipvTrqv3OQRx9d2z5X05KKZDlF4rQk8KViZO4flKERY+5BiVdOh7zZ7JGJWo5P0uA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -3278,8 +3300,8 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /ts-serde@0.3.1:
-    resolution: {integrity: sha512-NSooF4gOGl9z36JL5bZKJfq3V59nULoVj8yw1rcH+3UdXKXqELxmrIxQze6EwULxcqc/Z6VRU+JygLql0nzeMQ==}
+  /ts-serde@0.4.0:
+    resolution: {integrity: sha512-ts3qcRaqkfYN9SxMIr9NYAQXSICaZoe5NzJksgJ42NfOCZX2KM10arksw447to5QSfaUS34WhB0bRIjdTRs9qw==}
     dependencies:
       devalue: 4.3.2
     dev: true
