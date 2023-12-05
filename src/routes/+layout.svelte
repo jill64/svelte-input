@@ -1,7 +1,11 @@
 <script lang="ts">
   import { browser } from '$app/environment'
-  import { FlipButton, ThemeManager, theme } from '@jill64/svelte-dark-theme'
-  import { Toaster } from '@jill64/svelte-toast'
+  import {
+    FlipButton,
+    ThemeManager,
+    Toaster,
+    theme
+  } from '@jill64/svelte-suite'
   import { HighlightSwitcher } from 'svelte-highlight-switcher'
   import '../app.pcss'
   import GitHubLogo from './GitHubLogo.svelte'

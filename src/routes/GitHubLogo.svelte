@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { theme } from '@jill64/svelte-dark-theme'
+  import { theme } from '@jill64/svelte-suite'
 </script>
 
 <svg
