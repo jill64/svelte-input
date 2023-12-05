@@ -1,7 +1,7 @@
 <script lang="ts">
   import { ActionButton } from '$lib'
   import { observable } from '@jill64/async-observer'
-  import { toast } from '@jill64/svelte-toast'
+  import { toast } from '@jill64/svelte-suite'
   import { ActionButtonCode } from './ActionButtonCode'
   import Demo from './Demo.svelte'
 
