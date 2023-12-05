@@ -58,7 +58,7 @@
     "svelte-highlight-switcher": "0.0.1",
     "@playwright/test": "1.40.1",
     "@sveltejs/adapter-cloudflare": "2.3.4",
-    "@sveltejs/kit": "1.27.6",
+    "@sveltejs/kit": "1.27.7",
     "nanoid": "5.0.4",
     "svelte": "4.2.8",
     "svelte-highlight": "7.4.2",
