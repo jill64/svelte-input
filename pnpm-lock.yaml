@@ -29,8 +29,8 @@ devDependencies:
     specifier: 1.5.0
     version: 1.5.0(@sveltejs/kit@1.27.7)(svelte@4.2.8)
   '@jill64/svelte-suite':
-    specifier: 0.0.13
-    version: 0.0.13(@sveltejs/kit@1.27.7)(svelte@4.2.8)
+    specifier: 0.0.14
+    version: 0.0.14(@sveltejs/kit@1.27.7)(svelte@4.2.8)
   '@jill64/svelte-tailwind':
     specifier: 0.0.7
     version: 0.0.7
@@ -717,8 +717,19 @@ packages:
       svelte: 4.2.8
     dev: true
 
-  /@jill64/svelte-suite@0.0.13(@sveltejs/kit@1.27.7)(svelte@4.2.8):
-    resolution: {integrity: sha512-h0uV2Yl/1a5QHogiUSJ/qk38FZzPFKbidwUatILMrER0Qt9C05IznCBzrypPJFnPkTDxPMbViydkXsex0ThV2w==}
+  /@jill64/svelte-storage@0.0.5(@sveltejs/kit@1.27.7)(svelte@4.2.8):
+    resolution: {integrity: sha512-ItcIjz3ArodxszhfOWQyeRr26ZFtkddhlxGYzufLNPfocs+O5CbfyNeRMJh02AEHyId10fqBC+lGFzQ2Hwpkhw==}
+    peerDependencies:
+      '@sveltejs/kit': ^1.0.0
+      svelte: ^4.0.0
+    dependencies:
+      '@jill64/typed-storage': 2.0.5
+      '@sveltejs/kit': 1.27.7(svelte@4.2.8)(vite@5.0.5)
+      svelte: 4.2.8
+    dev: true
+
+  /@jill64/svelte-suite@0.0.14(@sveltejs/kit@1.27.7)(svelte@4.2.8):
+    resolution: {integrity: sha512-3aFwHEaT+DLO/26VgNemOToH0Q+NJwqCz0WiNOdZXI3c5gogrZ8jxBrKwsZUS+mPIrTnwqpMFfdPOBA22mFFkA==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
@@ -727,7 +738,7 @@ packages:
       '@jill64/svelte-input': 1.5.2(svelte@4.2.8)
       '@jill64/svelte-menu': 0.0.3(svelte@4.2.8)
       '@jill64/svelte-ogp': 0.1.0(@sveltejs/kit@1.27.7)(svelte@4.2.8)
-      '@jill64/svelte-storage': 0.0.4(@sveltejs/kit@1.27.7)(svelte@4.2.8)
+      '@jill64/svelte-storage': 0.0.5(@sveltejs/kit@1.27.7)(svelte@4.2.8)
       '@jill64/svelte-toast': 1.2.1(svelte@4.2.8)
       svelte: 4.2.8
       svelte-feather-icons: 4.0.1
@@ -787,6 +798,12 @@ packages:
     resolution: {integrity: sha512-f/2g02ph6m4yWSPMsFl3A7rLrFy3AyrU5OvYKaEw8UHSoE7vZKmIzUzpQ5P59K1djDVTUSPR3qKstn4vHE4zGQ==}
     dependencies:
       ts-serde: 0.4.0
+    dev: true
+
+  /@jill64/typed-storage@2.0.5:
+    resolution: {integrity: sha512-34O8BaVVTiHNPyRlKlHU2H7n0TU6JyFdqkpAhdIkFRYebVMoRSYoUhcAowVAP9qvutjFVxhHKBEGQxpECdBIHg==}
+    dependencies:
+      ts-serde: 1.0.0
     dev: true
 
   /@jridgewell/gen-mapping@0.3.3:
