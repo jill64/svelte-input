@@ -32,8 +32,8 @@ devDependencies:
     specifier: 0.0.21
     version: 0.0.21(@sveltejs/kit@1.27.7)(svelte@4.2.8)
   '@jill64/svelte-tailwind':
-    specifier: 0.0.7
-    version: 0.0.7
+    specifier: 1.0.0
+    version: 1.0.0
   '@playwright/test':
     specifier: 1.40.1
     version: 1.40.1
@@ -738,8 +738,8 @@ packages:
       - '@sveltejs/kit'
     dev: true
 
-  /@jill64/svelte-tailwind@0.0.7:
-    resolution: {integrity: sha512-84pY1jC4Rcw2+dkdK1fgQVC9lkB1H5sI1c21j/Nh/6mKnKCd2r17Gv9vpCL4c0uTtqUJwHrsYNrmnHM+CUgZZA==}
+  /@jill64/svelte-tailwind@1.0.0:
+    resolution: {integrity: sha512-2u3eh70STlb3RQoYh2oaKD1wM9HxPiEEmU+yKh7UFCKSPHMSh9lNU59XyqOfDgsulorJYV5CvAoNiM9GCLu7/w==}
     dependencies:
       '@jill64/tailwind-grid-auto': 1.3.0(tailwindcss@3.3.6)
       '@jill64/tailwind-reactions': 1.2.0(tailwindcss@3.3.6)
