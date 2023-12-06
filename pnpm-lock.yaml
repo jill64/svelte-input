@@ -56,8 +56,8 @@ devDependencies:
     specifier: 0.0.1
     version: 0.0.1(svelte-highlight@7.4.2)(svelte@4.2.8)
   svelte-mq-store:
-    specifier: 1.0.0
-    version: 1.0.0(svelte@4.2.8)
+    specifier: 2.0.0
+    version: 2.0.0(svelte@4.2.8)
   typescript:
     specifier: 5.3.2
     version: 5.3.2
@@ -3213,15 +3213,6 @@ packages:
 
   /svelte-loading-spinners@0.3.4:
     resolution: {integrity: sha512-vKaW71QMCBcTNijAGc0mUl8k3DQ66iYmp6MB8BMGCXyWk82bTrcLy8FOnSm9fE+8q6TwzD6PLUoYFHt0II93Xw==}
-
-  /svelte-mq-store@1.0.0(svelte@4.2.8):
-    resolution: {integrity: sha512-3n/86onQtqd231vW066341pDTnBXPqDEPcc0JGTmKtHqmA6ipa6iIu4siGXpsDrI26u3A9YazuRSiGsKKErabQ==}
-    peerDependencies:
-      svelte: ^4.0.0
-    dependencies:
-      esm-env: 1.0.0
-      svelte: 4.2.8
-    dev: true
 
   /svelte-mq-store@2.0.0(svelte@4.2.8):
     resolution: {integrity: sha512-VJALvjc8uFIUledmRcJ/eRjS+v//2uHJkUR7+z5oE/vqPp6HKO9M7H6q04r2U3fxp09vNN1ZnEck5NkK3uJwyA==}

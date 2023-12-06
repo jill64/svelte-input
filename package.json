@@ -62,7 +62,7 @@
     "nanoid": "5.0.4",
     "svelte": "4.2.8",
     "svelte-highlight": "7.4.2",
-    "svelte-mq-store": "1.0.0",
+    "svelte-mq-store": "2.0.0",
     "typescript": "5.3.2",
     "vite": "5.0.6"
   },
