@@ -53,8 +53,8 @@ devDependencies:
     specifier: 7.4.2
     version: 7.4.2
   svelte-highlight-switcher:
-    specifier: 0.0.1
-    version: 0.0.1(svelte-highlight@7.4.2)(svelte@4.2.8)
+    specifier: 1.0.0
+    version: 1.0.0(svelte-highlight@7.4.2)(svelte@4.2.8)
   svelte-mq-store:
     specifier: 2.0.0
     version: 2.0.0(svelte@4.2.8)
@@ -3190,8 +3190,8 @@ packages:
       svelte-writable-derived: 3.1.0(svelte@4.2.8)
     dev: true
 
-  /svelte-highlight-switcher@0.0.1(svelte-highlight@7.4.2)(svelte@4.2.8):
-    resolution: {integrity: sha512-dkI3PwgunEd8W64pcTyaUOP4wefxMNO0TnB0IfcYUux2DVbDIrHFA6Y2CxszMnzAO9tEc9l5lkYURTfVpBwuyg==}
+  /svelte-highlight-switcher@1.0.0(svelte-highlight@7.4.2)(svelte@4.2.8):
+    resolution: {integrity: sha512-R/eU8SjrPfxjNe3Odw39p3oJTwl1F1zoSgceOPKwVXMd6MXik0Yn1YqzE8vuJLbzF3KY6zSwc26/yAbGz1ELdQ==}
     peerDependencies:
       svelte: ^4.0.0
       svelte-highlight: ^7.0.0
