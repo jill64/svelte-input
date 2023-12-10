@@ -9,9 +9,7 @@
   "bugs": "https://github.com/jill64/svelte-input/issues",
   "homepage": "https://github.com/jill64/svelte-input#readme",
   "files": [
-    "dist",
-    "!*.test.*",
-    "!*.spec.*"
+    "dist"
   ],
   "exports": {
     ".": {
@@ -49,19 +47,18 @@
   },
   "prettier": "@jill64/prettier-config",
   "devDependencies": {
-    "@jill64/sentry-sveltekit-cloudflare": "1.5.0",
-    "@jill64/svelte-suite": "1.0.3",
-    "@jill64/prettier-config": "1.0.0",
-    "@jill64/svelte-tailwind": "1.0.0",
-    "@jill64/playwright-config": "2.2.0",
     "@jill64/eslint-config-svelte": "1.0.1",
-    "svelte-highlight-switcher": "1.0.0",
+    "@jill64/npm-demo-layout": "0.0.3",
+    "@jill64/playwright-config": "2.2.0",
+    "@jill64/prettier-config": "1.0.0",
+    "@jill64/sentry-sveltekit-cloudflare": "1.5.0",
+    "@jill64/svelte-menu": "0.0.3",
+    "@jill64/svelte-tailwind": "1.0.0",
     "@playwright/test": "1.40.1",
     "@sveltejs/adapter-cloudflare": "2.3.4",
     "@sveltejs/kit": "1.27.7",
     "nanoid": "5.0.4",
     "svelte": "4.2.8",
-    "svelte-highlight": "7.4.2",
     "svelte-mq-store": "2.1.1",
     "typescript": "5.3.3",
     "vite": "5.0.7"
