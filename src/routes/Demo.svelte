@@ -1,7 +1,7 @@
 <script lang="ts">
   import { ToggleSwitch } from '$lib'
-  import { Menu } from '@jill64/svelte-suite'
-  import { HighlightSvelte } from 'svelte-highlight'
+  import { Menu } from '@jill64/svelte-menu'
+  import { HighlightSvelte } from '@jill64/npm-demo-layout/highlight'
   import { listen } from 'svelte-mq-store'
   import { slide } from 'svelte/transition'
 
