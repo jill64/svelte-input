@@ -5,7 +5,12 @@
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
-  "author": "jill64 <intents.turrets0h@icloud.com> (https://github.com/jill64)",
+  "author": {
+    "name": "jill64",
+    "email": "143883742+jill64@users.noreply.github.com",
+    "url": "https://github.com/jill64",
+    "image": "https://avatars.githubusercontent.com/u/143883742?v=4"
+  },
   "bugs": "https://github.com/jill64/svelte-input/issues",
   "homepage": "https://github.com/jill64/svelte-input#readme",
   "files": [
@@ -23,7 +28,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jill64/svelte-input.git"
+    "url": "https://github.com/jill64/svelte-input.git",
+    "image": "https://opengraph.githubassets.com/5831f3af74cc34d4dbb1b193ed4eae6865fafb5ce7da966d5ef889d126dcae36/jill64/svelte-input"
   },
   "keywords": [
     "components",
