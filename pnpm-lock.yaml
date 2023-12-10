@@ -29,8 +29,8 @@ devDependencies:
     specifier: 1.5.0
     version: 1.5.0(@sveltejs/kit@1.27.7)(svelte@4.2.8)
   '@jill64/svelte-suite':
-    specifier: 1.0.2
-    version: 1.0.2(@sveltejs/kit@1.27.7)(svelte@4.2.8)
+    specifier: 1.0.3
+    version: 1.0.3(@sveltejs/kit@1.27.7)(svelte@4.2.8)
   '@jill64/svelte-tailwind':
     specifier: 1.0.0
     version: 1.0.0
@@ -708,17 +708,6 @@ packages:
       svelte: 4.2.8
     dev: true
 
-  /@jill64/svelte-storage@0.0.5(@sveltejs/kit@1.27.7)(svelte@4.2.8):
-    resolution: {integrity: sha512-ItcIjz3ArodxszhfOWQyeRr26ZFtkddhlxGYzufLNPfocs+O5CbfyNeRMJh02AEHyId10fqBC+lGFzQ2Hwpkhw==}
-    peerDependencies:
-      '@sveltejs/kit': ^1.0.0
-      svelte: ^4.0.0
-    dependencies:
-      '@jill64/typed-storage': 2.0.5
-      '@sveltejs/kit': 1.27.7(svelte@4.2.8)(vite@5.0.7)
-      svelte: 4.2.8
-    dev: true
-
   /@jill64/svelte-storage@1.0.0(@sveltejs/kit@1.27.7)(svelte@4.2.8):
     resolution: {integrity: sha512-44AQZATKcrKuS4W/7InaARM8t1ssljLZzCAZwWLYmqWQtruELz7YqrhnLIxPpBopPHEFi/2y42xjc6BgXHoYjg==}
     peerDependencies:
@@ -730,8 +719,8 @@ packages:
       svelte: 4.2.8
     dev: true
 
-  /@jill64/svelte-suite@1.0.2(@sveltejs/kit@1.27.7)(svelte@4.2.8):
-    resolution: {integrity: sha512-EdcUnAzW02Hzn9x1g6LgKl1hShm0G/AjWrCaN8xIoehitto00U3yVfsCDO9YOvl0rySRD53nFZa7IzfLeblK1A==}
+  /@jill64/svelte-suite@1.0.3(@sveltejs/kit@1.27.7)(svelte@4.2.8):
+    resolution: {integrity: sha512-eMVMNJiko+0IhfNVBHdT51GVMr3l4Eo6HOhVTgVqhRhPNrA6+Ql6pJAzka5fyCotsBDBY60ddyQKkwT++2cltg==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
@@ -740,7 +729,7 @@ packages:
       '@jill64/svelte-input': 1.5.2(svelte@4.2.8)
       '@jill64/svelte-menu': 0.0.3(svelte@4.2.8)
       '@jill64/svelte-ogp': 0.1.0(@sveltejs/kit@1.27.7)(svelte@4.2.8)
-      '@jill64/svelte-storage': 0.0.5(@sveltejs/kit@1.27.7)(svelte@4.2.8)
+      '@jill64/svelte-storage': 1.0.0(@sveltejs/kit@1.27.7)(svelte@4.2.8)
       '@jill64/svelte-toast': 1.2.5(svelte@4.2.8)
       svelte: 4.2.8
       svelte-feather-icons: 4.0.1
