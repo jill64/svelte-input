@@ -20,8 +20,8 @@ devDependencies:
     specifier: 1.0.1
     version: 1.0.1(svelte@4.2.8)(typescript@5.3.3)
   '@jill64/npm-demo-layout':
-    specifier: 0.1.6
-    version: 0.1.6(@sveltejs/kit@1.27.7)(svelte@4.2.8)
+    specifier: 0.1.7
+    version: 0.1.7(@sveltejs/kit@1.27.7)(svelte@4.2.8)
   '@jill64/playwright-config':
     specifier: 2.2.0
     version: 2.2.0(@playwright/test@1.40.1)
@@ -601,8 +601,8 @@ packages:
       - typescript
     dev: true
 
-  /@jill64/npm-demo-layout@0.1.6(@sveltejs/kit@1.27.7)(svelte@4.2.8):
-    resolution: {integrity: sha512-sP1dnOHyyj4RBtJagIRHW3xu/ttaxmwrLGclAzOu40y0eni1YQM6QOOXJOjAhiNmv7qk4SBG9rIxTjgw29Dl0A==}
+  /@jill64/npm-demo-layout@0.1.7(@sveltejs/kit@1.27.7)(svelte@4.2.8):
+    resolution: {integrity: sha512-gkCDM5o5Lzp4SUXYewYDe6t20MaZlnjfO2DH1VHkyZ2e2je2HwDDFsHn+MTJfHonSd8FuA7nzCi8NF/vijOwmw==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
@@ -610,6 +610,7 @@ packages:
       '@jill64/svelte-ogp': 0.1.0(@sveltejs/kit@1.27.7)(svelte@4.2.8)
       '@jill64/svelte-toast': 1.2.5(svelte@4.2.8)
       svelte: 4.2.8
+      svelte-code-copy: 0.0.1(svelte@4.2.8)
       svelte-highlight: 7.4.2
       svelte-highlight-switcher: 1.0.0(svelte-highlight@7.4.2)(svelte@4.2.8)
     transitivePeerDependencies:
@@ -3100,6 +3101,15 @@ packages:
       cookie: 0.6.0
       svelte: 4.2.8
       ts-serde: 1.0.0
+    dev: true
+
+  /svelte-code-copy@0.0.1(svelte@4.2.8):
+    resolution: {integrity: sha512-LWjjtclIGaVf2f8Ho8RPC5yMlEJN5BFnBPxXchgF4Bbn0O1QwVTDWxbB3TG5VagwumMQOVC6PR6MMolHghor/A==}
+    peerDependencies:
+      svelte: ^4.0.0
+    dependencies:
+      svelte: 4.2.8
+      svelte-feather-icons: 4.0.1
     dev: true
 
   /svelte-eslint-parser@0.33.1(svelte@4.2.8):
