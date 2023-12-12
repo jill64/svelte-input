@@ -34,7 +34,9 @@
       on:change
       on:input
     />
-    <slot {item} />
+    <slot {item}>
+      <span style:margin="0.25rem">{item}</span>
+    </slot>
   </label>
 {/each}
 
