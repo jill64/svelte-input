@@ -34,11 +34,7 @@
     </button>
   </svelte:fragment>
   <fieldset>
-    <CheckList bind:value {disabled} let:item>
-      <span style:margin-left="4px">
-        {item}
-      </span>
-    </CheckList>
+    <CheckList bind:value {disabled} />
   </fieldset>
 </Demo>
 

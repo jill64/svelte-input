@@ -34,6 +34,8 @@
     on:change
     on:input
   >
-    <slot item={key} />
+    <slot item={key}>
+      <span style:margin="0.25rem">{key}</span>
+    </slot>
   </CheckBox>
 {/each}

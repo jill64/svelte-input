@@ -12,11 +12,7 @@
     Component that applies input bound to a group to a radio button array.
   </svelte:fragment>
   <fieldset>
-    <Radio list={['Alpha', 'Beta', 'Gamma']} let:item bind:value {disabled}>
-      <span style:margin-left="4px">
-        {item}
-      </span>
-    </Radio>
+    <Radio list={['Alpha', 'Beta', 'Gamma']} bind:value {disabled} />
   </fieldset>
 </Demo>
 
