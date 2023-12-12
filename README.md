@@ -10,8 +10,6 @@
 
 <!----- END GHOST DOCS HEADER ----->
 
-[StackBlitz](https://stackblitz.com/edit/jill64-svelte-input?file=src%2Froutes%2FDemo.svelte)
-
 ## Installation
 
 ```sh
