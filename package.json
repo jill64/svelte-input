@@ -62,7 +62,7 @@
     "@jill64/svelte-menu": "1.0.0",
     "@jill64/svelte-tailwind": "1.0.0",
     "@playwright/test": "1.40.1",
-    "@sveltejs/adapter-cloudflare": "2.3.4",
+    "@sveltejs/adapter-cloudflare": "3.0.0",
     "@sveltejs/kit": "1.30.3",
     "nanoid": "5.0.4",
     "svelte": "4.2.8",
