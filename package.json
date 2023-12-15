@@ -60,7 +60,7 @@
     "@jill64/prettier-config": "1.0.0",
     "@jill64/sentry-sveltekit-cloudflare": "1.6.1",
     "@jill64/svelte-menu": "1.0.1",
-    "@jill64/svelte-tailwind": "1.0.0",
+    "@jill64/svelte-tailwind": "1.0.1",
     "@playwright/test": "1.40.1",
     "@sveltejs/adapter-cloudflare": "3.0.0",
     "@sveltejs/kit": "2.0.0",

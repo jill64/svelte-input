@@ -35,8 +35,8 @@ devDependencies:
     specifier: 1.0.1
     version: 1.0.1(svelte@4.2.8)
   '@jill64/svelte-tailwind':
-    specifier: 1.0.0
-    version: 1.0.0
+    specifier: 1.0.1
+    version: 1.0.1
   '@jill64/universal-sanitizer':
     specifier: 1.0.0
     version: 1.0.0
@@ -527,8 +527,8 @@ packages:
       svelte: 4.2.8
     dev: true
 
-  /@jill64/svelte-tailwind@1.0.0:
-    resolution: {integrity: sha512-2u3eh70STlb3RQoYh2oaKD1wM9HxPiEEmU+yKh7UFCKSPHMSh9lNU59XyqOfDgsulorJYV5CvAoNiM9GCLu7/w==}
+  /@jill64/svelte-tailwind@1.0.1:
+    resolution: {integrity: sha512-xdLMgBpfI8qe1TJ+UcPtmF90GWYjO4UEJa/dTYxeI1ZjWs2i2D2LQNowOF0B8mulOOTQy0giQs4XjU1dfIEUoA==}
     dependencies:
       '@jill64/tailwind-grid-auto': 1.3.0(tailwindcss@3.3.6)
       '@jill64/tailwind-reactions': 1.2.0(tailwindcss@3.3.6)
