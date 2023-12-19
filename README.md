@@ -18,3 +18,11 @@ npm i @jill64/svelte-input
 
 This library is a set of input components for Svelte, intended to improve markup semantics and reduce functional complexity.  
 There are few prescribed styles available, so use `style`, `class`, etc. to create the style you prefer.
+
+<!----- BEGIN GHOST DOCS FOOTER ----->
+
+## License
+
+MIT
+
+<!----- END GHOST DOCS FOOTER ----->
