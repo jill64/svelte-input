@@ -35,8 +35,8 @@ devDependencies:
     specifier: 1.0.5
     version: 1.0.5(svelte@4.2.8)
   '@jill64/svelte-tailwind':
-    specifier: 1.0.7
-    version: 1.0.7
+    specifier: 1.0.8
+    version: 1.0.8
   '@jill64/universal-sanitizer':
     specifier: 1.0.0
     version: 1.0.0
@@ -521,15 +521,15 @@ packages:
       svelte: 4.2.8
     dev: true
 
-  /@jill64/svelte-tailwind@1.0.7:
-    resolution: {integrity: sha512-cFTF5ViNrPyZbprkjAMOs7lNDp3DI14uqyMz9N3HT6RgPv9MJwWI3trRWwFIhLgDgruXCEX2Clq+ir1UPVemnQ==}
+  /@jill64/svelte-tailwind@1.0.8:
+    resolution: {integrity: sha512-MaHWehiraLVLODCDILHRvqb2Pc2L/m0822YS8+Z3y+d34kYPgLtUGehYKl/llTABhwNazLdnOwtOgJONiObQAg==}
     dependencies:
-      '@jill64/tailwind-grid-auto': 1.3.4(tailwindcss@3.3.7)
-      '@jill64/tailwind-reactions': 1.2.5(tailwindcss@3.3.7)
+      '@jill64/tailwind-grid-auto': 1.3.4(tailwindcss@3.4.0)
+      '@jill64/tailwind-reactions': 1.2.5(tailwindcss@3.4.0)
       autoprefixer: 10.4.16(postcss@8.4.32)
       postcss: 8.4.32
       postcss-load-config: 5.0.2(postcss@8.4.32)
-      tailwindcss: 3.3.7
+      tailwindcss: 3.4.0
     transitivePeerDependencies:
       - jiti
       - ts-node
@@ -548,20 +548,20 @@ packages:
       - '@sveltejs/kit'
     dev: true
 
-  /@jill64/tailwind-grid-auto@1.3.4(tailwindcss@3.3.7):
+  /@jill64/tailwind-grid-auto@1.3.4(tailwindcss@3.4.0):
     resolution: {integrity: sha512-R7xkxaG7gd4B8ei78QuvFc41qMw9Kt5hB/y9vMlY0z5MlVyqnaCLTuvrHjo5ei9Vq2ijtZiNBPJRTPKdJ9aMsQ==}
     peerDependencies:
       tailwindcss: ^3.0.0
     dependencies:
-      tailwindcss: 3.3.7
+      tailwindcss: 3.4.0
     dev: true
 
-  /@jill64/tailwind-reactions@1.2.5(tailwindcss@3.3.7):
+  /@jill64/tailwind-reactions@1.2.5(tailwindcss@3.4.0):
     resolution: {integrity: sha512-NFmj3ghQR4fxb9cN4Wybg3uipp9A8sNlTlTfjR/t8M0TPOxYKxhonWweQ+s9Ubg5LTkms/O70t8ZCSHZbTVuow==}
     peerDependencies:
       tailwindcss: ^3.0.0
     dependencies:
-      tailwindcss: 3.3.7
+      tailwindcss: 3.4.0
     dev: true
 
   /@jill64/transform@1.0.0:
@@ -3136,8 +3136,8 @@ packages:
       periscopic: 3.1.0
     dev: true
 
-  /tailwindcss@3.3.7:
-    resolution: {integrity: sha512-pjgQxDZPvyS/nG3ZYkyCvsbONJl7GdOejfm24iMt2ElYQQw8Jc4p0m8RdMp7mznPD0kUhfzwV3zAwa80qI0zmQ==}
+  /tailwindcss@3.4.0:
+    resolution: {integrity: sha512-VigzymniH77knD1dryXbyxR+ePHihHociZbXnLZHUyzf2MMs2ZVqlUrZ3FvpXP8pno9JzmILt1sZPD19M3IxtA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
