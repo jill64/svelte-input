@@ -1,6 +1,6 @@
 {
   "name": "@jill64/svelte-input",
-  "version": "1.6.5",
+  "version": "1.6.6",
   "description": "➡️ Functional Input Component Set for Svelte",
   "type": "module",
   "main": "dist/index.js",
@@ -72,7 +72,7 @@
     "@sveltejs/vite-plugin-svelte": "3.0.1"
   },
   "dependencies": {
-    "@jill64/async-observer": "1.2.0",
+    "@jill64/async-observer": "1.2.2",
     "bignumber.js": "9.1.2",
     "svelte-loading-spinners": "0.3.4"
   }
