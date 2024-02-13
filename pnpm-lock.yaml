@@ -35,8 +35,8 @@ devDependencies:
     specifier: 1.0.10
     version: 1.0.10(svelte@4.2.10)
   '@jill64/svelte-tailwind':
-    specifier: 1.0.27
-    version: 1.0.27
+    specifier: 1.0.28
+    version: 1.0.28
   '@jill64/universal-sanitizer':
     specifier: 1.2.0
     version: 1.2.0
@@ -503,11 +503,11 @@ packages:
       svelte: 4.2.10
     dev: true
 
-  /@jill64/svelte-tailwind@1.0.27:
-    resolution: {integrity: sha512-8YVscLBw8z7760PVEwm/nWYel6UosY+05L3sgdG9X3+Z30/fQKaY7Ykl3Z5wDjyLWow4swlfQx4nlHlQu0+rKQ==}
+  /@jill64/svelte-tailwind@1.0.28:
+    resolution: {integrity: sha512-FrpD5FTD+CAlUnHzjU0c9U/Suo+ArB9Q8puTV1hi74QKfnAEiHQZdEXZd3Xk//HFPzg93OErtvO/1aMOM50fxg==}
     dependencies:
       '@jill64/tailwind-grid-auto': 1.3.11(tailwindcss@3.4.1)
-      '@jill64/tailwind-reactions': 1.2.11(tailwindcss@3.4.1)
+      '@jill64/tailwind-reactions': 1.2.12(tailwindcss@3.4.1)
       autoprefixer: 10.4.17(postcss@8.4.35)
       postcss: 8.4.35
       postcss-load-config: 5.0.3(postcss@8.4.35)
@@ -538,8 +538,8 @@ packages:
       tailwindcss: 3.4.1
     dev: true
 
-  /@jill64/tailwind-reactions@1.2.11(tailwindcss@3.4.1):
-    resolution: {integrity: sha512-aZI/An+sCs3BRDzRqXaVDGTsNPyjpwcOmQwhD1IY+eggrwk1MUINwn8V8yvTTWeap4ccMV65gGCNSVBFcYITdQ==}
+  /@jill64/tailwind-reactions@1.2.12(tailwindcss@3.4.1):
+    resolution: {integrity: sha512-8NaLm3Kzo8YpCbgp8L35/gKcMsWMoFPsaz+hroIXMRr1ia2X3vIASNGlhX0pbheDnXk2KkEsS/woCc+l6cUqhg==}
     peerDependencies:
       tailwindcss: ^3.0.0
     dependencies:
