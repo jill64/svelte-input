@@ -7,7 +7,7 @@
   export let value: V | undefined = undefined
   export let list: V[] = []
   export let Class: HTMLInputAttributes['class'] = ''
-  export let style: HTMLInputAttributes['style'] = undefined
+  export let style: HTMLInputAttributes['style'] = ''
   export let disabled: HTMLInputAttributes['disabled'] = undefined
   export let required: HTMLInputAttributes['required'] = undefined
   export let readonly: HTMLInputAttributes['readonly'] = undefined
