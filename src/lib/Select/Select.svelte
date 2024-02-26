@@ -8,7 +8,7 @@
   export let value = ''
   export let list: GroupedInput | ListInput = []
   export let Class: HTMLSelectAttributes['class'] = ''
-  export let style: HTMLSelectAttributes['style'] = undefined
+  export let style: HTMLSelectAttributes['style'] = ''
   export let disabled: HTMLSelectAttributes['disabled'] = undefined
   export let required: HTMLSelectAttributes['required'] = undefined
   export let attributes: HTMLSelectAttributes = {}

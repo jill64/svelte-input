@@ -6,10 +6,10 @@
   export let max: number | undefined = undefined
   export let min: number | undefined = undefined
   export let value = min ?? 0
-  export let Class: HTMLInputAttributes['class'] = undefined
-  export let style: HTMLInputAttributes['style'] = undefined
+  export let Class: HTMLInputAttributes['class'] = ''
+  export let style: HTMLInputAttributes['style'] = ''
   export let buttonClass: HTMLInputAttributes['class'] = undefined
-  export let buttonStyle: HTMLInputAttributes['style'] = undefined
+  export let buttonStyle: HTMLInputAttributes['style'] = ''
   export let placeholder: HTMLInputAttributes['placeholder'] = undefined
   export let disabled: HTMLInputAttributes['disabled'] = undefined
   export let required: HTMLInputAttributes['required'] = undefined
