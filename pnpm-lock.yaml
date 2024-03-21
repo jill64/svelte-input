@@ -35,8 +35,8 @@ devDependencies:
     specifier: 1.0.15
     version: 1.0.15(svelte@4.2.12)
   '@jill64/svelte-tailwind':
-    specifier: 1.2.12
-    version: 1.2.12
+    specifier: 1.2.13
+    version: 1.2.13
   '@jill64/universal-sanitizer':
     specifier: 1.2.7
     version: 1.2.7
@@ -984,11 +984,11 @@ packages:
       svelte: 4.2.12
     dev: true
 
-  /@jill64/svelte-tailwind@1.2.12:
-    resolution: {integrity: sha512-PSq3pjixtK56REyLGaRCB+kebD5hbE/GpDE4MbEV5dYwhAj7K0n6AqymNfcLoB/4XG06jDA/GvwAQrecnr2xFQ==}
+  /@jill64/svelte-tailwind@1.2.13:
+    resolution: {integrity: sha512-XzTgnABnuNCDRzP6jdnnxN6jU+8lYHfvuepOOpVWHmxxHekKbCxBYRLhFKSQC95d5ox4Y4Buy8bBP6jN1ghrKw==}
     dependencies:
       '@jill64/tailwind-grid-auto': 1.3.16(tailwindcss@3.4.1)
-      '@jill64/tailwind-reactions': 1.2.15(tailwindcss@3.4.1)
+      '@jill64/tailwind-reactions': 1.2.16(tailwindcss@3.4.1)
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
       postcss-load-config: 5.0.3(postcss@8.4.38)
@@ -1019,8 +1019,8 @@ packages:
       tailwindcss: 3.4.1
     dev: true
 
-  /@jill64/tailwind-reactions@1.2.15(tailwindcss@3.4.1):
-    resolution: {integrity: sha512-3t5c6GMfHgctc4dV5bkBif3Btqp5f1NHU6LpwafMmGC4zWyOb9+sB3/D+O2seFQYSHWvNUMsFhKeV1mYcav1BQ==}
+  /@jill64/tailwind-reactions@1.2.16(tailwindcss@3.4.1):
+    resolution: {integrity: sha512-FeYNrEJ+GNTFM1tfrmz3h/fD/MMPWfub9uDVpcIh+9wK3rAv9QVw04aFJm3BJg7F7iDM+36yI1d+nM1ZvD6SDg==}
     peerDependencies:
       tailwindcss: ^3.0.0
     dependencies:
@@ -2164,9 +2164,9 @@ packages:
       eslint-compat-utils: 0.1.2(eslint@8.57.0)
       esutils: 2.0.3
       known-css-properties: 0.29.0
-      postcss: 8.4.37
-      postcss-load-config: 3.1.4(postcss@8.4.37)
-      postcss-safe-parser: 6.0.0(postcss@8.4.37)
+      postcss: 8.4.38
+      postcss-load-config: 3.1.4(postcss@8.4.38)
+      postcss-safe-parser: 6.0.0(postcss@8.4.38)
       postcss-selector-parser: 6.0.13
       semver: 7.5.4
       svelte: 4.2.12
@@ -2946,7 +2946,7 @@ packages:
       postcss: 8.4.38
     dev: true
 
-  /postcss-load-config@3.1.4(postcss@8.4.37):
+  /postcss-load-config@3.1.4(postcss@8.4.38):
     resolution: {integrity: sha512-6DiM4E7v4coTE4uzA8U//WhtPwyhiim3eyjEMFCnUpzbrkK9wJHgKDT2mR+HbtSrd/NubVaYTOpSpjUl8NQeRg==}
     engines: {node: '>= 10'}
     peerDependencies:
@@ -2959,7 +2959,7 @@ packages:
         optional: true
     dependencies:
       lilconfig: 2.1.0
-      postcss: 8.4.37
+      postcss: 8.4.38
       yaml: 1.10.2
     dev: true
 
@@ -3007,22 +3007,22 @@ packages:
       postcss-selector-parser: 6.0.13
     dev: true
 
-  /postcss-safe-parser@6.0.0(postcss@8.4.37):
+  /postcss-safe-parser@6.0.0(postcss@8.4.38):
     resolution: {integrity: sha512-FARHN8pwH+WiS2OPCxJI8FuRJpTVnn6ZNFiqAM2aeW2LwTHWWmWgIyKC6cUo0L8aeKiF/14MNvnpls6R2PBeMQ==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.3.3
     dependencies:
-      postcss: 8.4.37
+      postcss: 8.4.38
     dev: true
 
-  /postcss-scss@4.0.9(postcss@8.4.37):
+  /postcss-scss@4.0.9(postcss@8.4.38):
     resolution: {integrity: sha512-AjKOeiwAitL/MXxQW2DliT28EKukvvbEWx3LBmJIRN8KfBGZbRTxNYW0kSqi1COiTZ57nZ9NW06S6ux//N1c9A==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.4.29
     dependencies:
-      postcss: 8.4.37
+      postcss: 8.4.38
     dev: true
 
   /postcss-selector-parser@6.0.13:
@@ -3340,8 +3340,8 @@ packages:
       eslint-scope: 7.2.2
       eslint-visitor-keys: 3.4.3
       espree: 9.6.1
-      postcss: 8.4.37
-      postcss-scss: 4.0.9(postcss@8.4.37)
+      postcss: 8.4.38
+      postcss-scss: 4.0.9(postcss@8.4.38)
       svelte: 4.2.12
     dev: true
 
