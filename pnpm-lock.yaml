@@ -32,8 +32,8 @@ devDependencies:
     specifier: 1.7.8
     version: 1.7.8(@sveltejs/kit@2.5.4)(svelte@4.2.12)
   '@jill64/svelte-menu':
-    specifier: 1.0.15
-    version: 1.0.15(svelte@4.2.12)
+    specifier: 1.0.16
+    version: 1.0.16(svelte@4.2.12)
   '@jill64/svelte-tailwind':
     specifier: 1.2.14
     version: 1.2.14
@@ -947,6 +947,14 @@ packages:
 
   /@jill64/svelte-menu@1.0.15(svelte@4.2.12):
     resolution: {integrity: sha512-k8WMdR0NJy+jdSd+Hi75/4BghSyfBecbT6kLFjtfJwzJigpL0jZeZc6Kqae/TmhRAEZqI5HDxdyMzyB0f+rmmA==}
+    peerDependencies:
+      svelte: ^4.0.0
+    dependencies:
+      svelte: 4.2.12
+    dev: true
+
+  /@jill64/svelte-menu@1.0.16(svelte@4.2.12):
+    resolution: {integrity: sha512-iz+IMsulzSE+EIMe3OWF3LmB7m2e8ll/Vl++wRWpJr/+PCNt9WqJjXfDg693oXMp7MjvXfD/EcdWRmAtjpZ0uw==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
