@@ -1,7 +1,7 @@
 <script lang="ts">
   import { dev } from '$app/environment'
   import { observable } from '@jill64/async-observer'
-  import { Moon } from 'svelte-loading-spinners'
+  import { Moon } from '@jill64/svelte-loading-spinners'
   import type { HTMLButtonAttributes } from 'svelte/elements'
 
   export let onClick: () => unknown

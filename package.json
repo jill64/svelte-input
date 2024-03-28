@@ -74,6 +74,6 @@
   "dependencies": {
     "@jill64/async-observer": "1.2.3",
     "bignumber.js": "9.1.2",
-    "svelte-loading-spinners": "0.3.4"
+    "@jill64/svelte-loading-spinners": "0.3.6"
   }
 }
