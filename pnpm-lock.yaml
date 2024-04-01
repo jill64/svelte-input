@@ -59,8 +59,8 @@ devDependencies:
     specifier: 4.2.12
     version: 4.2.12
   svelte-mq-store:
-    specifier: 2.2.10
-    version: 2.2.10(@sveltejs/kit@2.5.5)(svelte@4.2.12)
+    specifier: 2.2.11
+    version: 2.2.11(@sveltejs/kit@2.5.5)(svelte@4.2.12)
   typescript:
     specifier: 5.4.3
     version: 5.4.3
@@ -3376,6 +3376,16 @@ packages:
 
   /svelte-mq-store@2.2.10(@sveltejs/kit@2.5.5)(svelte@4.2.12):
     resolution: {integrity: sha512-UvOLeXpiDrNS8xPEGMtR4Ji46HfIrwA/QHswucEeuag1/7KDAV1KSXT+o6jbKi9PRltwQK4p2AZvhdZpAABkDQ==}
+    peerDependencies:
+      '@sveltejs/kit': ^2.0.0
+      svelte: ^4.0.0
+    dependencies:
+      '@sveltejs/kit': 2.5.5(@sveltejs/vite-plugin-svelte@3.0.2)(svelte@4.2.12)(vite@5.2.7)
+      svelte: 4.2.12
+    dev: true
+
+  /svelte-mq-store@2.2.11(@sveltejs/kit@2.5.5)(svelte@4.2.12):
+    resolution: {integrity: sha512-FpCh5FMI3Q5xpxsaXQrjL56ENBsYDj/tjGEklw3tgl+TFgClUJUxTPXi360JyNZlsvEH/8iQ8LECH34VH4GvvQ==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
