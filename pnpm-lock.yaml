@@ -12,8 +12,8 @@ dependencies:
     specifier: 9.1.2
     version: 9.1.2
   svelte-loading-spinners:
-    specifier: 0.3.4
-    version: 0.3.4
+    specifier: 0.3.6
+    version: 0.3.6
 
 devDependencies:
   '@jill64/eslint-config-svelte':
@@ -3523,8 +3523,8 @@ packages:
       svelte: 4.2.12
     dev: true
 
-  /svelte-loading-spinners@0.3.4:
-    resolution: {integrity: sha512-vKaW71QMCBcTNijAGc0mUl8k3DQ66iYmp6MB8BMGCXyWk82bTrcLy8FOnSm9fE+8q6TwzD6PLUoYFHt0II93Xw==}
+  /svelte-loading-spinners@0.3.6:
+    resolution: {integrity: sha512-mthHQ2TwiwzTWzbFry3CBnVEfzqPOD9WkVw84OfSYzHRq6N9wgQ+yv37u81uPeuLU/ZOIPqhujpXquB1aol5ZQ==}
     dev: false
 
   /svelte-mq-store@2.2.11(@sveltejs/kit@2.5.5)(svelte@4.2.12):
