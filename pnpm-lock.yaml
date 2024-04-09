@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@jill64/async-observer':
-    specifier: 1.2.3
-    version: 1.2.3
+    specifier: 1.2.4
+    version: 1.2.4
   bignumber.js:
     specifier: 9.1.2
     version: 9.1.2
@@ -856,6 +856,11 @@ packages:
 
   /@jill64/async-observer@1.2.3:
     resolution: {integrity: sha512-IK0NpUnVdxTlZLgc24DmwZk1UsDCz3g8ZvmQVRFBph7cr55wQgpnj8cIrF7rvdFc4u9TR7fGOw0KWhcCRCahJQ==}
+    dev: true
+
+  /@jill64/async-observer@1.2.4:
+    resolution: {integrity: sha512-mO7teUES+oHXGwhQthr8voBi5lEoDrENoT+CtW/WkPRzSUxBY6HhzouHOMqswtabPaZX/5EIzbnpelKU6efEEQ==}
+    dev: false
 
   /@jill64/eslint-config-svelte@1.2.17(svelte@4.2.12)(typescript@5.4.4):
     resolution: {integrity: sha512-OSwoMwJI+L7fMLAJ32fSjsFH0KpM7qgMVy5nVHtS1MIEDUthhlEDjApoleJYybeNoEw3PWPP7cBCEDEK8TRNOQ==}
