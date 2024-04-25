@@ -34,8 +34,8 @@ importers:
         specifier: 1.7.11
         version: 1.7.11(@sveltejs/kit@2.5.7(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.15)(vite@5.2.10(@types/node@20.12.3)))(svelte@4.2.15)(vite@5.2.10(@types/node@20.12.3)))(svelte@4.2.15)
       '@jill64/svelte-menu':
-        specifier: 1.0.19
-        version: 1.0.19(svelte@4.2.15)
+        specifier: 1.0.20
+        version: 1.0.20(svelte@4.2.15)
       '@jill64/svelte-tailwind':
         specifier: 1.2.26
         version: 1.2.26(jiti@1.21.0)
@@ -487,6 +487,11 @@ packages:
 
   '@jill64/svelte-menu@1.0.19':
     resolution: {integrity: sha512-i9kjujtOgZiyxaev4AToLkKc9sSE+cTCNlt7nirkbkWR0IG6cL+PQwRaw9+FJkHTO24xAYLNiffNmMC/Wb67yg==}
+    peerDependencies:
+      svelte: ^4.0.0
+
+  '@jill64/svelte-menu@1.0.20':
+    resolution: {integrity: sha512-uYO54BN8vkd/lgDbd6KOp7pbMFDY5KIUIHXLV73xfy6A5izusORq83MJfkj7lD9NF5ubOQoYjCED94PjcEiT8g==}
     peerDependencies:
       svelte: ^4.0.0
 
@@ -2386,6 +2391,10 @@ snapshots:
       svelte: 4.2.15
 
   '@jill64/svelte-menu@1.0.19(svelte@4.2.15)':
+    dependencies:
+      svelte: 4.2.15
+
+  '@jill64/svelte-menu@1.0.20(svelte@4.2.15)':
     dependencies:
       svelte: 4.2.15
 
