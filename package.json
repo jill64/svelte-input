@@ -65,7 +65,7 @@
     "@sveltejs/adapter-cloudflare": "4.4.0",
     "@sveltejs/kit": "2.5.7",
     "nanoid": "5.0.7",
-    "svelte": "4.2.15",
+    "svelte": "4.2.16",
     "svelte-mq-store": "2.2.14",
     "typescript": "5.4.5",
     "vite": "5.2.11",
