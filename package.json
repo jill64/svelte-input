@@ -61,7 +61,7 @@
     "@jill64/sentry-sveltekit-cloudflare": "1.7.12",
     "@jill64/svelte-menu": "1.0.20",
     "@jill64/svelte-tailwind": "1.2.30",
-    "@playwright/test": "1.43.1",
+    "@playwright/test": "1.44.0",
     "@sveltejs/adapter-cloudflare": "4.4.0",
     "@sveltejs/kit": "2.5.7",
     "nanoid": "5.0.7",
