@@ -1,6 +1,6 @@
 {
   "name": "@jill64/svelte-input",
-  "version": "1.6.27",
+  "version": "1.6.28",
   "description": "➡️ Functional Input Component Set for Svelte",
   "type": "module",
   "main": "dist/index.js",
@@ -29,7 +29,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/svelte-input.git",
-    "image": "https://opengraph.githubassets.com/13d33cd539c7b54e5e9d3df08593b42a105f25ad1d645943a412f0e85a6ad10a/jill64/svelte-input"
+    "image": "https://opengraph.githubassets.com/28c2b5487987c77d48d6b58f24b526b4ff0afd693ede9e5f9704b90d2c3bcb37/jill64/svelte-input"
   },
   "keywords": [
     "components",
@@ -54,7 +54,7 @@
   "prettier": "@jill64/prettier-config",
   "devDependencies": {
     "@jill64/eslint-config-svelte": "1.2.27",
-    "@jill64/npm-demo-layout": "1.0.191",
+    "@jill64/npm-demo-layout": "1.0.193",
     "@jill64/universal-sanitizer": "1.2.11",
     "@jill64/playwright-config": "2.3.0",
     "@jill64/prettier-config": "1.0.0",
