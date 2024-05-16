@@ -37,8 +37,8 @@ importers:
         specifier: 1.0.21
         version: 1.0.21(svelte@4.2.17)
       '@jill64/svelte-tailwind':
-        specifier: 1.2.30
-        version: 1.2.30(jiti@1.21.0)
+        specifier: 1.2.31
+        version: 1.2.31(jiti@1.21.0)
       '@jill64/universal-sanitizer':
         specifier: 1.2.11
         version: 1.2.11
@@ -507,8 +507,8 @@ packages:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
 
-  '@jill64/svelte-tailwind@1.2.30':
-    resolution: {integrity: sha512-xtwqnGtBXHqnszk7wTl/SKDQGVfo0s0n1Dtu1kwrkXmG5AYmu3B620oalLX7f/esyhOrzccQNNqKm49xGdpzOg==}
+  '@jill64/svelte-tailwind@1.2.31':
+    resolution: {integrity: sha512-SCfG66d3M1oU+8PkHUFX2GJXFIuny7fxUJhGf8Uwk8EriSsLb2sA36x3CoH0yLXr3IikimKpn1fXONreF6AB/g==}
 
   '@jill64/svelte-toast@1.3.38':
     resolution: {integrity: sha512-prCBF75naHywb7vs/3u7OKNnsMoxGnDhjyNKcG3QCs4rMLkHPmb+9/N300OgSZ4JL5zdmyYKv/Y30PWgiF/Hog==}
@@ -520,8 +520,8 @@ packages:
     peerDependencies:
       tailwindcss: ^3.0.0
 
-  '@jill64/tailwind-reactions@1.2.21':
-    resolution: {integrity: sha512-JDkLBhhknlbWetWXAUPSfJvf4QTReb/GLSn4lwGT/qo8MEMX8p7j9NEarB8RSRqMB5CrCqSDXtOnMPG6qQU6ZQ==}
+  '@jill64/tailwind-reactions@1.2.22':
+    resolution: {integrity: sha512-lxz+kl4ACn8/vTFIKAnQUcIdnhVl6ivBUdcm0iN4U9BvrZ4u7ktRSCQbhDpQYe75CuBajrLn2ole1/5F7rH4mw==}
     peerDependencies:
       tailwindcss: ^3.0.0
 
@@ -2413,10 +2413,10 @@ snapshots:
       '@sveltejs/kit': 2.5.8(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.17)(vite@5.2.11(@types/node@20.12.3)))(svelte@4.2.17)(vite@5.2.11(@types/node@20.12.3))
       svelte: 4.2.17
 
-  '@jill64/svelte-tailwind@1.2.30(jiti@1.21.0)':
+  '@jill64/svelte-tailwind@1.2.31(jiti@1.21.0)':
     dependencies:
       '@jill64/tailwind-grid-auto': 1.3.24(tailwindcss@3.4.3)
-      '@jill64/tailwind-reactions': 1.2.21(tailwindcss@3.4.3)
+      '@jill64/tailwind-reactions': 1.2.22(tailwindcss@3.4.3)
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
       postcss-load-config: 5.1.0(jiti@1.21.0)(postcss@8.4.38)
@@ -2439,7 +2439,7 @@ snapshots:
     dependencies:
       tailwindcss: 3.4.3
 
-  '@jill64/tailwind-reactions@1.2.21(tailwindcss@3.4.3)':
+  '@jill64/tailwind-reactions@1.2.22(tailwindcss@3.4.3)':
     dependencies:
       tailwindcss: 3.4.3
 
