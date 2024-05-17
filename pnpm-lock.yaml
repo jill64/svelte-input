@@ -37,8 +37,8 @@ importers:
         specifier: 1.0.21
         version: 1.0.21(svelte@4.2.17)
       '@jill64/svelte-tailwind':
-        specifier: 1.2.31
-        version: 1.2.31(jiti@1.21.0)
+        specifier: 1.2.32
+        version: 1.2.32(jiti@1.21.0)
       '@jill64/universal-sanitizer':
         specifier: 1.2.11
         version: 1.2.11
@@ -507,16 +507,16 @@ packages:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
 
-  '@jill64/svelte-tailwind@1.2.31':
-    resolution: {integrity: sha512-SCfG66d3M1oU+8PkHUFX2GJXFIuny7fxUJhGf8Uwk8EriSsLb2sA36x3CoH0yLXr3IikimKpn1fXONreF6AB/g==}
+  '@jill64/svelte-tailwind@1.2.32':
+    resolution: {integrity: sha512-39Nddm4UIv8bQCsGMewPlZiP0YZt1NKZ/WZry8t7jANSBFs94zQC/qOoRqqfHkuXS2TNTRjZHbOCxmSG8tR9MA==}
 
   '@jill64/svelte-toast@1.3.38':
     resolution: {integrity: sha512-prCBF75naHywb7vs/3u7OKNnsMoxGnDhjyNKcG3QCs4rMLkHPmb+9/N300OgSZ4JL5zdmyYKv/Y30PWgiF/Hog==}
     peerDependencies:
       svelte: ^4.0.0
 
-  '@jill64/tailwind-grid-auto@1.3.24':
-    resolution: {integrity: sha512-zzTtmEiDBiNZoUm6M8+cNJ792RLqVSZ12OKw0KEdoi+SIARTW6HisYANjhSgah7a3R1QLRPsmzTUI3YJ4TpEAA==}
+  '@jill64/tailwind-grid-auto@1.3.25':
+    resolution: {integrity: sha512-IngE65QVxbNOzynapH0m5tGCT+QqWmnwsKGoyIjfeKUSEXaLyWxmgouEVrCOHwnECCO42hmb2ad+EzwVpLz55A==}
     peerDependencies:
       tailwindcss: ^3.0.0
 
@@ -2413,9 +2413,9 @@ snapshots:
       '@sveltejs/kit': 2.5.8(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.17)(vite@5.2.11(@types/node@20.12.3)))(svelte@4.2.17)(vite@5.2.11(@types/node@20.12.3))
       svelte: 4.2.17
 
-  '@jill64/svelte-tailwind@1.2.31(jiti@1.21.0)':
+  '@jill64/svelte-tailwind@1.2.32(jiti@1.21.0)':
     dependencies:
-      '@jill64/tailwind-grid-auto': 1.3.24(tailwindcss@3.4.3)
+      '@jill64/tailwind-grid-auto': 1.3.25(tailwindcss@3.4.3)
       '@jill64/tailwind-reactions': 1.2.22(tailwindcss@3.4.3)
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
@@ -2435,7 +2435,7 @@ snapshots:
     transitivePeerDependencies:
       - '@sveltejs/kit'
 
-  '@jill64/tailwind-grid-auto@1.3.24(tailwindcss@3.4.3)':
+  '@jill64/tailwind-grid-auto@1.3.25(tailwindcss@3.4.3)':
     dependencies:
       tailwindcss: 3.4.3
 
