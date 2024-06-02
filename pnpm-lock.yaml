@@ -37,8 +37,8 @@ importers:
         specifier: 1.0.21
         version: 1.0.21(svelte@4.2.17)
       '@jill64/svelte-tailwind':
-        specifier: 1.2.33
-        version: 1.2.33(jiti@1.21.0)
+        specifier: 1.2.34
+        version: 1.2.34(jiti@1.21.0)(yaml@2.4.2)
       '@jill64/universal-sanitizer':
         specifier: 1.2.13
         version: 1.2.13
@@ -518,8 +518,8 @@ packages:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
 
-  '@jill64/svelte-tailwind@1.2.33':
-    resolution: {integrity: sha512-bDHksi7GeZw3X9cU3UVxWikwcHHJ6cyV5R/IZ6igSt7xCyxdtvSJyMLpQ9Ie+KeIznIITUWVSq1Jd5zkgjpXrg==}
+  '@jill64/svelte-tailwind@1.2.34':
+    resolution: {integrity: sha512-DxExdb9NoFl2dy9lLyvwHna1ywzuWIl7uicUTnJj+KHoU/4Azap1AKbyAD+r1gc/ZrLQh0/yATIu4auR/DFLgg==}
 
   '@jill64/svelte-toast@1.3.39':
     resolution: {integrity: sha512-EMWoYkY8VGNQBrByOcegO7OMDTfMiNkuDWPq+EEaPs5DWbMUqOpe0Ig4IW6FMSujcJl0vQhi+uNPndMLQOJrEA==}
@@ -1618,19 +1618,22 @@ packages:
       ts-node:
         optional: true
 
-  postcss-load-config@5.1.0:
-    resolution: {integrity: sha512-G5AJ+IX0aD0dygOE0yFZQ/huFFMSNneyfp0e3/bT05a8OfPC5FUoZRPfGijUdGOJNMewJiwzcHJXFafFzeKFVA==}
+  postcss-load-config@6.0.0:
+    resolution: {integrity: sha512-Awdbn0DxIoOD0y9ljT7T8nm57tA0EGhnBRN2o8Dn/qZj4XuFfQ9q3mDgB5f4+A8wuD6x23RUgr0RMaId4bcFvA==}
     engines: {node: '>= 18'}
     peerDependencies:
       jiti: '>=1.21.0'
       postcss: '>=8.0.9'
       tsx: ^4.8.1
+      yaml: ^2.4.2
     peerDependenciesMeta:
       jiti:
         optional: true
       postcss:
         optional: true
       tsx:
+        optional: true
+      yaml:
         optional: true
 
   postcss-nested@6.0.1:
@@ -2408,18 +2411,19 @@ snapshots:
       '@sveltejs/kit': 2.5.10(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.17)(vite@5.2.12(@types/node@20.12.3)))(svelte@4.2.17)(vite@5.2.12(@types/node@20.12.3))
       svelte: 4.2.17
 
-  '@jill64/svelte-tailwind@1.2.33(jiti@1.21.0)':
+  '@jill64/svelte-tailwind@1.2.34(jiti@1.21.0)(yaml@2.4.2)':
     dependencies:
       '@jill64/tailwind-grid-auto': 1.3.25(tailwindcss@3.4.3)
       '@jill64/tailwind-reactions': 1.2.23(tailwindcss@3.4.3)
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
-      postcss-load-config: 5.1.0(jiti@1.21.0)(postcss@8.4.38)
+      postcss-load-config: 6.0.0(jiti@1.21.0)(postcss@8.4.38)(yaml@2.4.2)
       tailwindcss: 3.4.3
     transitivePeerDependencies:
       - jiti
       - ts-node
       - tsx
+      - yaml
 
   '@jill64/svelte-toast@1.3.39(@sveltejs/kit@2.5.10(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.17)(vite@5.2.12(@types/node@20.12.3)))(svelte@4.2.17)(vite@5.2.12(@types/node@20.12.3)))(svelte@4.2.17)':
     dependencies:
@@ -3578,13 +3582,13 @@ snapshots:
     optionalDependencies:
       postcss: 8.4.38
 
-  postcss-load-config@5.1.0(jiti@1.21.0)(postcss@8.4.38):
+  postcss-load-config@6.0.0(jiti@1.21.0)(postcss@8.4.38)(yaml@2.4.2):
     dependencies:
       lilconfig: 3.1.1
-      yaml: 2.4.2
     optionalDependencies:
       jiti: 1.21.0
       postcss: 8.4.38
+      yaml: 2.4.2
 
   postcss-nested@6.0.1(postcss@8.4.38):
     dependencies:
