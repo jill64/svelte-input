@@ -31,8 +31,8 @@ importers:
         specifier: 1.0.0
         version: 1.0.0
       '@jill64/sentry-sveltekit-cloudflare':
-        specifier: 1.7.13
-        version: 1.7.13(@sveltejs/kit@2.5.10(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.18)(vite@5.2.13(@types/node@20.12.3)))(svelte@4.2.18)(vite@5.2.13(@types/node@20.12.3)))(svelte@4.2.18)
+        specifier: 1.7.14
+        version: 1.7.14(@sveltejs/kit@2.5.10(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.18)(vite@5.2.13(@types/node@20.12.3)))(svelte@4.2.18)(vite@5.2.13(@types/node@20.12.3)))(svelte@4.2.18)
       '@jill64/svelte-menu':
         specifier: 1.0.22
         version: 1.0.22(svelte@4.2.18)
@@ -463,8 +463,8 @@ packages:
   '@jill64/prettier-config@1.0.0':
     resolution: {integrity: sha512-KuryQDStqkQ/zKR9Q7JXiW927m7SvwirQo6Oohss1Q9cRyYS2JOyhtcBavZnoEhH4pHJkaigfjUXA3em4n6egA==}
 
-  '@jill64/sentry-sveltekit-cloudflare@1.7.13':
-    resolution: {integrity: sha512-pR9APo1LLT2KQMx70ofrDL4TwWzZke2p0LCv4rJw6USJM/QpzRvE7wqWEVg3xy7kYx8DCXy6evxzsIdwFy/hEQ==}
+  '@jill64/sentry-sveltekit-cloudflare@1.7.14':
+    resolution: {integrity: sha512-JYeA44DHWln3WEs3noj4G1z/dYCU5H2lor2nGS1g5W9uHzs9cJb0P347GS+nFt8jcNGBrx+K4wGCBgaaZgOsPQ==}
     peerDependencies:
       '@sveltejs/kit': 1.x || 2.x
 
@@ -2332,7 +2332,7 @@ snapshots:
 
   '@jill64/prettier-config@1.0.0': {}
 
-  '@jill64/sentry-sveltekit-cloudflare@1.7.13(@sveltejs/kit@2.5.10(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.18)(vite@5.2.13(@types/node@20.12.3)))(svelte@4.2.18)(vite@5.2.13(@types/node@20.12.3)))(svelte@4.2.18)':
+  '@jill64/sentry-sveltekit-cloudflare@1.7.14(@sveltejs/kit@2.5.10(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.18)(vite@5.2.13(@types/node@20.12.3)))(svelte@4.2.18)(vite@5.2.13(@types/node@20.12.3)))(svelte@4.2.18)':
     dependencies:
       '@sentry/svelte': 7.116.0(svelte@4.2.18)
       '@sveltejs/kit': 2.5.10(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.18)(vite@5.2.13(@types/node@20.12.3)))(svelte@4.2.18)(vite@5.2.13(@types/node@20.12.3))
