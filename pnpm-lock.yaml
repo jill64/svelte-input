@@ -25,8 +25,8 @@ importers:
         specifier: 1.0.213
         version: 1.0.213(@sveltejs/kit@2.5.10(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.18)(vite@5.3.0(@types/node@20.12.3)))(svelte@4.2.18)(vite@5.3.0(@types/node@20.12.3)))(svelte@4.2.18)
       '@jill64/playwright-config':
-        specifier: 2.3.0
-        version: 2.3.0(@playwright/test@1.44.1)
+        specifier: 2.3.1
+        version: 2.3.1(@playwright/test@1.44.1)
       '@jill64/prettier-config':
         specifier: 1.0.0
         version: 1.0.0
@@ -595,8 +595,8 @@ packages:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
 
-  '@jill64/playwright-config@2.3.0':
-    resolution: {integrity: sha512-6PstbdoN9wKZwVoW5iyLHtGpyX/gei0PMHwMSf4HkEZSiTqAG4FqVqX9H0YscfDcFlKJIg0jqKjaw9iPrkgNDw==}
+  '@jill64/playwright-config@2.3.1':
+    resolution: {integrity: sha512-YOb9FQDvRtNplbyzIW59Ka2Nx6hKT1xHQJFxoGiqMpVioOKRPW1xAk226a3XWR/znwYvCheF8DNVF11NadUyUQ==}
     peerDependencies:
       '@playwright/test': ^1.40.0
 
@@ -2590,7 +2590,7 @@ snapshots:
       svelte-highlight: 7.6.1
       svelte-highlight-switcher: 1.2.13(svelte-highlight@7.6.1)(svelte@4.2.18)
 
-  '@jill64/playwright-config@2.3.0(@playwright/test@1.44.1)':
+  '@jill64/playwright-config@2.3.1(@playwright/test@1.44.1)':
     dependencies:
       '@playwright/test': 1.44.1
 
