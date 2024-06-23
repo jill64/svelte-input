@@ -1,6 +1,6 @@
 {
   "name": "@jill64/svelte-input",
-  "version": "1.6.30",
+  "version": "1.6.31",
   "description": "➡️ Functional Input Component Set for Svelte",
   "type": "module",
   "main": "dist/index.js",
