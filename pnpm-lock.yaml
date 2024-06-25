@@ -37,8 +37,8 @@ importers:
         specifier: 1.0.23
         version: 1.0.23(svelte@4.2.18)
       '@jill64/svelte-tailwind':
-        specifier: 1.2.39
-        version: 1.2.39(jiti@1.21.0)(yaml@2.4.2)
+        specifier: 1.2.40
+        version: 1.2.40(jiti@1.21.0)(yaml@2.4.2)
       '@jill64/universal-sanitizer':
         specifier: 1.2.13
         version: 1.2.13
@@ -652,16 +652,16 @@ packages:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
 
-  '@jill64/svelte-tailwind@1.2.39':
-    resolution: {integrity: sha512-K+Hp4DlBv2qGxrzMfBSR+sgIN638OGconP1TeEw91PsaMX+urovnyLOWSeyL+1WCZsmgatd+NS7MHD+tC3uvDA==}
+  '@jill64/svelte-tailwind@1.2.40':
+    resolution: {integrity: sha512-zArq1yn2DVVF9JBgTVuV40ThNQ+ajEZaZRy3c0KShIfuIbiSl8/lME5XdlxdANDy20rbV38lxdEGXOF/nRnT7w==}
 
   '@jill64/svelte-toast@1.3.43':
     resolution: {integrity: sha512-xxC2E//h72zHDvuhB8fotxOIuLDtS+tup1uYu+o4vOb3797gj10BapcXWxddAckU492EH44ltN5F3rzx7iD+VQ==}
     peerDependencies:
       svelte: ^4.0.0
 
-  '@jill64/tailwind-grid-auto@1.3.27':
-    resolution: {integrity: sha512-uo3+3eXVM/5NWZDs0rNotBi64X6xR2PktLYdJbAtMnpQL5ltD0I3++Cp+6MPK3PaHg18ns1bihsgR4vqQ8R7MQ==}
+  '@jill64/tailwind-grid-auto@1.3.28':
+    resolution: {integrity: sha512-GN6trl72t7XmdTob95uD22UvFsHJsqk+s8LRd9bMQh4HAD0vKHu9oKYwwA9O1IpwTmsaLDvZ2zj3mgvFOjW2aw==}
     peerDependencies:
       tailwindcss: ^3.0.0
 
@@ -2622,9 +2622,9 @@ snapshots:
       '@sveltejs/kit': 2.5.10(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.18)(vite@5.3.1(@types/node@20.12.3)))(svelte@4.2.18)(vite@5.3.1(@types/node@20.12.3))
       svelte: 4.2.18
 
-  '@jill64/svelte-tailwind@1.2.39(jiti@1.21.0)(yaml@2.4.2)':
+  '@jill64/svelte-tailwind@1.2.40(jiti@1.21.0)(yaml@2.4.2)':
     dependencies:
-      '@jill64/tailwind-grid-auto': 1.3.27(tailwindcss@3.4.4)
+      '@jill64/tailwind-grid-auto': 1.3.28(tailwindcss@3.4.4)
       '@jill64/tailwind-reactions': 1.2.25(tailwindcss@3.4.4)
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
@@ -2645,7 +2645,7 @@ snapshots:
     transitivePeerDependencies:
       - '@sveltejs/kit'
 
-  '@jill64/tailwind-grid-auto@1.3.27(tailwindcss@3.4.4)':
+  '@jill64/tailwind-grid-auto@1.3.28(tailwindcss@3.4.4)':
     dependencies:
       tailwindcss: 3.4.4
 
