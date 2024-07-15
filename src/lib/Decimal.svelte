@@ -25,7 +25,7 @@
     return n.toNumber()
   }
 
-  $: validation = (n: number) => (isNaN(n) || !isFinite(n) ? min ?? 0 : n)
+  $: validation = (n: number) => (isNaN(n) || !isFinite(n) ? (min ?? 0) : n)
 
   $: if (min !== undefined && value < min) {
     value = min
