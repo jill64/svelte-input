@@ -29,7 +29,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/svelte-input.git",
-    "image": "https://opengraph.githubassets.com/a906714caafa6855e0f0d936c2778777a8646d4074e35e5e215bb0fe08cb00df/jill64/svelte-input"
+    "image": "https://opengraph.githubassets.com/c0ae316b5841ea8d894af9db893d21b23c9ec97c5130ca87ee9fdcd6702d3395/jill64/svelte-input"
   },
   "keywords": [
     "components",
@@ -68,7 +68,7 @@
     "svelte": "4.2.18",
     "svelte-mq-store": "2.2.18",
     "typescript": "5.5.3",
-    "vite": "5.3.3",
+    "vite": "5.3.4",
     "@sveltejs/vite-plugin-svelte": "3.1.1"
   },
   "dependencies": {
