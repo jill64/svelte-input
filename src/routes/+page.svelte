@@ -7,7 +7,6 @@
   import Index from './Index.svelte'
   import RadioDemo from './RadioDemo.svelte'
   import SelectDemo from './SelectDemo.svelte'
-  import TextAreaDemo from './TextAreaDemo.svelte'
   import ToggleSwitchDemo from './ToggleSwitchDemo.svelte'
 
   const list = [
@@ -17,7 +16,6 @@
     'Decimal',
     'FileInput',
     'Radio',
-    'TextArea',
     'ToggleSwitch',
     'Select'
   ]
@@ -34,7 +32,6 @@
   <DecimalDemo />
   <FileInputDemo />
   <RadioDemo />
-  <TextAreaDemo />
   <ToggleSwitchDemo />
   <SelectDemo />
 </main>

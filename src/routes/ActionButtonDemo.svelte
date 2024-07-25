@@ -8,27 +8,33 @@
   const delay = (ms: number) =>
     new Promise((resolve) => setTimeout(resolve, ms))
 
-  let disabled = false
+  let disabled = $state(false)
 
-  const { status, observed } = observable()
+  let observer = observable()
 
-  $: onClick = observed(async () => {
+  let onclick = observer.observed(async () => {
     await delay(1500)
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     $toast.success('Action Complete')
   })
 </script>
 
+{#snippet icon()}
+  ＋
+{/snippet}
+{#snippet description()}
+  Button component with visual feedback to wait for <code>Promise</code>.
+{/snippet}
+{#snippet slot()}
+  <ActionButton {icon} {disabled} {onclick} label="Action Button" class="px-4 py-2" />
+{/snippet}
 <Demo
   title="ActionButton"
   code={ActionButtonCode({ disabled })}
-  label="$status"
-  value={$status}
+  label="status"
+  value={observer.status}
   bind:disabled
->
-  <svelte:fragment slot="description">
-    Button component with visual feedback to wait for <code>Promise</code>.
-  </svelte:fragment>
-  <ActionButton {disabled} {onClick} label="Action Button" Class="px-4 py-2">
-    ＋
-  </ActionButton>
-</Demo>
+  {slot}
+  {description}
+/>

@@ -9,34 +9,37 @@
     Third: null
   }
 
-  let disabled = false
-  let value = { ...initialValue }
+  let disabled = $state(false)
+  let value = $state({ ...initialValue })
 </script>
 
+{#snippet description()}
+  A checkbox list component that binds inputs structured as <code>object</code>.
+{/snippet}
+{#snippet options()}
+  <button
+    onclick={() => {
+      value = initialValue
+    }}
+    {disabled}
+  >
+    Reset
+  </button>
+{/snippet}
+{#snippet slot()}
+  <fieldset>
+    <CheckList bind:value {disabled} />
+  </fieldset>
+{/snippet}
 <Demo
   title="CheckList"
   value={JSON.stringify(value, null, 2)}
   code={CheckListCode({ disabled })}
   bind:disabled
->
-  <svelte:fragment slot="description">
-    A checkbox list component that binds inputs structured as
-    <code>object</code>.
-  </svelte:fragment>
-  <svelte:fragment slot="options">
-    <button
-      on:click={() => {
-        value = initialValue
-      }}
-      {disabled}
-    >
-      Reset
-    </button>
-  </svelte:fragment>
-  <fieldset>
-    <CheckList bind:value {disabled} />
-  </fieldset>
-</Demo>
+  {slot}
+  {description}
+  {options}
+/>
 
 <style>
   fieldset {

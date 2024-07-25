@@ -3,11 +3,13 @@ export const FileInputCode = ({ disabled }: { disabled: boolean }) => /*html*/ `
   import { FileInput } from '@jill64/svelte-input'
 </script>
 
-<FileInput bind:value ${disabled ? 'disabled ' : ''}>
+{#snippet label()}
   <div>
     Custom File Input
   </div>
-</FileInput>
+{/snippet}
+
+<FileInput bind:value {label} ${disabled ? 'disabled ' : ''} />
 
 <style>
   div {

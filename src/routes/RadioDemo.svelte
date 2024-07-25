@@ -3,18 +3,21 @@
   import Demo from './Demo.svelte'
   import { RadioCode } from './RadioCode'
 
-  let value = 'Alpha'
-  let disabled = false
+  let value = $state('Alpha')
+  let disabled = $state(false)
 </script>
 
-<Demo title="Radio" code={RadioCode({ disabled })} bind:disabled {value}>
-  <svelte:fragment slot="description">
-    Component that applies input bound to a group to a radio button array.
-  </svelte:fragment>
+{#snippet description()}
+  Component that applies input bound to a group to a radio button array.
+{/snippet}
+
+{#snippet slot()}
   <fieldset>
     <Radio list={['Alpha', 'Beta', 'Gamma']} bind:value {disabled} />
   </fieldset>
-</Demo>
+{/snippet}
+
+<Demo title="Radio" {description} {slot} code={RadioCode({ disabled })} bind:disabled {value} />
 
 <style>
   fieldset {

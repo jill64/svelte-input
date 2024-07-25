@@ -3,23 +3,30 @@
   import Demo from './Demo.svelte'
   import { FileInputCode } from './FileInputCode'
 
-  let value = ''
-  let disabled = false
+  let value = $state('')
+  let disabled =$state(false)
 </script>
+
+{#snippet description()}
+  Quickly configure file input with custom styles applied.
+{/snippet}
+
+{#snippet label()}
+  <div>Custom File Input</div>
+{/snippet}
+
+{#snippet slot()}
+  <FileInput bind:value {label} {disabled} />
+{/snippet}
 
 <Demo
   title="FileInput"
   code={FileInputCode({ disabled })}
   bind:disabled
+  {description}
+  {slot}
   {value}
->
-  <svelte:fragment slot="description">
-    Quickly configure file input with custom styles applied.
-  </svelte:fragment>
-  <FileInput bind:value {disabled}>
-    <div>Custom File Input</div>
-  </FileInput>
-</Demo>
+/>
 
 <style>
   div {

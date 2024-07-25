@@ -3,7 +3,9 @@ export const CheckBoxCode = ({ disabled }: { disabled: boolean }) => /*html*/ `
   import { CheckBox } from '@jill64/svelte-input'
 </script>
 
-<CheckBox bind:value ${disabled ? 'disabled ' : ''}>
+{#snippet label()}
   Check Box
-</CheckBox>
+{/snippet}
+
+<CheckBox bind:value {label} ${disabled ? 'disabled ' : ''}/>
 `

@@ -1,35 +1,51 @@
 <script lang="ts">
-  import type { HTMLInputAttributes } from 'svelte/elements'
+    import type { Snippet } from 'svelte'
+    import type { HTMLInputAttributes } from 'svelte/elements'
 
-  export let height = '2rem'
-  export let padGap = '0.25rem'
-  export let padColor = ''
-  export let offColor = ''
-  export let onColor = ''
-  export let style = ''
-  export let value = false
-  export let Class: HTMLInputAttributes['class'] = ''
-  export let disabled: HTMLInputAttributes['disabled'] = undefined
-  export let required: HTMLInputAttributes['required'] = undefined
-  export let readonly: HTMLInputAttributes['readonly'] = undefined
-  export let attributes: HTMLInputAttributes = {}
-  export let onChange: ((s: boolean) => unknown) | undefined = undefined
+  let {
+    height = '2rem',
+    padGap = '0.25rem',
+    padColor = '',
+    offColor = '',
+    onColor = '',
+    style = '',
+    value = $bindable(false),
+    class: Class = '',
+    disabled = undefined,
+    required = undefined,
+    readonly = undefined,
+    attributes = {},
+    onchange = undefined,
+    label = undefined
+  }: {
+    height?: string
+    padGap?: string
+    padColor?: string
+    offColor?: string
+    onColor?: string
+    style?: string
+    value: boolean
+    class?: HTMLInputAttributes['class']
+    disabled?: HTMLInputAttributes['disabled']
+    required?: HTMLInputAttributes['required']
+    readonly?: HTMLInputAttributes['readonly']
+    attributes?: HTMLInputAttributes
+    onchange?: ((s: boolean) => unknown) | undefined
+    label?: Snippet | undefined
+  } = $props()
 
-  $: width = `calc(${height} * 1.6)`
-  $: padSize = `calc(${height} - ${padGap} * 2)`
-  $: translateX = value ? `calc(${width} - ${padGap} * 2 - ${padSize})` : '0px'
+  let width = $derived(`calc(${height} * 1.6)`)
+  let padSize = $derived(`calc(${height} - ${padGap} * 2)`)
+  let translateX = $derived(value ? `calc(${width} - ${padGap} * 2 - ${padSize})` : '0px')
 
-  $: cursor = disabled ? 'not-allowed' : 'pointer'
+  let cursor = $derived(disabled ? 'not-allowed' : 'pointer')
 </script>
 
 <label style:cursor style:display="inline-flex" style:align-items="center">
   <input
     type="checkbox"
     bind:checked={value}
-    on:change={(x) => onChange?.(x.currentTarget.checked)}
-    on:change
-    on:input
-    on:click
+    onchange={(x) => onchange?.(x.currentTarget.checked)}
     {...attributes}
     {disabled}
     {readonly}
@@ -51,8 +67,8 @@
     style:--pad-size={padSize}
     class={Class}
     {style}
-  />
-  <slot />
+  ></span>
+  {@render label?.()}
 </label>
 
 <style>

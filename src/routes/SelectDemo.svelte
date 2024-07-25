@@ -3,26 +3,25 @@
   import Demo from './Demo.svelte'
   import { SelectCode } from './SelectCode'
 
-  let value = ''
-  let grouped = false
-  let disabled = false
+  let value = $state('')
+  let grouped = $state(false)
+  let disabled = $state(false)
 </script>
 
-<Demo
-  title="Select"
-  code={SelectCode({ grouped, disabled })}
-  bind:disabled
-  {value}
->
-  <svelte:fragment slot="description">
+ {#snippet description()}
     Declarative list input with multiple variations quickly creates semantic
     pull-down menus.
-  </svelte:fragment>
-  <svelte:fragment slot="options">
-    <ToggleSwitch bind:value={grouped}>
-      <span style:margin-left="0.5rem">Grouped Options</span>
-    </ToggleSwitch>
-  </svelte:fragment>
+ {/snippet}
+
+{#snippet label()}
+  <span style:margin-left="0.5rem">Grouped Options</span>
+{/snippet}
+
+{#snippet options()}
+  <ToggleSwitch bind:value={grouped} {label} />
+{/snippet}
+
+{#snippet slot()}
   <Select
     list={grouped
       ? {
@@ -34,4 +33,14 @@
     {disabled}
     style="background: inherit; padding: 0.5rem; font-size: large; color: inherit; border: none;"
   />
-</Demo>
+{/snippet}
+
+<Demo
+  title="Select"
+  code={SelectCode({ grouped, disabled })}
+  bind:disabled
+  {value}
+  {description}
+  {options}
+  {slot}
+/>
