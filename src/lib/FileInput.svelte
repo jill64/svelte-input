@@ -1,6 +1,6 @@
 <script lang="ts">
-    import type { Snippet } from 'svelte'
-    import type { HTMLInputAttributes } from 'svelte/elements'
+  import type { Snippet } from 'svelte'
+  import type { HTMLInputAttributes } from 'svelte/elements'
 
   let {
     value = $bindable(''),
@@ -11,7 +11,7 @@
     readonly = undefined,
     attributes = {},
     onchange = undefined,
-    label = undefined
+    children = undefined
   }: {
     value: string
     accept?: HTMLInputAttributes['accept']
@@ -21,7 +21,7 @@
     readonly?: HTMLInputAttributes['readonly']
     attributes?: HTMLInputAttributes
     onchange?: ((files: FileList) => unknown) | undefined
-    label?: Snippet | undefined
+    children?: Snippet | undefined
   } = $props()
 
   let cursor = $derived(disabled ? 'not-allowed' : 'pointer')
@@ -45,5 +45,5 @@
     }}
     hidden
   />
-  {@render label?.()}
+  {@render children?.()}
 </label>
