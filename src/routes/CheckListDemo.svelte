@@ -13,33 +13,36 @@
   let value = $state({ ...initialValue })
 </script>
 
-{#snippet description()}
-  A checkbox list component that binds inputs structured as <code>object</code>.
-{/snippet}
-{#snippet options()}
-  <button
-    onclick={() => {
-      value = initialValue
-    }}
-    {disabled}
-  >
-    Reset
-  </button>
-{/snippet}
-{#snippet slot()}
-  <fieldset>
-    <CheckList bind:value {disabled} />
-  </fieldset>
-{/snippet}
 <Demo
   title="CheckList"
   value={JSON.stringify(value, null, 2)}
   code={CheckListCode({ disabled })}
   bind:disabled
-  {slot}
-  {description}
-  {options}
-/>
+>
+  {#snippet description()}
+    A checkbox list component that binds inputs structured as <code>object</code
+    >.
+  {/snippet}
+  {#snippet options()}
+    <button
+      onclick={() => {
+        value = initialValue
+      }}
+      {disabled}
+    >
+      Reset
+    </button>
+  {/snippet}
+  {#snippet children()}
+    <fieldset>
+      <CheckList bind:value {disabled}>
+        {#snippet children(item)}
+          <span style:margin="0.25rem">{item}</span>
+        {/snippet}
+      </CheckList>
+    </fieldset>
+  {/snippet}
+</Demo>
 
 <style>
   fieldset {
