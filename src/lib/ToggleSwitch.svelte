@@ -1,6 +1,6 @@
 <script lang="ts">
-    import type { Snippet } from 'svelte'
-    import type { HTMLInputAttributes } from 'svelte/elements'
+  import type { Snippet } from 'svelte'
+  import type { HTMLInputAttributes } from 'svelte/elements'
 
   let {
     height = '2rem',
@@ -16,7 +16,7 @@
     readonly = undefined,
     attributes = {},
     onchange = undefined,
-    label = undefined
+    children = undefined
   }: {
     height?: string
     padGap?: string
@@ -31,12 +31,14 @@
     readonly?: HTMLInputAttributes['readonly']
     attributes?: HTMLInputAttributes
     onchange?: ((s: boolean) => unknown) | undefined
-    label?: Snippet | undefined
+    children?: Snippet | undefined
   } = $props()
 
   let width = $derived(`calc(${height} * 1.6)`)
   let padSize = $derived(`calc(${height} - ${padGap} * 2)`)
-  let translateX = $derived(value ? `calc(${width} - ${padGap} * 2 - ${padSize})` : '0px')
+  let translateX = $derived(
+    value ? `calc(${width} - ${padGap} * 2 - ${padSize})` : '0px'
+  )
 
   let cursor = $derived(disabled ? 'not-allowed' : 'pointer')
 </script>
@@ -68,7 +70,7 @@
     class={Class}
     {style}
   ></span>
-  {@render label?.()}
+  {@render children?.()}
 </label>
 
 <style>

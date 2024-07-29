@@ -7,9 +7,7 @@ export const ToggleSwitchCode = ({
   import { ToggleSwitch } from '@jill64/svelte-input'
 </script>
 
-{#snippet label()}
-  Toggle Switch
-{/snippet}
-
-<ToggleSwitch bind:value ${disabled ? 'disabled ' : ''} {label} />
+<ToggleSwitch bind:value ${disabled ? 'disabled ' : ''} >
+  <span style:margin-left="4px"> Toggle Switch </span>
+</ToggleSwitch>
 `
