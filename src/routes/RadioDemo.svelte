@@ -15,7 +15,7 @@
     <fieldset>
       <Radio list={['Alpha', 'Beta', 'Gamma']} bind:value {disabled}>
         {#snippet children(item)}
-          {item}
+          <span style:margin="0.5rem">{item}</span>
         {/snippet}
       </Radio>
     </fieldset>

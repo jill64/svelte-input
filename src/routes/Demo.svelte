@@ -41,10 +41,9 @@
     </p>
   </hgroup>
   {@render options?.()}
-  {#snippet ts_label()}
+  <ToggleSwitch bind:value={disabled}>
     <span style:margin-left="0.5rem">Disable</span>
-  {/snippet}
-  <ToggleSwitch bind:value={disabled} label={ts_label} />
+  </ToggleSwitch>
 </section>
 <output
   class="overflow-auto bg-zinc-400 dark:bg-gray-900 p-2 rounded max-h-80 whitespace-pre-wrap font-mono text-xl"

@@ -8,7 +8,7 @@ export const RadioCode = ({ disabled }: { disabled: boolean }) => /*html*/ `
     disabled ? 'disabled ' : ''
   }>
     {#snippet children(item)}
-      {item}
+      <span style:margin="0.5rem">{item}</span>
     {/snippet}
   </Radio>
 </fieldset>
