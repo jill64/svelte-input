@@ -1,6 +1,6 @@
 <script lang="ts">
-    import type { Snippet } from 'svelte'
-    import type { HTMLInputAttributes } from 'svelte/elements'
+  import type { Snippet } from 'svelte'
+  import type { HTMLInputAttributes } from 'svelte/elements'
 
   let {
     value = $bindable(false),
@@ -9,7 +9,7 @@
     required = undefined,
     readonly = undefined,
     attributes = {},
-    label = undefined,
+    children = undefined,
     onchange = undefined
   }: {
     value: HTMLInputAttributes['checked']
@@ -18,7 +18,7 @@
     required?: HTMLInputAttributes['required']
     readonly?: HTMLInputAttributes['readonly']
     attributes?: HTMLInputAttributes
-    label?: Snippet | undefined
+    children?: Snippet | undefined
     onchange?: ((value: boolean) => unknown) | undefined
   } = $props()
 
@@ -40,7 +40,7 @@
     indeterminate={value === null || value === undefined}
     bind:checked={value}
   />
-  {@render label?.()}
+  {@render children?.()}
 </label>
 
 <style>

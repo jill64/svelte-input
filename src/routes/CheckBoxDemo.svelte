@@ -7,31 +7,23 @@
   let disabled = $state(false)
 </script>
 
-{#snippet description()}
-  Labeled checkbox to support bindable <code>indeterminate</code> value input.
-{/snippet}
-{#snippet options()}
-  <button
-    onclick={() => {
-      value = null
-    }}
-    {disabled}
-  >
-    Reset
-  </button>
-{/snippet}
-{#snippet label()}
-  <span style:margin-left="4px"> Check Box </span>
-{/snippet}
-{#snippet slot()}
-  <CheckBox bind:value {label} {disabled} />
-{/snippet}
-<Demo 
-  title="CheckBox" 
-  {description} 
-  {slot} 
-  {options} 
-  code={CheckBoxCode({ disabled })} 
-  bind:disabled 
-  {value} 
-/>
+<Demo title="CheckBox" code={CheckBoxCode({ disabled })} bind:disabled {value}>
+  {#snippet description()}
+    Labeled checkbox to support bindable <code>indeterminate</code> value input.
+  {/snippet}
+  {#snippet options()}
+    <button
+      onclick={() => {
+        value = null
+      }}
+      {disabled}
+    >
+      Reset
+    </button>
+  {/snippet}
+  {#snippet children(disabled)}
+    <CheckBox bind:value {disabled}>
+      <span style:margin-left="4px"> Check Box </span>
+    </CheckBox>
+  {/snippet}
+</Demo>
