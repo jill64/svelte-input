@@ -3,14 +3,14 @@ export const RadioCode = ({ disabled }: { disabled: boolean }) => /*html*/ `
   import { Radio } from '@jill64/svelte-input'
 </script>
 
-{#snippet label(item)}
-  {item}
-{/snippet}
-
 <fieldset>
   <Radio list={['Alpha', 'Beta', 'Gamma']} bind:value {label} ${
     disabled ? 'disabled ' : ''
-  } />
+  }>
+    {#snippet children(item)}
+      {item}
+    {/snippet}
+  </Radio>
 </fieldset>
 
 <style>

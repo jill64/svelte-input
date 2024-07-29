@@ -7,17 +7,20 @@
   let disabled = $state(false)
 </script>
 
-{#snippet description()}
-  Component that applies input bound to a group to a radio button array.
-{/snippet}
-
-{#snippet slot()}
-  <fieldset>
-    <Radio list={['Alpha', 'Beta', 'Gamma']} bind:value {disabled} />
-  </fieldset>
-{/snippet}
-
-<Demo title="Radio" {description} {slot} code={RadioCode({ disabled })} bind:disabled {value} />
+<Demo title="Radio" code={RadioCode({ disabled })} bind:disabled {value}>
+  {#snippet description()}
+    Component that applies input bound to a group to a radio button array.
+  {/snippet}
+  {#snippet children(disabled)}
+    <fieldset>
+      <Radio list={['Alpha', 'Beta', 'Gamma']} bind:value {disabled}>
+        {#snippet children(item)}
+          {item}
+        {/snippet}
+      </Radio>
+    </fieldset>
+  {/snippet}
+</Demo>
 
 <style>
   fieldset {

@@ -1,6 +1,6 @@
 <script lang="ts" generics="T">
-    import type { Snippet } from 'svelte'
-    import type { HTMLInputAttributes } from 'svelte/elements'
+  import type { Snippet } from 'svelte'
+  import type { HTMLInputAttributes } from 'svelte/elements'
 
   type V = T extends string ? T : never
 
@@ -14,7 +14,7 @@
     readonly = undefined,
     attributes = {},
     onchange = undefined,
-    label = undefined
+    children = undefined
   }: {
     value: V | undefined
     list: V[]
@@ -25,7 +25,7 @@
     readonly?: HTMLInputAttributes['readonly']
     attributes?: HTMLInputAttributes
     onchange?: ((value: string) => unknown) | undefined
-    label?: Snippet<[item: V]> | undefined
+    children?: Snippet<[item: V]> | undefined
   } = $props()
 
   let cursor = $derived(disabled ? 'not-allowed' : 'pointer')
@@ -46,8 +46,8 @@
       class={Class}
       onchange={() => onchange?.(item)}
     />
-    {#if label}
-      {@render label(item)}
+    {#if children}
+      {@render children(item)}
     {:else}
       <span style:margin="0.25rem">{item}</span>
     {/if}
