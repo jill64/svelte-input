@@ -12,44 +12,41 @@
     'color: inherit; background: inherit; border: solid 1px #888; border-radius: 0.25rem; padding: 0.25rem;'
 </script>
 
-{#snippet description()}
-  Integer input with control buttons.
-{/snippet}
-
-{#snippet options()}
-  <fieldset>
-    <legend> Min </legend>
-    <Decimal buttonClass="p-2" bind:value={min} {max} {style} {disabled} />
-  </fieldset>
-  <fieldset>
-    <legend> Max </legend>
-    <Decimal buttonClass="p-2" bind:value={max} {min} {style} {disabled} />
-  </fieldset>
-{/snippet}
-
-{#snippet slot()}
-  <fieldset>
-    <Decimal
-      bind:value
-      buttonClass="p-2 rounded-full border border-zinc-500 push-effect dark:pop-effect"
-      placeholder="Decimal Input"
-      {style}
-      {disabled}
-      {min}
-      {max}
-    />
-  </fieldset>
-{/snippet}
-
 <Demo
   title="Decimal"
   code={DecimalCode({ disabled, min, max })}
   bind:disabled
   {value}
-  {slot}
-  {description}
-  {options}
-/>
+>
+  {#snippet description()}
+    Integer input with control buttons.
+  {/snippet}
+
+  {#snippet options()}
+    <fieldset>
+      <legend> Min </legend>
+      <Decimal buttonClass="p-2" bind:value={min} {max} {style} {disabled} />
+    </fieldset>
+    <fieldset>
+      <legend> Max </legend>
+      <Decimal buttonClass="p-2" bind:value={max} {min} {style} {disabled} />
+    </fieldset>
+  {/snippet}
+
+  {#snippet children(disabled)}
+    <fieldset>
+      <Decimal
+        bind:value
+        buttonClass="p-2 rounded-full border border-zinc-500 push-effect dark:pop-effect"
+        placeholder="Decimal Input"
+        {style}
+        {disabled}
+        {min}
+        {max}
+      />
+    </fieldset>
+  {/snippet}
+</Demo>
 
 <style>
   fieldset {
