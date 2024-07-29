@@ -12,14 +12,21 @@ export const ActionButtonCode = ({
   }
 </script>
 
-{#snippet icon()}
+<ActionButton
+  onClick={actionHandler}
+  label="Action Button"${disabled ? '\n  disabled' : ''}
+>
   ＋
-{/snippet}
+</ActionButton>
+
+<!-- OR -->
 
 <ActionButton
   onClick={actionHandler}
   label="Action Button"${disabled ? '\n  disabled' : ''}
-  let:status
-  {icon}
-/>
+>
+  {#snippet children(status)}
+    ＋
+  {/snippet}
+</ActionButton>
 `

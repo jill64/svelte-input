@@ -14,7 +14,7 @@
     disabled = $bindable(),
     description,
     options,
-    slot
+    children
   }: {
     title: string
     code: string
@@ -23,7 +23,7 @@
     disabled: boolean
     description: Snippet
     options?: Snippet
-    slot: Snippet<[disabled: boolean]>
+    children: Snippet<[disabled: boolean]>
   } = $props()
 
   let isMobile = listen('(max-width: 640px)')
@@ -64,7 +64,7 @@
   </div>
 </Menu>
 <div>
-  {@render slot(disabled)}
+  {@render children(disabled)}
 </div>
 
 <style>

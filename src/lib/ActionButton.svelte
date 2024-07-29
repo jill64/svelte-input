@@ -16,7 +16,7 @@
     disabled = undefined,
     attributes = {},
     debug = false,
-    icon = undefined
+    children = undefined
   }: {
     onclick?: () => unknown
     label?: string
@@ -28,7 +28,7 @@
     disabled?: HTMLButtonAttributes['disabled']
     attributes?: HTMLButtonAttributes
     debug?: boolean
-    icon?: Snippet<[status?: PromiseStatus]> | undefined
+    children?: Snippet<[status?: PromiseStatus]> | undefined
   } = $props()
 
   let observer = observable()
@@ -59,11 +59,11 @@
     {#if pending}
       <Moon size={size - 2} color={color || '#AAA'} />
     {:else}
-      {@render icon?.(observer.status)}
+      {@render children?.(observer.status)}
     {/if}
   </span>
   {label}
-  {#if !icon}
+  {#if !children}
     <span style:height style:width></span>
   {/if}
 </button>
