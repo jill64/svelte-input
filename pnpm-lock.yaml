@@ -30,9 +30,6 @@ importers:
       '@jill64/playwright-config':
         specifier: 2.4.0
         version: 2.4.0(@playwright/test@1.45.3)
-      '@jill64/prettier-config':
-        specifier: 1.0.0
-        version: 1.0.0
       '@jill64/sentry-sveltekit-cloudflare':
         specifier: 1.7.16
         version: 1.7.16(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.197)(vite@5.3.5(@types/node@20.12.3)))(svelte@5.0.0-next.197)(vite@5.3.5(@types/node@20.12.3)))(svelte@5.0.0-next.197)
@@ -63,6 +60,9 @@ importers:
       nanoid:
         specifier: 5.0.7
         version: 5.0.7
+      prettier-plugin-svelte:
+        specifier: 3.2.6
+        version: 3.2.6(prettier@3.3.3)(svelte@5.0.0-next.197)
       svelte:
         specifier: 5.0.0-next.197
         version: 5.0.0-next.197
@@ -472,9 +472,6 @@ packages:
     resolution: {integrity: sha512-Gwp56wpXL74cLuKRNCLdOHs4QtJL5k1ArJrR4J6/IcoZRLB1+aW3gNwWIyXgrXyR26QMmXPk8hNYF4eSRsB8Tw==}
     peerDependencies:
       '@playwright/test': ^1.40.0
-
-  '@jill64/prettier-config@1.0.0':
-    resolution: {integrity: sha512-KuryQDStqkQ/zKR9Q7JXiW927m7SvwirQo6Oohss1Q9cRyYS2JOyhtcBavZnoEhH4pHJkaigfjUXA3em4n6egA==}
 
   '@jill64/sentry-sveltekit-cloudflare@1.7.16':
     resolution: {integrity: sha512-GSSBOPPsnHcpc8D8QoLb7zN9G5kF9CBQLqHd80Nn/sRvvSaFwcYss1aY01SM1qENEwcvMEzj9WFWzHA/zdF77A==}
@@ -1699,6 +1696,17 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
+  prettier-plugin-svelte@3.2.6:
+    resolution: {integrity: sha512-Y1XWLw7vXUQQZmgv1JAEiLcErqUniAF2wO7QJsw8BVMvpLET2dI5WpEIEJx1r11iHVdSMzQxivyfrH9On9t2IQ==}
+    peerDependencies:
+      prettier: ^3.0.0
+      svelte: ^3.2.0 || ^4.0.0-next.0 || ^5.0.0-next.0
+
+  prettier@3.3.3:
+    resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==}
+    engines: {node: '>=14'}
+    hasBin: true
+
   printable-characters@1.0.42:
     resolution: {integrity: sha512-dKp+C4iXWK4vVYZmYSd0KBH5F/h1HoZRsbJ82AVKRO3PEo8L4lBS/vLwhVtpwwuYcoIsVY+1JYKR268yn480uQ==}
 
@@ -2392,8 +2400,6 @@ snapshots:
   '@jill64/playwright-config@2.4.0(@playwright/test@1.45.3)':
     dependencies:
       '@playwright/test': 1.45.3
-
-  '@jill64/prettier-config@1.0.0': {}
 
   '@jill64/sentry-sveltekit-cloudflare@1.7.16(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.197)(vite@5.3.5(@types/node@20.12.3)))(svelte@5.0.0-next.197)(vite@5.3.5(@types/node@20.12.3)))(svelte@5.0.0-next.197)':
     dependencies:
@@ -3689,6 +3695,13 @@ snapshots:
       source-map-js: 1.2.0
 
   prelude-ls@1.2.1: {}
+
+  prettier-plugin-svelte@3.2.6(prettier@3.3.3)(svelte@5.0.0-next.197):
+    dependencies:
+      prettier: 3.3.3
+      svelte: 5.0.0-next.197
+
+  prettier@3.3.3: {}
 
   printable-characters@1.0.42: {}
 
