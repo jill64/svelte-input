@@ -76,6 +76,5 @@
     "bignumber.js": "9.1.2",
     "esm-env": "^1.0.0",
     "svelte-loading-spinners": "0.3.6"
-  },
-  "prettier": "@jill64/prettier-config"
+  }
 }
