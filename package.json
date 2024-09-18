@@ -1,6 +1,6 @@
 {
   "name": "@jill64/svelte-input",
-  "version": "1.6.34",
+  "version": "1.6.35",
   "description": "➡️ Functional Input Component Set for Svelte",
   "type": "module",
   "main": "dist/index.js",
@@ -29,7 +29,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/svelte-input.git",
-    "image": "https://opengraph.githubassets.com/55cf7d5ffaf2f093b8ed267eb2755cf896a872b67513b8743885f1d95aa444ff/jill64/svelte-input"
+    "image": "https://opengraph.githubassets.com/de8495c7ad219d7091bad03817e4ecf8f315cfa1fa81b3f65ab520ce77616a93/jill64/svelte-input"
   },
   "keywords": [
     "components",
