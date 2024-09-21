@@ -61,8 +61,8 @@ importers:
         specifier: 4.2.19
         version: 4.2.19
       svelte-mq-store:
-        specifier: 2.2.19
-        version: 2.2.19(@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.7(@types/node@20.12.3)))(svelte@4.2.19)(vite@5.4.7(@types/node@20.12.3)))(svelte@4.2.19)
+        specifier: 2.2.21
+        version: 2.2.21(@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.7(@types/node@20.12.3)))(svelte@4.2.19)(vite@5.4.7(@types/node@20.12.3)))(svelte@4.2.19)
       typescript:
         specifier: 5.6.2
         version: 5.6.2
@@ -1910,6 +1910,12 @@ packages:
 
   svelte-mq-store@2.2.19:
     resolution: {integrity: sha512-sGz4dz59BCtuhC2rvmFwpEePZR8gMMwb4nL4X0npr859upmux3dA77Ot9T1yhmeB7XGqtY0oENKf1zwifIYSEg==}
+    peerDependencies:
+      '@sveltejs/kit': ^2.0.0
+      svelte: ^4.0.0
+
+  svelte-mq-store@2.2.21:
+    resolution: {integrity: sha512-MQz9hsyySXW4h40Tiwe3eKFvxnWtgeJBGHAQhEan2CCw6VAISgp63gn+4bn09ovQZSj9vjQCsFeojnSDPcmfnA==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
@@ -3910,6 +3916,11 @@ snapshots:
       svelte: 4.2.19
 
   svelte-mq-store@2.2.19(@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.7(@types/node@20.12.3)))(svelte@4.2.19)(vite@5.4.7(@types/node@20.12.3)))(svelte@4.2.19):
+    dependencies:
+      '@sveltejs/kit': 2.5.28(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.7(@types/node@20.12.3)))(svelte@4.2.19)(vite@5.4.7(@types/node@20.12.3))
+      svelte: 4.2.19
+
+  svelte-mq-store@2.2.21(@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.7(@types/node@20.12.3)))(svelte@4.2.19)(vite@5.4.7(@types/node@20.12.3)))(svelte@4.2.19):
     dependencies:
       '@sveltejs/kit': 2.5.28(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.7(@types/node@20.12.3)))(svelte@4.2.19)(vite@5.4.7(@types/node@20.12.3))
       svelte: 4.2.19
