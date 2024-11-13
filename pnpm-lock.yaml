@@ -37,8 +37,8 @@ importers:
         specifier: 1.0.28
         version: 1.0.28(svelte@4.2.19)
       '@jill64/svelte-tailwind':
-        specifier: 1.2.66
-        version: 1.2.66(jiti@1.21.0)(yaml@2.4.2)
+        specifier: 1.2.67
+        version: 1.2.67(jiti@1.21.0)(yaml@2.4.2)
       '@jill64/universal-sanitizer':
         specifier: 1.3.1
         version: 1.3.1
@@ -514,8 +514,8 @@ packages:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
 
-  '@jill64/svelte-tailwind@1.2.66':
-    resolution: {integrity: sha512-xtQx3fRHar1vv+50F4TR7ldzaAMi3egwxztvL5uXUKS2dI7oF0SbCajz1cJSyADA57DEvonkBFaq/dvkGMKqZA==}
+  '@jill64/svelte-tailwind@1.2.67':
+    resolution: {integrity: sha512-tA7DqoWQHu3LPM0/l8KyQ8LYLvXSNfzVHsJ+tlu9lXzqgYJd2ACd3t33mNFChq8JiaahB+f27AMe8qpvNlAQ3A==}
 
   '@jill64/svelte-toast@1.3.49':
     resolution: {integrity: sha512-UdNFfvuHGrmlGTmickvboH5wvRfN79r6Ug6hapXqUrVoI3en1Hr31f8aN56qQQyDKr1nsxaDr8b1+ds6bf6GTQ==}
@@ -527,8 +527,8 @@ packages:
     peerDependencies:
       tailwindcss: ^3.0.0
 
-  '@jill64/tailwind-reactions@1.2.30':
-    resolution: {integrity: sha512-gtfCm48+pHQ4ywkturd5GsasbaE2jpAVGxJ2VHAdRKKtZHlb98UHCAxPQRKTyQh1SLDInjuSLrVrPfQG+13ryw==}
+  '@jill64/tailwind-reactions@1.2.31':
+    resolution: {integrity: sha512-DH3LZJs5h+miX66F68A7FXomXYK0DkBzJvVxJOXyzNf+u06R4V8Jj+7B/6QYlBTBqhctjuQ7IVDyg0yt4k6dEA==}
     peerDependencies:
       tailwindcss: ^3.0.0
 
@@ -2447,10 +2447,10 @@ snapshots:
       '@sveltejs/kit': 2.6.4(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.11(@types/node@20.12.3)))(svelte@4.2.19)(vite@5.4.11(@types/node@20.12.3))
       svelte: 4.2.19
 
-  '@jill64/svelte-tailwind@1.2.66(jiti@1.21.0)(yaml@2.4.2)':
+  '@jill64/svelte-tailwind@1.2.67(jiti@1.21.0)(yaml@2.4.2)':
     dependencies:
       '@jill64/tailwind-grid-auto': 1.3.33(tailwindcss@3.4.14)
-      '@jill64/tailwind-reactions': 1.2.30(tailwindcss@3.4.14)
+      '@jill64/tailwind-reactions': 1.2.31(tailwindcss@3.4.14)
       autoprefixer: 10.4.20(postcss@8.4.49)
       postcss: 8.4.49
       postcss-load-config: 6.0.1(jiti@1.21.0)(postcss@8.4.49)(yaml@2.4.2)
@@ -2474,7 +2474,7 @@ snapshots:
     dependencies:
       tailwindcss: 3.4.14
 
-  '@jill64/tailwind-reactions@1.2.30(tailwindcss@3.4.14)':
+  '@jill64/tailwind-reactions@1.2.31(tailwindcss@3.4.14)':
     dependencies:
       tailwindcss: 3.4.14
 
@@ -3156,9 +3156,9 @@ snapshots:
       eslint-compat-utils: 0.5.1(eslint@8.57.1)
       esutils: 2.0.3
       known-css-properties: 0.34.0
-      postcss: 8.4.48
-      postcss-load-config: 3.1.4(postcss@8.4.48)
-      postcss-safe-parser: 6.0.0(postcss@8.4.48)
+      postcss: 8.4.49
+      postcss-load-config: 3.1.4(postcss@8.4.49)
+      postcss-safe-parser: 6.0.0(postcss@8.4.49)
       postcss-selector-parser: 6.1.0
       semver: 7.6.2
       svelte-eslint-parser: 0.41.1(svelte@4.2.19)
@@ -3630,12 +3630,12 @@ snapshots:
       camelcase-css: 2.0.1
       postcss: 8.4.49
 
-  postcss-load-config@3.1.4(postcss@8.4.48):
+  postcss-load-config@3.1.4(postcss@8.4.49):
     dependencies:
       lilconfig: 2.1.0
       yaml: 1.10.2
     optionalDependencies:
-      postcss: 8.4.48
+      postcss: 8.4.49
 
   postcss-load-config@4.0.2(postcss@8.4.49):
     dependencies:
@@ -3657,13 +3657,13 @@ snapshots:
       postcss: 8.4.49
       postcss-selector-parser: 6.1.0
 
-  postcss-safe-parser@6.0.0(postcss@8.4.48):
+  postcss-safe-parser@6.0.0(postcss@8.4.49):
     dependencies:
-      postcss: 8.4.48
+      postcss: 8.4.49
 
-  postcss-scss@4.0.9(postcss@8.4.48):
+  postcss-scss@4.0.9(postcss@8.4.49):
     dependencies:
-      postcss: 8.4.48
+      postcss: 8.4.49
 
   postcss-selector-parser@6.1.0:
     dependencies:
@@ -3878,8 +3878,8 @@ snapshots:
       eslint-scope: 7.2.2
       eslint-visitor-keys: 3.4.3
       espree: 9.6.1
-      postcss: 8.4.48
-      postcss-scss: 4.0.9(postcss@8.4.48)
+      postcss: 8.4.49
+      postcss-scss: 4.0.9(postcss@8.4.49)
     optionalDependencies:
       svelte: 4.2.19
 
@@ -3888,8 +3888,8 @@ snapshots:
       eslint-scope: 7.2.2
       eslint-visitor-keys: 3.4.3
       espree: 9.6.1
-      postcss: 8.4.48
-      postcss-scss: 4.0.9(postcss@8.4.48)
+      postcss: 8.4.49
+      postcss-scss: 4.0.9(postcss@8.4.49)
     optionalDependencies:
       svelte: 4.2.19
 
