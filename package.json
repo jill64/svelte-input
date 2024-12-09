@@ -29,7 +29,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-input.git",
-    "image": "https://opengraph.githubassets.com/f11e7c899f06af28c64809d6dc0e765891236d91b1aaf177fe2072ad090d186e/jill64/svelte-input"
+    "image": "https://opengraph.githubassets.com/6762b81422355d1e190a2bce6ebb484b2f7bab2d6482014acaa8e62b443e0aea/jill64/svelte-input"
   },
   "keywords": [
     "components",
@@ -53,7 +53,7 @@
   },
   "prettier": "@jill64/prettier-config",
   "devDependencies": {
-    "@jill64/eslint-config-svelte": "1.3.25",
+    "@jill64/eslint-config-svelte": "1.3.26",
     "@jill64/npm-demo-layout": "1.0.249",
     "@jill64/universal-sanitizer": "1.3.1",
     "@jill64/playwright-config": "2.4.2",
