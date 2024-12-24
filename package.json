@@ -1,6 +1,6 @@
 {
   "name": "@jill64/svelte-input",
-  "version": "1.6.39",
+  "version": "1.6.40",
   "description": "➡️ Functional Input Component Set for Svelte",
   "type": "module",
   "main": "dist/index.js",
@@ -29,7 +29,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-input.git",
-    "image": "https://opengraph.githubassets.com/12a8d05564af6292d1dec1ec7fbfc78ddfc9a188c86a6c172503b0904ac5ccc0/jill64/svelte-input"
+    "image": "https://opengraph.githubassets.com/847f6c186181f28e4ee021f4e93df0450c4ff908ea3cbe4ec5a76241dc375d5c/jill64/svelte-input"
   },
   "keywords": [
     "components",
@@ -72,7 +72,7 @@
     "@sveltejs/vite-plugin-svelte": "3.1.2"
   },
   "dependencies": {
-    "@jill64/async-observer": "1.2.5",
+    "@jill64/async-observer": "1.2.6",
     "bignumber.js": "9.1.2",
     "svelte-loading-spinners": "0.3.6"
   }
