@@ -34,8 +34,8 @@ importers:
         specifier: 2.0.1
         version: 2.0.1(@sveltejs/kit@2.8.3(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.11(@types/node@20.12.3)))(svelte@4.2.19)(vite@5.4.11(@types/node@20.12.3)))(svelte@4.2.19)
       '@jill64/svelte-menu':
-        specifier: 1.0.29
-        version: 1.0.29(svelte@4.2.19)
+        specifier: 2.0.0
+        version: 2.0.0(svelte@4.2.19)
       '@jill64/svelte-tailwind':
         specifier: 1.2.69
         version: 1.2.69(jiti@1.21.6)(yaml@2.4.2)
@@ -666,10 +666,10 @@ packages:
     peerDependencies:
       svelte: ^4.0.0
 
-  '@jill64/svelte-menu@1.0.29':
-    resolution: {integrity: sha512-92dsOxTARuD52SiaR3chVCpDFPGYU4FbCwVQ4uLHgz2+gaikZdGW6toeC7g4JQt7lXc6d4PMWBvWd9H6ozH0+A==}
+  '@jill64/svelte-menu@2.0.0':
+    resolution: {integrity: sha512-Q3IOGWQy6hgGo+5Q/nTaxVASl832UVbCSnY7Wm7zTKUZzH6njwSCKYAOjss4bD/ciSrBHqJWxuWcvw9SCSgQ/Q==}
     peerDependencies:
-      svelte: ^4.0.0
+      svelte: ^5.0.0
 
   '@jill64/svelte-ogp@1.1.32':
     resolution: {integrity: sha512-oTkKijcMGOFicBy912BoSijC/Ij7xlOM+OOKpmqNCRwTiH4Y7qn8YSyxt1vIREMHTm56QCE6mNSYFgccVTjRJA==}
@@ -2595,7 +2595,7 @@ snapshots:
     dependencies:
       svelte: 4.2.19
 
-  '@jill64/svelte-menu@1.0.29(svelte@4.2.19)':
+  '@jill64/svelte-menu@2.0.0(svelte@4.2.19)':
     dependencies:
       svelte: 4.2.19
 
@@ -3574,7 +3574,7 @@ snapshots:
   miniflare@3.20240329.0:
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
-      acorn: 8.11.3
+      acorn: 8.14.0
       acorn-walk: 8.3.2
       capnp-ts: 0.7.0
       exit-hook: 2.2.1
