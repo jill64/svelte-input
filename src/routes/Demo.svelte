@@ -51,7 +51,7 @@
   {label} = {value}
 </output>
 <Menu
-  initialOpened={!isMobile}
+  initialOpened={!isMobile.v}
   Class="overflow-auto"
   summaryClass="rounded-md py-1 px-2 push-effect dark:pop-effect"
   noOuterClosing
