@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { Snippet } from 'svelte'
+  import type { Snippet } from 'svelte'
   import type { HTMLInputAttributes } from 'svelte/elements'
 
   let {
@@ -23,7 +23,7 @@
     onSelect?: (files: FileList) => unknown
     children?: Snippet
   } = $props()
-  
+
   let cursor = $derived(disabled ? 'not-allowed' : 'pointer')
 </script>
 

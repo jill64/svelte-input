@@ -1,5 +1,5 @@
 <script lang="ts" generics="T">
-    import type { Snippet } from 'svelte'
+  import type { Snippet } from 'svelte'
   import type { HTMLInputAttributes } from 'svelte/elements'
 
   type V = T extends string ? T : never

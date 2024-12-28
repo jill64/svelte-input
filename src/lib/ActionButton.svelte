@@ -1,7 +1,7 @@
 <script lang="ts">
   import { dev } from '$app/environment'
   import { observable, type PromiseStatus } from '@jill64/svelte-observer'
-    import type { Snippet } from 'svelte'
+  import type { Snippet } from 'svelte'
   import { Moon } from 'svelte-loading-spinners'
   import type { HTMLButtonAttributes } from 'svelte/elements'
 
@@ -17,7 +17,7 @@
     attributes = {},
     debug = false,
     children = undefined
-  } : {
+  }: {
     onClick: () => unknown
     label?: string
     Class?: HTMLButtonAttributes['class']

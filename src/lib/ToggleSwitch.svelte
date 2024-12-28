@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { Snippet } from 'svelte'
+  import type { Snippet } from 'svelte'
   import type { HTMLInputAttributes } from 'svelte/elements'
 
   let {
@@ -36,7 +36,9 @@
 
   let width = $derived(`calc(${height} * 1.6)`)
   let padSize = $derived(`calc(${height} - ${padGap} * 2)`)
-  let translateX = $derived(value ? `calc(${width} - ${padGap} * 2 - ${padSize})` : '0px')
+  let translateX = $derived(
+    value ? `calc(${width} - ${padGap} * 2 - ${padSize})` : '0px'
+  )
 
   let cursor = $derived(disabled ? 'not-allowed' : 'pointer')
 </script>
