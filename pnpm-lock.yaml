@@ -37,8 +37,8 @@ importers:
         specifier: 2.0.0
         version: 2.0.0(svelte@5.16.0)
       '@jill64/svelte-tailwind':
-        specifier: 1.2.69
-        version: 1.2.69(jiti@1.21.6)(yaml@2.4.2)
+        specifier: 1.2.72
+        version: 1.2.72(jiti@1.21.6)(yaml@2.4.2)
       '@jill64/universal-sanitizer':
         specifier: 1.3.1
         version: 1.3.1
@@ -702,8 +702,8 @@ packages:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
 
-  '@jill64/svelte-tailwind@1.2.69':
-    resolution: {integrity: sha512-AV3aVBQz4Z6qu6aiEcTv8HV5+Q6ncoGZhECs5ObR+mscmCMkfbLgkplQ4qPrA9Vt+MEfX5OjrXMoGxV27opksg==}
+  '@jill64/svelte-tailwind@1.2.72':
+    resolution: {integrity: sha512-JqxnREgXLrLXmMRNZKbKAGSzpIhBXhyssFAKMqi56CCqp+oQTRhM02bgOy14Ap/DkSqHiwUTIYSWXnl/eMFi8A==}
 
   '@jill64/svelte-toast@1.3.49':
     resolution: {integrity: sha512-UdNFfvuHGrmlGTmickvboH5wvRfN79r6Ug6hapXqUrVoI3en1Hr31f8aN56qQQyDKr1nsxaDr8b1+ds6bf6GTQ==}
@@ -1550,6 +1550,10 @@ packages:
     resolution: {integrity: sha512-O18pf7nyvHTckunPWCV1XUNXU1piu01y2b7ATJ0ppkUkk8ocqVWBrYjJBCwHDjD/ZWcfyrA0P4gKhzWGi5EINQ==}
     engines: {node: '>=14'}
 
+  lilconfig@3.1.3:
+    resolution: {integrity: sha512-/vlFKAoH5Cgt3Ie+JLhRbwOsCQePABiU3tJ1egGvyQ+33R/vcwM2Zl2QR/LzjsBeItPt3oSVXapn+m4nQDvpzw==}
+    engines: {node: '>=14'}
+
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
 
@@ -2031,8 +2035,8 @@ packages:
     resolution: {integrity: sha512-Ygqsiac6UogVED2ruKclU+pOeMThxWtp9LG+li7BXeDKC2paVIsRTMkNmcON4Zejerd1s5sZHWx6ZtU85xklVg==}
     engines: {node: '>=18'}
 
-  tailwindcss@3.4.15:
-    resolution: {integrity: sha512-r4MeXnfBmSOuKUWmXe6h2CcyfzJCEk4F0pptO5jlnYSIViUkVmsawj80N5h2lO3gwcmSb4n3PuN+e+GC1Guylw==}
+  tailwindcss@3.4.17:
+    resolution: {integrity: sha512-w33E2aCvSDP0tW9RZuNXadXlkHXqFzSkQew/aIa2i/Sj8fThxwovwlXHSPXTbAHwEIhBFXAedUhP2tueAKP8Og==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -2645,14 +2649,14 @@ snapshots:
       '@sveltejs/kit': 2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.0)(vite@6.0.6(@types/node@20.12.3)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.0)(vite@6.0.6(@types/node@20.12.3)(jiti@1.21.6)(yaml@2.4.2))
       svelte: 5.16.0
 
-  '@jill64/svelte-tailwind@1.2.69(jiti@1.21.6)(yaml@2.4.2)':
+  '@jill64/svelte-tailwind@1.2.72(jiti@1.21.6)(yaml@2.4.2)':
     dependencies:
-      '@jill64/tailwind-grid-auto': 1.3.34(tailwindcss@3.4.15)
-      '@jill64/tailwind-reactions': 1.2.31(tailwindcss@3.4.15)
+      '@jill64/tailwind-grid-auto': 1.3.34(tailwindcss@3.4.17)
+      '@jill64/tailwind-reactions': 1.2.31(tailwindcss@3.4.17)
       autoprefixer: 10.4.20(postcss@8.4.49)
       postcss: 8.4.49
       postcss-load-config: 6.0.1(jiti@1.21.6)(postcss@8.4.49)(yaml@2.4.2)
-      tailwindcss: 3.4.15
+      tailwindcss: 3.4.17
     transitivePeerDependencies:
       - jiti
       - ts-node
@@ -2668,13 +2672,13 @@ snapshots:
     transitivePeerDependencies:
       - '@sveltejs/kit'
 
-  '@jill64/tailwind-grid-auto@1.3.34(tailwindcss@3.4.15)':
+  '@jill64/tailwind-grid-auto@1.3.34(tailwindcss@3.4.17)':
     dependencies:
-      tailwindcss: 3.4.15
+      tailwindcss: 3.4.17
 
-  '@jill64/tailwind-reactions@1.2.31(tailwindcss@3.4.15)':
+  '@jill64/tailwind-reactions@1.2.31(tailwindcss@3.4.17)':
     dependencies:
-      tailwindcss: 3.4.15
+      tailwindcss: 3.4.17
 
   '@jill64/transform@1.0.3': {}
 
@@ -3561,6 +3565,8 @@ snapshots:
 
   lilconfig@3.1.1: {}
 
+  lilconfig@3.1.3: {}
+
   lines-and-columns@1.2.4: {}
 
   locate-character@3.0.0: {}
@@ -3732,7 +3738,7 @@ snapshots:
 
   postcss-load-config@4.0.2(postcss@8.4.49):
     dependencies:
-      lilconfig: 3.1.1
+      lilconfig: 3.1.3
       yaml: 2.4.2
     optionalDependencies:
       postcss: 8.4.49
@@ -4023,7 +4029,7 @@ snapshots:
       magic-string: 0.30.17
       zimmerframe: 1.1.2
 
-  tailwindcss@3.4.15:
+  tailwindcss@3.4.17:
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
@@ -4034,7 +4040,7 @@ snapshots:
       glob-parent: 6.0.2
       is-glob: 4.0.3
       jiti: 1.21.6
-      lilconfig: 2.1.0
+      lilconfig: 3.1.3
       micromatch: 4.0.8
       normalize-path: 3.0.0
       object-hash: 3.0.0
