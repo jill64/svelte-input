@@ -1,16 +1,30 @@
 <script lang="ts">
+    import type { Snippet } from 'svelte'
   import type { HTMLInputAttributes } from 'svelte/elements'
 
-  export let value = ''
-  export let accept: HTMLInputAttributes['accept'] = undefined
-  export let multiple: HTMLInputAttributes['multiple'] = undefined
-  export let disabled: HTMLInputAttributes['disabled'] = undefined
-  export let required: HTMLInputAttributes['required'] = undefined
-  export let readonly: HTMLInputAttributes['readonly'] = undefined
-  export let attributes: HTMLInputAttributes = {}
-  export let onSelect: ((files: FileList) => unknown) | undefined = undefined
-
-  $: cursor = disabled ? 'not-allowed' : 'pointer'
+  let {
+    value = $bindable(''),
+    accept,
+    multiple,
+    disabled,
+    required,
+    readonly,
+    attributes = {},
+    onSelect,
+    children
+  }: {
+    value?: string
+    accept?: HTMLInputAttributes['accept']
+    multiple?: HTMLInputAttributes['multiple']
+    disabled?: HTMLInputAttributes['disabled']
+    required?: HTMLInputAttributes['required']
+    readonly?: HTMLInputAttributes['readonly']
+    attributes?: HTMLInputAttributes
+    onSelect?: (files: FileList) => unknown
+    children?: Snippet
+  } = $props()
+  
+  let cursor = $derived(disabled ? 'not-allowed' : 'pointer')
 </script>
 
 <label style:cursor style:display="inline-block">
@@ -23,9 +37,7 @@
     {required}
     {readonly}
     bind:value
-    on:change
-    on:input
-    on:change={(x) => {
+    onchange={(x) => {
       const files = x.currentTarget.files
       if (files) {
         onSelect?.(files)
@@ -33,5 +45,5 @@
     }}
     hidden
   />
-  <slot />
+  {@render children?.()}
 </label>

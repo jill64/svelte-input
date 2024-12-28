@@ -2,53 +2,78 @@
   import BigNumber from 'bignumber.js'
   import type { HTMLInputAttributes } from 'svelte/elements'
 
-  export let step = 1
-  export let max: number | undefined = undefined
-  export let min: number | undefined = undefined
-  export let value = min ?? 0
-  export let Class: HTMLInputAttributes['class'] = ''
-  export let style: HTMLInputAttributes['style'] = ''
-  export let buttonClass: HTMLInputAttributes['class'] = undefined
-  export let buttonStyle: HTMLInputAttributes['style'] = ''
-  export let placeholder: HTMLInputAttributes['placeholder'] = undefined
-  export let disabled: HTMLInputAttributes['disabled'] = undefined
-  export let required: HTMLInputAttributes['required'] = undefined
-  export let readonly: HTMLInputAttributes['readonly'] = undefined
-  export let attributes: HTMLInputAttributes = {}
-  export let onChange: ((value: number) => unknown) | undefined = undefined
+  let {
+    step = 1,
+    max,
+    min,
+    value = min ?? 0,
+    Class = '',
+    style = '',
+    buttonClass,
+    buttonStyle = '',
+    placeholder,
+    disabled,
+    required,
+    readonly,
+    attributes = {},
+    onChange
+  }: {
+    step?: number
+    max?: number
+    min?: number
+    value?: number
+    Class?: HTMLInputAttributes['class']
+    style?: HTMLInputAttributes['style']
+    buttonClass?: HTMLInputAttributes['class']
+    buttonStyle?: HTMLInputAttributes['style']
+    placeholder?: HTMLInputAttributes['placeholder']
+    disabled?: HTMLInputAttributes['disabled']
+    required?: HTMLInputAttributes['required']
+    readonly?: HTMLInputAttributes['readonly']
+    attributes?: HTMLInputAttributes
+    onChange?: (value: number) => unknown
+  } = $props()
 
-  $: stepN = BigNumber(step)
+  let stepN = $derived(BigNumber(step))
 
-  $: clamp = (n: BigNumber) => {
+  let clamp = $derived((n: BigNumber) => {
     if (max !== undefined && n.gt(max)) return max
     if (min !== undefined && n.lt(min)) return min
     return n.toNumber()
-  }
+  })
 
-  $: validation = (n: number) => (isNaN(n) || !isFinite(n) ? (min ?? 0) : n)
+  let validation = $derived((n: number) =>
+    isNaN(n) || !isFinite(n) ? (min ?? 0) : n
+  )
 
-  $: if (min !== undefined && value < min) {
-    value = min
-  }
-
-  $: if (max !== undefined && value > max) {
-    value = max
-  }
-
-  $: set = (
-    n: BigNumber,
-    options?: {
-      skipHandler?: boolean
+  $effect(() => {
+    if (min !== undefined && value < min) {
+      value = min
     }
-  ) => {
-    const clamped = clamp(n)
-    value = validation(clamped)
-    if (!options?.skipHandler) {
-      onChange?.(value)
-    }
-  }
+  })
 
-  $: cursor = disabled ? 'not-allowed' : 'pointer'
+  $effect(() => {
+    if (max !== undefined && value > max) {
+      value = max
+    }
+  })
+
+  let set = $derived(
+    (
+      n: BigNumber,
+      options?: {
+        skipHandler?: boolean
+      }
+    ) => {
+      const clamped = clamp(n)
+      value = validation(clamped)
+      if (!options?.skipHandler) {
+        onChange?.(value)
+      }
+    }
+  )
+
+  let cursor = $derived(disabled ? 'not-allowed' : 'pointer')
 </script>
 
 <button
@@ -56,7 +81,7 @@
   class={buttonClass}
   style={buttonStyle}
   style:cursor
-  on:click={() => set(stepN.negated().plus(value))}
+  onclick={() => set(stepN.negated().plus(value))}
   {disabled}
 >
   ー
@@ -72,26 +97,18 @@
   {required}
   {readonly}
   {step}
-  on:change={(x) => set(BigNumber(x.currentTarget.valueAsNumber))}
-  on:input={(x) =>
+  onchange={(x) => set(BigNumber(x.currentTarget.valueAsNumber))}
+  oninput={(x) =>
     set(BigNumber(x.currentTarget.valueAsNumber), {
       skipHandler: true
     })}
-  on:input
-  on:focus
-  on:blur
-  on:selectionchange
-  on:select
-  on:copy
-  on:cut
-  on:paste
 />
 <button
   class={buttonClass}
   style={buttonStyle}
   style:cursor
   title="increase"
-  on:click={() => set(stepN.plus(value))}
+  onclick={() => set(stepN.plus(value))}
   {disabled}
 >
   ＋

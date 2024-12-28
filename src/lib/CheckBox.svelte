@@ -1,19 +1,33 @@
 <script lang="ts">
+  import type { Snippet } from 'svelte'
   import type { Action } from 'svelte/action'
   import type { HTMLInputAttributes } from 'svelte/elements'
 
-  export let value: HTMLInputAttributes['checked'] = false
-  export let Class: HTMLInputAttributes['class'] = ''
-  export let style: HTMLInputAttributes['style'] = ''
-  export let disabled: HTMLInputAttributes['disabled'] = undefined
-  export let required: HTMLInputAttributes['required'] = undefined
-  export let readonly: HTMLInputAttributes['readonly'] = undefined
-  export let attributes: HTMLInputAttributes = {}
-  export let onChange: ((s: boolean) => unknown) | undefined = undefined
+  let {
+    value = $bindable(false),
+    Class = '',
+    style = '',
+    disabled = undefined,
+    required = undefined,
+    readonly = undefined,
+    attributes = {},
+    onChange = undefined,
+    children
+  }: {
+    value?: HTMLInputAttributes['checked']
+    Class?: HTMLInputAttributes['class']
+    style?: HTMLInputAttributes['style']
+    disabled?: HTMLInputAttributes['disabled']
+    required?: HTMLInputAttributes['required']
+    readonly?: HTMLInputAttributes['readonly']
+    attributes?: HTMLInputAttributes
+    onChange?: (s: boolean) => unknown
+    children?: Snippet
+  } = $props()
 
-  $: cursor = disabled ? 'not-allowed' : 'pointer'
+  let cursor = $derived(disabled ? 'not-allowed' : 'pointer')
 
-  $: action = ((node, value) => {
+  let action = $derived(((node, value) => {
     const update = (v: typeof value) => {
       node.indeterminate = v === null || v === undefined
     }
@@ -23,7 +37,7 @@
     return {
       update
     }
-  }) satisfies Action<HTMLInputElement, typeof value>
+  }) satisfies Action<HTMLInputElement, typeof value>)
 </script>
 
 <label style:cursor style:display="inline-flex" style:align-items="center">
@@ -38,11 +52,9 @@
     {style}
     bind:checked={value}
     class={Class}
-    on:change={(x) => onChange?.(x.currentTarget.checked)}
-    on:change
-    on:input
+    onchange={(x) => onChange?.(x.currentTarget.checked)}
   />
-  <slot />
+  {@render children?.()}
 </label>
 
 <style>
