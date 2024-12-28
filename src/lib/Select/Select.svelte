@@ -5,17 +5,28 @@
   import { convert } from './utils/convert'
   import { isGroupedOutput } from './utils/isGroupedOutput'
 
-  export let value = ''
-  export let list: GroupedInput | ListInput = []
-  export let Class: HTMLSelectAttributes['class'] = ''
-  export let style: HTMLSelectAttributes['style'] = ''
-  export let disabled: HTMLSelectAttributes['disabled'] = undefined
-  export let required: HTMLSelectAttributes['required'] = undefined
-  export let attributes: HTMLSelectAttributes = {}
-  export let onChange: ((item: string) => unknown) | undefined = undefined
+  let {
+    value = $bindable(''),
+    list = [],
+    Class = '',
+    style = '',
+    disabled = undefined,
+    required = undefined,
+    attributes = {},
+    onChange = undefined
+  }: {
+    value?: string
+    list?: GroupedInput | ListInput
+    Class?: HTMLSelectAttributes['class']
+    style?: HTMLSelectAttributes['style']
+    disabled?: HTMLSelectAttributes['disabled']
+    required?: HTMLSelectAttributes['required']
+    attributes?: HTMLSelectAttributes
+    onChange?: ((item: string) => unknown) | undefined
+  } = $props()
 
-  $: output = convert(list)
-  $: cursor = disabled ? 'not-allowed' : 'pointer'
+  let output = $derived(convert(list))
+  let cursor = $derived(disabled ? 'not-allowed' : 'pointer')
 </script>
 
 <select
@@ -26,11 +37,7 @@
   style:cursor
   {disabled}
   {required}
-  on:change={() => onChange?.(value)}
-  on:change
-  on:input
-  on:focus
-  on:blur
+  onchange={() => onChange?.(value)}
 >
   {#if isGroupedOutput(output)}
     {#each output as { label, disabled, list }}

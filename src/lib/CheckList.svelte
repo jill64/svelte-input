@@ -1,24 +1,37 @@
-<script lang="ts">
+<script lang="ts" generics="T">
+  import type { Snippet } from 'svelte'
   import type { HTMLInputAttributes } from 'svelte/elements'
   import CheckBox from './CheckBox.svelte'
 
-  type T = $$Generic
   type K = string | number | symbol
   type V = T extends Record<K, boolean | null> ? T : never
 
-  export let value: V = {} as V
-  export let Class: HTMLInputAttributes['class'] = ''
-  export let style: HTMLInputAttributes['style'] = ''
-  export let disabled: HTMLInputAttributes['disabled'] = undefined
-  export let required: HTMLInputAttributes['required'] = undefined
-  export let readonly: HTMLInputAttributes['readonly'] = undefined
-  export let attributes: HTMLInputAttributes = {}
-  export let onChange: ((value: V) => unknown) | undefined = undefined
+  let {
+    value = $bindable({} as V),
+    Class = '',
+    style = '',
+    disabled = undefined,
+    required = undefined,
+    readonly = undefined,
+    attributes = {},
+    onChange = undefined,
+    children
+  }: {
+    value?: V
+    Class?: HTMLInputAttributes['class']
+    style?: HTMLInputAttributes['style']
+    disabled?: HTMLInputAttributes['disabled']
+    required?: HTMLInputAttributes['required']
+    readonly?: HTMLInputAttributes['readonly']
+    attributes?: HTMLInputAttributes
+    onChange?: ((value: V) => unknown) | undefined
+    children?: Snippet<[K]>
+  } = $props()
 
-  $: handle = (key: K) => (x: boolean) => {
+  let handle = $derived((key: K) => (x: boolean) => {
     value = { ...value, [key]: x }
     onChange?.(value)
-  }
+  })
 </script>
 
 {#each Object.entries(value) as [key, v]}
@@ -31,11 +44,11 @@
     {style}
     {Class}
     onChange={handle(key)}
-    on:change
-    on:input
   >
-    <slot item={key}>
+    {#if children}
+      {@render children(key)}
+    {:else}
       <span style:margin="0.25rem">{key}</span>
-    </slot>
+    {/if}
   </CheckBox>
 {/each}

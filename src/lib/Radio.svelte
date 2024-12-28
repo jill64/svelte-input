@@ -1,20 +1,34 @@
-<script lang="ts">
+<script lang="ts" generics="T">
+  import type { Snippet } from 'svelte'
   import type { HTMLInputAttributes } from 'svelte/elements'
 
-  type T = $$Generic
   type V = T extends string ? T : never
 
-  export let value: V | undefined = undefined
-  export let list: V[] = []
-  export let Class: HTMLInputAttributes['class'] = ''
-  export let style: HTMLInputAttributes['style'] = ''
-  export let disabled: HTMLInputAttributes['disabled'] = undefined
-  export let required: HTMLInputAttributes['required'] = undefined
-  export let readonly: HTMLInputAttributes['readonly'] = undefined
-  export let attributes: HTMLInputAttributes = {}
-  export let onSelect: ((value: string) => unknown) | undefined = undefined
+  let {
+    value = $bindable(undefined),
+    list = [],
+    Class = '',
+    style = '',
+    disabled = undefined,
+    required = undefined,
+    readonly = undefined,
+    attributes = {},
+    onSelect = undefined,
+    children
+  }: {
+    value?: V
+    list?: V[]
+    Class?: HTMLInputAttributes['class']
+    style?: HTMLInputAttributes['style']
+    disabled?: HTMLInputAttributes['disabled']
+    required?: HTMLInputAttributes['required']
+    readonly?: HTMLInputAttributes['readonly']
+    attributes?: HTMLInputAttributes
+    onSelect?: ((value: string) => unknown) | undefined
+    children?: Snippet<[V]>
+  } = $props()
 
-  $: cursor = disabled ? 'not-allowed' : 'pointer'
+  let cursor = $derived(disabled ? 'not-allowed' : 'pointer')
 </script>
 
 {#each list as item}
@@ -30,13 +44,13 @@
       bind:group={value}
       value={item}
       class={Class}
-      on:change={() => onSelect?.(item)}
-      on:change
-      on:input
+      onchange={() => onSelect?.(item)}
     />
-    <slot {item}>
+    {#if children}
+      {@render children(item)}
+    {:else}
       <span style:margin="0.25rem">{item}</span>
-    </slot>
+    {/if}
   </label>
 {/each}
 

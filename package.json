@@ -1,6 +1,6 @@
 {
   "name": "@jill64/svelte-input",
-  "version": "1.6.43",
+  "version": "2.0.0",
   "description": "➡️ Functional Input Component Set for Svelte",
   "type": "module",
   "main": "dist/index.js",
@@ -29,7 +29,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-input.git",
-    "image": "https://opengraph.githubassets.com/34651561401ec62249486f83a67976db3b957d223a83244b2f38acd2af940cff/jill64/svelte-input"
+    "image": "https://opengraph.githubassets.com/10ac807fb05786f6feb6dd10f1fe1495f8576b92ea34bf38d0578c37a49f81ec/jill64/svelte-input"
   },
   "keywords": [
     "components",
@@ -59,20 +59,20 @@
     "@jill64/playwright-config": "2.4.2",
     "@jill64/prettier-config": "1.0.0",
     "@jill64/sentry-sveltekit-cloudflare": "2.0.1",
-    "@jill64/svelte-menu": "1.0.29",
+    "@jill64/svelte-menu": "2.0.0",
     "@jill64/svelte-tailwind": "1.2.69",
     "@playwright/test": "1.49.1",
     "@sveltejs/adapter-cloudflare": "5.0.0",
     "@sveltejs/kit": "2.15.1",
     "nanoid": "5.0.9",
-    "svelte": "4.2.19",
-    "svelte-mq-store": "2.2.22",
+    "svelte": "5.16.0",
+    "svelte-mq-store": "3.0.0",
     "typescript": "5.7.2",
-    "vite": "5.4.11",
-    "@sveltejs/vite-plugin-svelte": "3.1.2"
+    "vite": "6.0.6",
+    "@sveltejs/vite-plugin-svelte": "5.0.3"
   },
   "dependencies": {
-    "@jill64/async-observer": "1.2.6",
+    "@jill64/svelte-observer": "0.0.1",
     "bignumber.js": "9.1.2",
     "svelte-loading-spinners": "0.3.6"
   }

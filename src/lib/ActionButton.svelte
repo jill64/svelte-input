@@ -1,31 +1,47 @@
 <script lang="ts">
   import { dev } from '$app/environment'
-  import { observable } from '@jill64/async-observer'
+  import { observable, type PromiseStatus } from '@jill64/svelte-observer'
+  import type { Snippet } from 'svelte'
   import { Moon } from 'svelte-loading-spinners'
   import type { HTMLButtonAttributes } from 'svelte/elements'
 
-  export let onClick: () => unknown
-  export let label = ''
-  export let Class: HTMLButtonAttributes['class'] = ''
-  export let style: HTMLButtonAttributes['style'] = ''
-  export let size = 24
-  export let gap = '5px'
-  export let color = ''
-  export let disabled: HTMLButtonAttributes['disabled'] = undefined
-  export let attributes: HTMLButtonAttributes = {}
-  export let debug = false
+  let {
+    onClick,
+    label = '',
+    Class = '',
+    style = '',
+    size = 24,
+    gap = '5px',
+    color = '',
+    disabled = undefined,
+    attributes = {},
+    debug = false,
+    children = undefined
+  }: {
+    onClick: () => unknown
+    label?: string
+    Class?: HTMLButtonAttributes['class']
+    style?: HTMLButtonAttributes['style']
+    size?: number
+    gap?: string
+    color?: string
+    disabled?: HTMLButtonAttributes['disabled']
+    attributes?: HTMLButtonAttributes
+    debug?: boolean
+    children?: Snippet<[PromiseStatus]>
+  } = $props()
 
-  const { status, observed } = observable()
+  let { status, observed } = $derived(observable())
 
-  $: set = observed(onClick)
+  let set = $derived(observed(onClick))
 
-  $: pending = $status === 'PENDING' || (debug && dev)
-  $: enable = !pending && !disabled
+  let pending = $derived(status === 'PENDING' || (debug && dev))
+  let enable = $derived(!pending && !disabled)
 
-  $: height = `${size}px`
-  $: width = `${size}px`
+  let height = $derived(`${size}px`)
+  let width = $derived(`${size}px`)
 
-  $: useIcon = $$slots.default
+  let useIcon = $derived(children)
 </script>
 
 <button
@@ -35,23 +51,22 @@
   style:cursor={disabled ? 'not-allowed' : pending ? 'wait' : 'pointer'}
   class={Class}
   disabled={!enable}
-  on:click={() => {
+  onclick={() => {
     if (enable) {
       set()
     }
   }}
-  on:click
 >
   <span style:height style:width style:font-size="{size}px">
     {#if pending}
       <Moon size={size - 2} color={color || '#AAA'} />
     {:else}
-      <slot {status} />
+      {@render children?.(status)}
     {/if}
   </span>
   {label}
   {#if !useIcon}
-    <span style:height style:width />
+    <span style:height style:width></span>
   {/if}
 </button>
 

@@ -3,8 +3,10 @@
   import README from '../../README.md?raw'
   import packageJson from '../../package.json'
   import '../app.pcss'
+
+  let { children } = $props()
 </script>
 
 <Layout {packageJson} {README}>
-  <slot />
+  {@render children()}
 </Layout>

@@ -3,8 +3,8 @@
   import Demo from './Demo.svelte'
   import { FileInputCode } from './FileInputCode'
 
-  let value = ''
-  let disabled = false
+  let value = $state('')
+  let disabled = $state(false)
 </script>
 
 <Demo
@@ -13,9 +13,9 @@
   bind:disabled
   {value}
 >
-  <svelte:fragment slot="description">
+  {#snippet description()}
     Quickly configure file input with custom styles applied.
-  </svelte:fragment>
+  {/snippet}
   <FileInput bind:value {disabled}>
     <div>Custom File Input</div>
   </FileInput>

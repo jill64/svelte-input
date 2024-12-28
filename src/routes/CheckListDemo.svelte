@@ -9,8 +9,8 @@
     Third: null
   }
 
-  let disabled = false
-  let value = { ...initialValue }
+  let disabled = $state(false)
+  let value = $state({ ...initialValue })
 </script>
 
 <Demo
@@ -19,20 +19,20 @@
   code={CheckListCode({ disabled })}
   bind:disabled
 >
-  <svelte:fragment slot="description">
+  {#snippet description()}
     A checkbox list component that binds inputs structured as
     <code>object</code>.
-  </svelte:fragment>
-  <svelte:fragment slot="options">
+  {/snippet}
+  {#snippet options()}
     <button
-      on:click={() => {
+      onclick={() => {
         value = initialValue
       }}
       {disabled}
     >
       Reset
     </button>
-  </svelte:fragment>
+  {/snippet}
   <fieldset>
     <CheckList bind:value {disabled} />
   </fieldset>
