@@ -1,17 +1,32 @@
 <script lang="ts">
   import { ToggleSwitch } from '$lib'
-  import { Menu } from '@jill64/svelte-menu'
   import { HighlightSvelte } from '@jill64/npm-demo-layout/highlight'
+  import { Menu } from '@jill64/svelte-menu'
+  import type { Snippet } from 'svelte'
   import { listen } from 'svelte-mq-store'
   import { slide } from 'svelte/transition'
 
-  export let title: string
-  export let code: string
-  export let label = 'value'
-  export let value: unknown
-  export let disabled: boolean
+  let {
+    title = '',
+    code = '',
+    label = 'value',
+    value,
+    disabled = $bindable(),
+    description,
+    options,
+    children
+  }: {
+    title?: string
+    code?: string
+    label?: string
+    value: unknown
+    disabled: boolean
+    description: Snippet
+    options?: Snippet
+    children: Snippet<[boolean]>
+  } = $props()
 
-  $: isMobile = listen('(max-width: 640px)')
+  let isMobile = $derived(listen('(max-width: 640px)'))
 </script>
 
 <hr class="border mt-4 border-zinc-500 dark:border-zinc-700" />
@@ -22,10 +37,10 @@
       <a class="invisible text-blue-500 hover:underline" href="#{title}">#</a>
     </h2>
     <p class="text-zinc-500 leading-loose dark:text-zinc-400 my-2">
-      <slot name="description" />
+      {@render description()}
     </p>
   </hgroup>
-  <slot name="options" />
+  {@render options?.()}
   <ToggleSwitch bind:value={disabled}>
     <span style:margin-left="0.5rem">Disable</span>
   </ToggleSwitch>
@@ -36,19 +51,22 @@
   {label} = {value}
 </output>
 <Menu
-  initialOpened={!$isMobile}
+  initialOpened={!isMobile}
   Class="overflow-auto"
   summaryClass="rounded-md py-1 px-2 push-effect dark:pop-effect"
   noOuterClosing
-  let:state
 >
-  {state === 'CLOSED' || state === 'CLOSING' ? '▷' : '▽'} Code
-  <div slot="contents" transition:slide>
-    <HighlightSvelte code={code.trim()} />
-  </div>
+  {#snippet button(state)}
+    {state === 'CLOSED' || state === 'CLOSING' ? '▷' : '▽'} Code
+  {/snippet}
+  {#snippet contents()}
+    <div transition:slide>
+      <HighlightSvelte code={code.trim()} />
+    </div>
+  {/snippet}
 </Menu>
 <div>
-  <slot {disabled} />
+  {@render children(disabled)}
 </div>
 
 <style>
