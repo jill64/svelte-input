@@ -7,7 +7,7 @@
   type V = T extends Record<K, boolean | null> ? T : never
 
   let {
-    value = {} as V,
+    value = $bindable({} as V),
     Class = '',
     style = '',
     disabled = undefined,

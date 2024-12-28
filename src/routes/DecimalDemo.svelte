@@ -3,10 +3,10 @@
   import { DecimalCode } from './DecimalCode'
   import Demo from './Demo.svelte'
 
-  let disabled = false
-  let value = 0
-  let min = 0
-  let max = 10
+  let disabled = $state(false)
+  let value = $state(0)
+  let min = $state(0)
+  let max = $state(10)
 
   const style =
     'color: inherit; background: inherit; border: solid 1px #888; border-radius: 0.25rem; padding: 0.25rem;'
@@ -18,10 +18,10 @@
   bind:disabled
   {value}
 >
-  <svelte:fragment slot="description">
+  {#snippet description()}
     Integer input with control buttons.
-  </svelte:fragment>
-  <svelte:fragment slot="options">
+  {/snippet}
+  {#snippet options()}
     <fieldset>
       <legend> Min </legend>
       <Decimal buttonClass="p-2" bind:value={min} {max} {style} {disabled} />
@@ -30,7 +30,7 @@
       <legend> Max </legend>
       <Decimal buttonClass="p-2" bind:value={max} {min} {style} {disabled} />
     </fieldset>
-  </svelte:fragment>
+  {/snippet}
   <fieldset>
     <Decimal
       bind:value

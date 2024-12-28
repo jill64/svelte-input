@@ -6,7 +6,7 @@
     step = 1,
     max,
     min,
-    value = min ?? 0,
+    value = $bindable(min ?? 0),
     Class = '',
     style = '',
     buttonClass,

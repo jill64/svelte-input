@@ -5,7 +5,7 @@
   type V = T extends string ? T : never
 
   let {
-    value = undefined,
+    value = $bindable(undefined),
     list = [],
     Class = '',
     style = '',

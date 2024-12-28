@@ -3,8 +3,8 @@
   import Demo from './Demo.svelte'
   import { ToggleSwitchCode } from './ToggleSwitchCode'
 
-  let value = false
-  let disabled = false
+  let value = $state(false)
+  let disabled = $state(false)
 </script>
 
 <Demo
@@ -13,11 +13,11 @@
   {value}
   bind:disabled
 >
-  <svelte:fragment slot="description">
+  {#snippet description()}
     Pre-styled
     <code>{'<input type="checkbox">'}</code>
     compatible toggle switch component.
-  </svelte:fragment>
+  {/snippet}
   <ToggleSwitch bind:value {disabled}>
     <span style:margin-left="4px"> Toggle Switch </span>
   </ToggleSwitch>
