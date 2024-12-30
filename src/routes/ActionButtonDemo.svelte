@@ -15,7 +15,7 @@
   let onClick = $derived(
     observed(async () => {
       await delay(1500)
-      $toast.success('Action Complete')
+      toast.success('Action Complete')
     })
   )
 </script>
