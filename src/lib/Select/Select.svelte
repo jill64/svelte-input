@@ -1,5 +1,8 @@
 <script lang="ts">
-  import type { HTMLSelectAttributes } from 'svelte/elements'
+  import type {
+    HTMLOptionAttributes,
+    HTMLSelectAttributes
+  } from 'svelte/elements'
   import type { GroupedInput } from './types/GroupedInput'
   import type { ListInput } from './types/ListInput'
   import { convert } from './utils/convert'
@@ -10,6 +13,8 @@
     list = [],
     Class = '',
     style = '',
+    optionClass = '',
+    optionStyle = '',
     disabled = undefined,
     required = undefined,
     attributes = {},
@@ -19,6 +24,8 @@
     list?: GroupedInput | ListInput
     Class?: HTMLSelectAttributes['class']
     style?: HTMLSelectAttributes['style']
+    optionClass?: HTMLOptionAttributes['class']
+    optionStyle?: HTMLOptionAttributes['style']
     disabled?: HTMLSelectAttributes['disabled']
     required?: HTMLSelectAttributes['required']
     attributes?: HTMLSelectAttributes
@@ -43,13 +50,27 @@
     {#each output as { label, disabled, list }}
       <optgroup {label} {disabled}>
         {#each list as { value, selected, label, disabled }}
-          <option {value} {selected} {disabled} style:cursor>{label}</option>
+          <option
+            {value}
+            {selected}
+            {disabled}
+            class={optionClass}
+            style={optionStyle}
+            style:cursor>{label}</option
+          >
         {/each}
       </optgroup>
     {/each}
   {:else}
     {#each output as { value, selected, label, disabled }}
-      <option {value} {selected} {disabled} style:cursor>{label}</option>
+      <option
+        {value}
+        {selected}
+        {disabled}
+        class={optionClass}
+        style={optionStyle}
+        style:cursor>{label}</option
+      >
     {/each}
   {/if}
 </select>
