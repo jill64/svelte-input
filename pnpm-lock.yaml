@@ -22,8 +22,8 @@ importers:
         specifier: 2.0.4
         version: 2.0.4(jiti@1.21.6)(svelte@5.16.2)(typescript@5.7.2)
       '@jill64/npm-demo-layout':
-        specifier: 2.0.7
-        version: 2.0.7(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.7(@types/node@20.12.3)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.2)(vite@6.0.7(@types/node@20.12.3)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.2)
+        specifier: 2.0.9
+        version: 2.0.9(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.7(@types/node@20.12.3)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.2)(vite@6.0.7(@types/node@20.12.3)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.2)
       '@jill64/playwright-config':
         specifier: 2.4.2
         version: 2.4.2(@playwright/test@1.49.1)
@@ -483,8 +483,8 @@ packages:
     peerDependencies:
       svelte: ^4.0.0 || ^5.0.0
 
-  '@jill64/npm-demo-layout@2.0.7':
-    resolution: {integrity: sha512-qOIQ851yLmGdYo50/gbCVDLjGEqT6OwtK8yC5d/EGjyB4WPcNsc2+FmvIfrItPbCzh33+89v0fzA7pdn62X9+Q==}
+  '@jill64/npm-demo-layout@2.0.9':
+    resolution: {integrity: sha512-vvSudA+SkIPE56iJqGO95O7QL5DCdsGHgXGIzYTIWkiwwyQGOL6KudQOp1ZBJbk/CVm45V+9ME4wsJSJiA2txg==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
       svelte: ^5.0.0
@@ -535,8 +535,8 @@ packages:
       '@sveltejs/kit': ^2.0.0
       svelte: ^5.0.0
 
-  '@jill64/svelte-sanitize@2.1.0':
-    resolution: {integrity: sha512-nRq9PHM9+6QKPf8vosmpwjkeiBwo0cmRwsKYCi9RSnTxua96FuwyfjhwObbKtq4KuN0jHebzFO0hDutrtm0EVw==}
+  '@jill64/svelte-sanitize@2.1.1':
+    resolution: {integrity: sha512-4vPr7HQUd7+R/NoWKFw+TokhUFmDGXnBrj70oDfkWgGFjKdF2ABP26BpaLl5Knjbhcg/W8MNA9tqVb63NH1Bjg==}
     peerDependencies:
       svelte: ^5.0.0
 
@@ -569,9 +569,6 @@ packages:
 
   '@jill64/typed-storage@3.1.5':
     resolution: {integrity: sha512-wYtZKu65VA4C5WX1NpR0rfUyz9eSb9x/RKoGi54jNV5sgCvJRRElmfhM1o3F1QUcWj76eYRY356Le8Hxbk8ARQ==}
-
-  '@jill64/universal-sanitizer@1.3.6':
-    resolution: {integrity: sha512-T/0JI3pts+Ytv+6tDi4qAbEZ2+hiERl9TXDph/oKlNxpD1N0jNXLK2ZozQ926rG0CL1M25NafiPdRGdBj5P8/A==}
 
   '@jill64/universal-sanitizer@1.4.0':
     resolution: {integrity: sha512-H17UAbbD0CdF4QfU/OVFveaub1kdhkFZVlnrR9eUFiyNN/55E3UIRJqn4AMLabLmiT3/ek4yDQNIkGaydK8uDA==}
@@ -794,10 +791,6 @@ packages:
   '@types/cookie@1.0.0':
     resolution: {integrity: sha512-mGFXbkDQJ6kAXByHS7QAggRXgols0mAdP4MuXgloGY1tXokvzaFFM4SMqWvf7AH0oafI7zlFJwoGWzmhDqTZ9w==}
     deprecated: This is a stub types definition. cookie provides its own type definitions, so you do not need this installed.
-
-  '@types/dompurify@3.2.0':
-    resolution: {integrity: sha512-Fgg31wv9QbLDA0SpTOXO3MaxySc4DKGLi8sna4/Utjo4r3ZRPdCt4UQee8BWr+Q5z21yifghREPJGYaEOEIACg==}
-    deprecated: This is a stub types definition. dompurify provides its own type definitions, so you do not need this installed.
 
   '@types/eslint@9.6.1':
     resolution: {integrity: sha512-FXx2pKgId/WyYo2jXw63kk7/+TY7u7AziEJxJAnSFzHlqTAS3Ync6SvgYAN/k4/PQpnnVuzoMuVnByKK2qp0ag==}
@@ -1818,8 +1811,8 @@ packages:
     peerDependencies:
       svelte: ^3.57.0 || ^4.0.0
 
-  svelte-highlight-switcher@1.3.3:
-    resolution: {integrity: sha512-EixJfpMxqqQzIFEiCPHFU2a061fjI+OsQRa4WPXaoT4VPSrB/Sy/pCi/5ADYSbvIT7X+OP2Y2AmqhqikYDsv8w==}
+  svelte-highlight-switcher@1.3.4:
+    resolution: {integrity: sha512-LBniWlLvebMs6WerJYfQqo7LUhZ73IA7udKvM+HN5VkHWVkl5jnFWuzrXhGC0cneB3Sz3E860hQiObcP7LhM/w==}
     peerDependencies:
       svelte: ^4.0.0 || ^5.0.0
       svelte-highlight: ^7.4.6
@@ -2315,18 +2308,18 @@ snapshots:
       - ts-node
       - typescript
 
-  '@jill64/npm-demo-layout@2.0.7(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.7(@types/node@20.12.3)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.2)(vite@6.0.7(@types/node@20.12.3)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.2)':
+  '@jill64/npm-demo-layout@2.0.9(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.7(@types/node@20.12.3)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.2)(vite@6.0.7(@types/node@20.12.3)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.2)':
     dependencies:
       '@jill64/svelte-dark-theme': 5.1.1(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.7(@types/node@20.12.3)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.2)(vite@6.0.7(@types/node@20.12.3)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.2)
       '@jill64/svelte-menu': 2.0.0(svelte@5.16.2)
       '@jill64/svelte-ogp': 2.0.1(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.7(@types/node@20.12.3)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.2)(vite@6.0.7(@types/node@20.12.3)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.2)
-      '@jill64/svelte-sanitize': 2.1.0(svelte@5.16.2)
+      '@jill64/svelte-sanitize': 2.1.1(svelte@5.16.2)
       '@jill64/svelte-toast': 2.1.5(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.7(@types/node@20.12.3)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.2)(vite@6.0.7(@types/node@20.12.3)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.2)
       '@sveltejs/kit': 2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.7(@types/node@20.12.3)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.2)(vite@6.0.7(@types/node@20.12.3)(jiti@1.21.6)(yaml@2.4.2))
       svelte: 5.16.2
       svelte-code-copy: 2.2.0(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.7(@types/node@20.12.3)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.2)(vite@6.0.7(@types/node@20.12.3)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.2)
       svelte-highlight: 7.8.2
-      svelte-highlight-switcher: 1.3.3(svelte-highlight@7.8.2)(svelte@5.16.2)
+      svelte-highlight-switcher: 1.3.4(svelte-highlight@7.8.2)(svelte@5.16.2)
 
   '@jill64/playwright-config@2.4.2(@playwright/test@1.49.1)':
     dependencies:
@@ -2379,9 +2372,9 @@ snapshots:
       '@sveltejs/kit': 2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.7(@types/node@20.12.3)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.2)(vite@6.0.7(@types/node@20.12.3)(jiti@1.21.6)(yaml@2.4.2))
       svelte: 5.16.2
 
-  '@jill64/svelte-sanitize@2.1.0(svelte@5.16.2)':
+  '@jill64/svelte-sanitize@2.1.1(svelte@5.16.2)':
     dependencies:
-      '@jill64/universal-sanitizer': 1.3.6
+      '@jill64/universal-sanitizer': 1.4.0
       svelte: 5.16.2
 
   '@jill64/svelte-storage@2.0.0(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.7(@types/node@20.12.3)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.2)(vite@6.0.7(@types/node@20.12.3)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.2)':
@@ -2426,13 +2419,6 @@ snapshots:
   '@jill64/typed-storage@3.1.5':
     dependencies:
       ts-serde: 1.0.8
-
-  '@jill64/universal-sanitizer@1.3.6':
-    dependencies:
-      '@types/dompurify': 3.2.0
-      '@types/sanitize-html': 2.13.0
-      dompurify: 3.2.3
-      sanitize-html: 2.14.0
 
   '@jill64/universal-sanitizer@1.4.0':
     dependencies:
@@ -2639,10 +2625,6 @@ snapshots:
   '@types/cookie@1.0.0':
     dependencies:
       cookie: 1.0.2
-
-  '@types/dompurify@3.2.0':
-    dependencies:
-      dompurify: 3.2.3
 
   '@types/eslint@9.6.1':
     dependencies:
@@ -3691,7 +3673,7 @@ snapshots:
       svelte: 5.16.2
       svelte-writable-derived: 3.1.0(svelte@5.16.2)
 
-  svelte-highlight-switcher@1.3.3(svelte-highlight@7.8.2)(svelte@5.16.2):
+  svelte-highlight-switcher@1.3.4(svelte-highlight@7.8.2)(svelte@5.16.2):
     dependencies:
       svelte: 5.16.2
       svelte-highlight: 7.8.2
