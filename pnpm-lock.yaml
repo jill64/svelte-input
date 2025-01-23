@@ -37,8 +37,8 @@ importers:
         specifier: 2.0.0
         version: 2.0.0(svelte@5.16.2)
       '@jill64/svelte-tailwind':
-        specifier: 1.2.77
-        version: 1.2.77(jiti@1.21.6)(yaml@2.4.2)
+        specifier: 1.2.79
+        version: 1.2.79(jiti@1.21.6)(yaml@2.4.2)
       '@jill64/universal-sanitizer':
         specifier: 1.4.0
         version: 1.4.0
@@ -546,8 +546,8 @@ packages:
       '@sveltejs/kit': ^2.0.0
       svelte: ^5.0.0
 
-  '@jill64/svelte-tailwind@1.2.77':
-    resolution: {integrity: sha512-AequFXGj3nSi+dCdwYKT9AHtucGuWsrlTcSq+Ek9VXM4vbnp+RLAiTaKyvFd+mb3GKZYTpQ+698Z+1AQXThs4A==}
+  '@jill64/svelte-tailwind@1.2.79':
+    resolution: {integrity: sha512-IRYlGEsyVQa69QYnmN6aivPb84QtrphOi2m4Yn0thWiV9GAvYmwxKcLwL/U6g4A4ldSVYBbtIA5Hvyv1a+Xumw==}
 
   '@jill64/svelte-toast@2.1.5':
     resolution: {integrity: sha512-9Xk49WjzqkTaZPVdZNjecd+eqdzcPElitYLQSJvgSwNOKndtV05mC3vW3Gpj4wHBlmf1qBXh9Q7fug71X69IRQ==}
@@ -559,8 +559,8 @@ packages:
     peerDependencies:
       tailwindcss: ^3.0.0
 
-  '@jill64/tailwind-reactions@1.3.1':
-    resolution: {integrity: sha512-TbNw/ScdG0NwjI6MuQ8ePcGhFQRrB03vaWq8DEprvxD/oj3kAmiSRq4HrLz3HY091QGfUD8EIBfq8Ouy3kbyzA==}
+  '@jill64/tailwind-reactions@1.3.2':
+    resolution: {integrity: sha512-qX0iOIhYuCpmn0EONvZKQXtz++Ne5XhJ6ZmPTlMmC+d8N/RGrIG1OyBDaEmq/qKZ9B9ppWqvQDmwDO5zyQiE9Q==}
     peerDependencies:
       tailwindcss: ^3.0.0
 
@@ -1305,9 +1305,6 @@ packages:
     resolution: {integrity: sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==}
     engines: {node: '>=8'}
 
-  is-core-module@2.13.1:
-    resolution: {integrity: sha512-hHrIjvZsftOsvKSn2TRYl63zvxsgE0K+0mYMoH6gD4omR5IWB2KynivBQczo3+wF1cCkjzvptnI9Q0sPU66ilw==}
-
   is-core-module@2.16.1:
     resolution: {integrity: sha512-UfoeMA6fIJ8wTYFEUjelnaGI67v6+N7qXJEvQuIGa99l4xsCruSYOVSQ0uPANn4dAzm8lkYPaKLrrijLq7x23w==}
     engines: {node: '>= 0.4'}
@@ -1680,10 +1677,6 @@ packages:
   resolve@1.22.10:
     resolution: {integrity: sha512-NPRy+/ncIMeDlTAsuqwKIiferiawhefFJtkNSW0qZJEqMEb+qBt/77B/jGeeek+F0uOeN05CDa6HXbbIgtVX4w==}
     engines: {node: '>= 0.4'}
-    hasBin: true
-
-  resolve@1.22.8:
-    resolution: {integrity: sha512-oKWePCxqpd6FlLvGV1VU0x7bkPmmCNolxzjMf4NczoDnQcIWrAF+cPtZn5i6n+RfD2d9i0tzpKnG6Yk168yIyw==}
     hasBin: true
 
   reusify@1.0.4:
@@ -2395,10 +2388,10 @@ snapshots:
       '@sveltejs/kit': 2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.11(@types/node@22.10.7)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.2)(vite@6.0.11(@types/node@22.10.7)(jiti@1.21.6)(yaml@2.4.2))
       svelte: 5.16.2
 
-  '@jill64/svelte-tailwind@1.2.77(jiti@1.21.6)(yaml@2.4.2)':
+  '@jill64/svelte-tailwind@1.2.79(jiti@1.21.6)(yaml@2.4.2)':
     dependencies:
       '@jill64/tailwind-grid-auto': 1.4.1(tailwindcss@3.4.17)
-      '@jill64/tailwind-reactions': 1.3.1(tailwindcss@3.4.17)
+      '@jill64/tailwind-reactions': 1.3.2(tailwindcss@3.4.17)
       autoprefixer: 10.4.20(postcss@8.5.1)
       postcss: 8.5.1
       postcss-load-config: 6.0.1(jiti@1.21.6)(postcss@8.5.1)(yaml@2.4.2)
@@ -2422,7 +2415,7 @@ snapshots:
     dependencies:
       tailwindcss: 3.4.17
 
-  '@jill64/tailwind-reactions@1.3.1(tailwindcss@3.4.17)':
+  '@jill64/tailwind-reactions@1.3.2(tailwindcss@3.4.17)':
     dependencies:
       tailwindcss: 3.4.17
 
@@ -3221,10 +3214,6 @@ snapshots:
     dependencies:
       binary-extensions: 2.3.0
 
-  is-core-module@2.13.1:
-    dependencies:
-      hasown: 2.0.2
-
   is-core-module@2.16.1:
     dependencies:
       hasown: 2.0.2
@@ -3435,7 +3424,7 @@ snapshots:
       postcss: 8.5.1
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
-      resolve: 1.22.8
+      resolve: 1.22.10
 
   postcss-js@4.0.1(postcss@8.5.1):
     dependencies:
@@ -3521,12 +3510,6 @@ snapshots:
   resolve@1.22.10:
     dependencies:
       is-core-module: 2.16.1
-      path-parse: 1.0.7
-      supports-preserve-symlinks-flag: 1.0.0
-
-  resolve@1.22.8:
-    dependencies:
-      is-core-module: 2.13.1
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
 
@@ -3765,7 +3748,7 @@ snapshots:
       postcss-load-config: 4.0.2(postcss@8.5.1)
       postcss-nested: 6.2.0(postcss@8.5.1)
       postcss-selector-parser: 6.1.2
-      resolve: 1.22.8
+      resolve: 1.22.10
       sucrase: 3.35.0
     transitivePeerDependencies:
       - ts-node
