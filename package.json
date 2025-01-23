@@ -29,7 +29,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-input.git",
-    "image": "https://opengraph.githubassets.com/3997b80b2b4de9a67eb5ebbd0cc2b97ff4397bafbb9a81f79a95e76fc4f83fc6/jill64/svelte-input"
+    "image": "https://opengraph.githubassets.com/afd3c3f004ce7a72f5eb7e76fbcd8ab0af4946f00ab636ac0b96b73e9e2b5c27/jill64/svelte-input"
   },
   "keywords": [
     "components",
@@ -61,7 +61,7 @@
     "@jill64/sentry-sveltekit-cloudflare": "2.0.6",
     "@jill64/svelte-menu": "2.0.0",
     "@jill64/svelte-tailwind": "1.2.79",
-    "@playwright/test": "1.49.1",
+    "@playwright/test": "1.50.0",
     "@sveltejs/adapter-cloudflare": "5.0.1",
     "@sveltejs/kit": "2.15.1",
     "nanoid": "5.0.9",
