@@ -64,7 +64,7 @@
     "@playwright/test": "1.50.1",
     "@sveltejs/adapter-cloudflare": "5.0.2",
     "@sveltejs/kit": "2.15.1",
-    "nanoid": "5.0.9",
+    "nanoid": "5.1.0",
     "svelte": "5.19.7",
     "svelte-mq-store": "3.0.0",
     "typescript": "5.7.3",
