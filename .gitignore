@@ -4,5 +4,4 @@ node_modules
 /build
 .svelte-kit
 .env
-package-lock.json
 /test-results
