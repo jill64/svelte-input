@@ -45,8 +45,8 @@
     "package": "svelte-kit sync && bunx @sveltejs/package && bunx publint",
     "test": "playwright test",
     "check": "svelte-kit sync && bunx svelte-check",
-    "format": "bunx @jill64/psx",
-    "lint": "bunx eslint . && bun run check"
+    "format": "bunx psvx",
+    "lint": "bun run check && bunx eslint ."
   },
   "peerDependencies": {
     "svelte": "^5.0.0"
