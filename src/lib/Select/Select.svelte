@@ -47,7 +47,7 @@
   onchange={() => onChange?.(value)}
 >
   {#if isGroupedOutput(output)}
-    {#each output as { label, disabled, list }}
+    {#each output as { label, disabled, list }, index (index)}
       <optgroup {label} {disabled}>
         {#each list as { value, selected, label, disabled }}
           <option
@@ -62,7 +62,7 @@
       </optgroup>
     {/each}
   {:else}
-    {#each output as { value, selected, label, disabled }}
+    {#each output as { value, selected, label, disabled }, index (index)}
       <option
         {value}
         {selected}

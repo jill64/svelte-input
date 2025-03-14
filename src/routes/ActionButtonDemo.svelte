@@ -6,6 +6,7 @@
   import Demo from './Demo.svelte'
 
   const delay = (ms: number) =>
+    // eslint-disable-next-line no-undef
     new Promise((resolve) => setTimeout(resolve, ms))
 
   let disabled = $state(false)

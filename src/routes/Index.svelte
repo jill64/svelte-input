@@ -3,7 +3,7 @@
 </script>
 
 <ul>
-  {#each list as item}
+  {#each list as item, index (index)}
     <li class="list-disc list-inside py-1">
       <a class="text-blue-500 hover:underline" href="#{item}">{item}</a>
     </li>
