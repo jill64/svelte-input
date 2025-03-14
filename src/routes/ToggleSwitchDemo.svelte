@@ -15,6 +15,7 @@
 >
   {#snippet description()}
     Pre-styled
+    <!-- eslint-disable-next-line -->
     <code>{'<input type="checkbox">'}</code>
     compatible toggle switch component.
   {/snippet}

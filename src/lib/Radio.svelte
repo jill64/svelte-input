@@ -31,7 +31,7 @@
   let cursor = $derived(disabled ? 'not-allowed' : 'pointer')
 </script>
 
-{#each list as item}
+{#each list as item, index (index)}
   <label style:cursor style:display="inline-flex" style:align-items="center">
     <input
       type="radio"

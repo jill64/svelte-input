@@ -34,7 +34,7 @@
   })
 </script>
 
-{#each Object.entries(value) as [key, v]}
+{#each Object.entries(value) as [key, v] (key)}
   <CheckBox
     value={v}
     {...attributes}
