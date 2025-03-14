@@ -49,7 +49,7 @@
   {#if isGroupedOutput(output)}
     {#each output as { label, disabled, list }, index (index)}
       <optgroup {label} {disabled}>
-        {#each list as { value, selected, label, disabled }}
+        {#each list as { value, selected, label, disabled }, index (index)}
           <option
             {value}
             {selected}
